@@ -1,5 +1,6 @@
 import io.gatling.app.Gatling;
 import io.gatling.core.config.GatlingPropertiesBuilder;
+package org.pruebasDeCarga;
 
 public class Engine {
 
