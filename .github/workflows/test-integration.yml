@@ -17,6 +17,8 @@ jobs:
       command-install: 'mvn clean install -DskipTests'
       command-execute: 'mvn test -P load'
       repository: 'bbog-bnpl-cp-load-testing'
+      files-to-export: >
+        report/**
       dependencies-file-cache: '**/pom.xml'
       folder-libraries-cache: '~/.m2'
       name-file-report: 'results'
