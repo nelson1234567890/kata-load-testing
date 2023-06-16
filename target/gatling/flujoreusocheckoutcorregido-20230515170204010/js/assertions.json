@@ -1,0 +1,10 @@
+{
+  "simulation": "bnpl.flujoReusoCheckOutCorregido",
+  "simulationId": "flujoreusocheckoutcorregido-20230515170204010",
+  "start": 1684170130476,
+  "description": "",
+  "scenarios": ["flujoReusoCheckOut"],
+  "assertions": [
+
+  ]
+}
