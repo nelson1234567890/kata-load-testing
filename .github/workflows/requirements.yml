@@ -1,0 +1,18 @@
+name: requirements-project
+
+on:
+  pull_request:
+    branches:
+      - staging
+      - master
+
+jobs:
+  requirements:
+    uses: bancodebogota/bbog-dig-do-testing-pipeline/.github/workflows/requirements_load.yml@v2
+    with:
+      use-linter: false
+      project-name: ${{ github.event.repository.name }}
+      project-key: ${{ github.event.repository.name }}
+      language: 'java'
+      sonar-project-properties-file: 'sonar-project-custom.properties'
+    secrets: inherit
