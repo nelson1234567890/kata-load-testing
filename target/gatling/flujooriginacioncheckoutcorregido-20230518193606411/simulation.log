@@ -1,0 +1,1859 @@
+RUN	bnpl.FlujoOriginacionCheckOutCorregido	flujooriginacioncheckoutcorregido	1684438566411	 	3.8.3
+USER	FlujoOriginacionCheckOut	START	1684438570588
+USER	FlujoOriginacionCheckOut	START	1684438570588
+USER	FlujoOriginacionCheckOut	START	1684438570589
+USER	FlujoOriginacionCheckOut	START	1684438570588
+USER	FlujoOriginacionCheckOut	START	1684438570591
+REQUEST		request_0	1684438570503	1684438571949	OK	 
+REQUEST		request_0	1684438570503	1684438571949	OK	 
+REQUEST		request_0	1684438570503	1684438571949	OK	 
+REQUEST		request_0	1684438570512	1684438571949	OK	 
+REQUEST		request_0	1684438570503	1684438573236	OK	 
+REQUEST		request_0 Redirect 1	1684438571977	1684438573331	OK	 
+REQUEST		request_0 Redirect 1	1684438571980	1684438573331	OK	 
+REQUEST		request_0 Redirect 1	1684438571979	1684438573331	OK	 
+REQUEST		request_0 Redirect 1	1684438571977	1684438573334	OK	 
+REQUEST		request_0 Redirect 1	1684438573237	1684438574953	OK	 
+REQUEST		style.min.css?ver=6.2.1	1684438575847	1684438579692	OK	 
+REQUEST		style.min.css?ver=6.2.1	1684438575847	1684438579694	OK	 
+REQUEST		style.min.css?ver=6.2.1	1684438575847	1684438579702	OK	 
+REQUEST		style.min.css?ver=6.2.1	1684438575847	1684438579698	OK	 
+REQUEST		style.min.css?ver=6.2.1	1684438575847	1684438584775	OK	 
+REQUEST		bdb-ecommerce-widget.loader.js?token=8cb789be-2396-45c0-9fe2-04e42b88c4bc	1684438574334	1684438585990	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_92	1684438575005	1684438585990	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_92	1684438575005	1684438585990	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_92	1684438575005	1684438585990	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_168	1684438575788	1684438586027	KO	j.n.c.ClosedChannelException
+REQUEST		request_170	1684438575845	1684438586374	KO	j.n.c.ClosedChannelException
+REQUEST		css2?family=Roboto&display=swap	1684438575079	1684438586376	KO	j.n.c.ClosedChannelException
+REQUEST		css2?family=Roboto&display=swap	1684438575079	1684438586376	KO	j.n.c.ClosedChannelException
+REQUEST		request_141	1684438575224	1684438586376	KO	j.n.c.ClosedChannelException
+REQUEST		request_152	1684438575319	1684438586377	KO	j.n.c.ClosedChannelException
+REQUEST		request_168	1684438575788	1684438586377	KO	j.n.c.ClosedChannelException
+REQUEST		request_141	1684438575224	1684438586377	KO	j.n.c.ClosedChannelException
+REQUEST		request_152	1684438575319	1684438586377	KO	j.n.c.ClosedChannelException
+REQUEST		request_172	1684438575846	1684438586378	KO	j.n.c.ClosedChannelException
+REQUEST		request_170	1684438575845	1684438586378	KO	j.n.c.ClosedChannelException
+REQUEST		request_172	1684438575846	1684438586378	KO	j.n.c.ClosedChannelException
+REQUEST		request_152	1684438575319	1684438586378	KO	j.n.c.ClosedChannelException
+REQUEST		request_172	1684438575846	1684438586378	KO	j.n.c.ClosedChannelException
+REQUEST		request_141	1684438575224	1684438586378	KO	j.n.c.ClosedChannelException
+REQUEST		request_168	1684438575787	1684438586379	KO	j.n.c.ClosedChannelException
+REQUEST		request_169	1684438575320	1684438586379	KO	j.n.c.ClosedChannelException
+REQUEST		request_170	1684438575845	1684438586379	KO	j.n.c.ClosedChannelException
+REQUEST		request_169	1684438575320	1684438586379	KO	j.n.c.ClosedChannelException
+REQUEST		css2?family=Roboto&display=swap	1684438575078	1684438586380	KO	j.n.c.ClosedChannelException
+REQUEST		request_169	1684438575320	1684438586380	KO	j.n.c.ClosedChannelException
+REQUEST		request_82	1684438575003	1684438586380	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_170	1684438575845	1684438586380	KO	j.n.c.ClosedChannelException
+REQUEST		request_92	1684438575005	1684438586380	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_149	1684438575006	1684438586380	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_168	1684438575787	1684438586381	KO	j.n.c.ClosedChannelException
+REQUEST		request_82	1684438575003	1684438586381	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_82	1684438575003	1684438586381	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		bdb-ecommerce-widget.loader.js?token=8cb789be-2396-45c0-9fe2-04e42b88c4bc	1684438574338	1684438586382	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_172	1684438575846	1684438586382	KO	j.n.c.ClosedChannelException
+REQUEST		request_149	1684438575006	1684438586382	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		bdb-ecommerce-widget.loader.js?token=8cb789be-2396-45c0-9fe2-04e42b88c4bc	1684438574342	1684438586382	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		css2?family=Roboto&display=swap	1684438575079	1684438586383	KO	j.n.c.ClosedChannelException
+REQUEST		request_154	1684438575007	1684438586383	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_154	1684438575009	1684438586383	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_149	1684438575006	1684438586383	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_169	1684438575320	1684438586383	KO	j.n.c.ClosedChannelException
+REQUEST		request_155	1684438575009	1684438586383	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_155	1684438575010	1684438586383	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_168	1684438575787	1684438586384	KO	j.n.c.ClosedChannelException
+REQUEST		request_154	1684438575008	1684438586384	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		bdb-ecommerce-easy-to-pay-widget.loader.js?token=f374eca5-80de-4940-ae7f-8f12fb8b33c5	1684438575010	1684438586384	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_152	1684438575319	1684438586384	KO	j.n.c.ClosedChannelException
+REQUEST		request_155	1684438575009	1684438586384	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_141	1684438575224	1684438586385	KO	j.n.c.ClosedChannelException
+REQUEST		bdb-ecommerce-easy-to-pay-widget.loader.js?token=f374eca5-80de-4940-ae7f-8f12fb8b33c5	1684438575012	1684438586385	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		bdb-ecommerce-easy-to-pay-widget.loader.js?token=f374eca5-80de-4940-ae7f-8f12fb8b33c5	1684438575010	1684438586385	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_82	1684438575003	1684438586385	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_72	1684438575072	1684438586387	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_154	1684438575008	1684438586387	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		bdb-ecommerce-widget.loader.js?token=8cb789be-2396-45c0-9fe2-04e42b88c4bc	1684438574334	1684438586388	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_78	1684438575073	1684438586388	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_142	1684438575075	1684438586389	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_149	1684438575006	1684438586389	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_72	1684438575070	1684438586389	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_72	1684438575073	1684438586389	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_143	1684438575076	1684438586389	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_155	1684438575009	1684438586389	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_78	1684438575072	1684438586389	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_78	1684438575074	1684438586389	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_144	1684438575078	1684438586390	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		bdb-ecommerce-easy-to-pay-widget.loader.js?token=f374eca5-80de-4940-ae7f-8f12fb8b33c5	1684438575010	1684438586390	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_142	1684438575073	1684438586390	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_142	1684438575075	1684438586390	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_143	1684438575074	1684438586391	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_143	1684438575076	1684438586391	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_144	1684438575078	1684438586391	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_144	1684438575075	1684438586392	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_72	1684438575072	1684438586392	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_79	1684438575131	1684438586392	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_79	1684438575131	1684438586392	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_78	1684438575073	1684438586392	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_80	1684438575223	1684438586393	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_80	1684438575223	1684438586393	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_142	1684438575075	1684438586396	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_79	1684438575131	1684438586396	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_143	1684438575076	1684438586397	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_80	1684438575223	1684438586397	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_144	1684438575078	1684438586398	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_79	1684438575131	1684438586399	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_80	1684438575223	1684438586399	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_172	1684438575846	1684438587032	KO	j.n.c.ClosedChannelException
+REQUEST		request_141	1684438575224	1684438587033	KO	j.n.c.ClosedChannelException
+REQUEST		request_170	1684438575845	1684438587034	KO	j.n.c.ClosedChannelException
+REQUEST		request_152	1684438575319	1684438587035	KO	j.n.c.ClosedChannelException
+REQUEST		css2?family=Roboto&display=swap	1684438575116	1684438587036	KO	j.n.c.ClosedChannelException
+REQUEST		request_169	1684438575320	1684438587036	KO	j.n.c.ClosedChannelException
+REQUEST		bdb-ecommerce-widget.loader.js?token=8cb789be-2396-45c0-9fe2-04e42b88c4bc	1684438575074	1684438587037	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_82	1684438575076	1684438587039	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_92	1684438575078	1684438587040	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_149	1684438575080	1684438587040	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_154	1684438575082	1684438587041	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_155	1684438575083	1684438587042	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		bdb-ecommerce-easy-to-pay-widget.loader.js?token=f374eca5-80de-4940-ae7f-8f12fb8b33c5	1684438575085	1684438587043	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_72	1684438575086	1684438587045	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_78	1684438575087	1684438587046	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		classic-themes.min.css?ver=6.2.1	1684438584778	1684438600670	OK	 
+REQUEST		request_142	1684438575088	1684438600722	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_79	1684438575133	1684438600723	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_80	1684438575223	1684438600724	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_107	1684438575433	1684438600724	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_108	1684438575489	1684438600726	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_109	1684438575490	1684438600727	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_110	1684438575491	1684438600728	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_111	1684438575494	1684438600729	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_112	1684438575496	1684438600730	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_146	1684438575498	1684438600732	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_148	1684438575559	1684438600734	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_150	1684438575560	1684438600735	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_151	1684438575562	1684438600735	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_160	1684438575564	1684438600736	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_161	1684438575678	1684438600737	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_167	1684438575679	1684438600737	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_159	1684438575682	1684438600738	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_165	1684438575686	1684438600742	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_166	1684438575687	1684438600743	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_173	1684438575688	1684438600745	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_94	1684438575782	1684438600745	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_96	1684438575784	1684438600747	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_99	1684438575785	1684438600749	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_100	1684438575786	1684438600751	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		wc-blocks-vendors-style.css?ver=8.9.2	1684438575850	1684438600752	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		wc-blocks-style.css?ver=8.9.2	1684438575851	1684438600755	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		jquery.selectBox.css?ver=1.2.0	1684438575853	1684438600756	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		font-awesome.css?ver=4.7.0	1684438575854	1684438600758	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		style.css?ver=3.0.20	1684438575855	1684438600759	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_140	1684438575856	1684438600760	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_162	1684438575914	1684438600761	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		classic-themes.min.css?ver=6.2.1	1684438579762	1684438604242	OK	 
+REQUEST		request_107	1684438575432	1684438604272	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_108	1684438575489	1684438604273	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_109	1684438575490	1684438604274	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_110	1684438575491	1684438604276	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_111	1684438575492	1684438604277	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_112	1684438575494	1684438604278	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_148	1684438575558	1684438604279	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_153	1684438575561	1684438604281	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_167	1684438575679	1684438604282	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_171	1684438575680	1684438604283	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_163	1684438575683	1684438604283	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_164	1684438575685	1684438604284	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_165	1684438575686	1684438604286	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_166	1684438575687	1684438604287	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_173	1684438575688	1684438604287	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_81	1684438575689	1684438604288	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_94	1684438575782	1684438604289	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_96	1684438575783	1684438604290	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_99	1684438575784	1684438604292	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_100	1684438575785	1684438604293	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_101	1684438575786	1684438604294	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		wc-blocks-vendors-style.css?ver=8.9.2	1684438575849	1684438604295	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		wc-blocks-style.css?ver=8.9.2	1684438575850	1684438604297	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		jquery.selectBox.css?ver=1.2.0	1684438575851	1684438604299	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		font-awesome.css?ver=4.7.0	1684438575852	1684438604300	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		style.css?ver=3.0.20	1684438575853	1684438604301	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_140	1684438575854	1684438604303	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_162	1684438575914	1684438604303	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		classic-themes.min.css?ver=6.2.1	1684438579762	1684438604781	OK	 
+REQUEST		classic-themes.min.css?ver=6.2.1	1684438579762	1684438604781	OK	 
+REQUEST		classic-themes.min.css?ver=6.2.1	1684438579762	1684438604788	OK	 
+REQUEST		request_95	1684438575321	1684438604799	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_107	1684438575433	1684438604800	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_108	1684438575489	1684438604801	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_109	1684438575490	1684438604802	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_110	1684438575491	1684438604804	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_111	1684438575492	1684438604805	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_112	1684438575494	1684438604806	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_146	1684438575496	1684438604807	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_107	1684438575432	1684438604808	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_147	1684438575556	1684438604809	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_108	1684438575489	1684438604809	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_148	1684438575558	1684438604809	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_150	1684438575559	1684438604810	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_109	1684438575490	1684438604810	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_151	1684438575560	1684438604810	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_153	1684438575561	1684438604811	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_160	1684438575562	1684438604811	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_110	1684438575491	1684438604812	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_161	1684438575677	1684438604812	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_107	1684438575431	1684438604812	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_167	1684438575679	1684438604812	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_111	1684438575492	1684438604813	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_171	1684438575680	1684438604813	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_163	1684438575682	1684438604813	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_112	1684438575494	1684438604813	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_108	1684438575489	1684438604813	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_109	1684438575490	1684438604814	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_146	1684438575496	1684438604815	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_164	1684438575683	1684438604816	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_110	1684438575491	1684438604816	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_147	1684438575556	1684438604817	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_111	1684438575492	1684438604817	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_165	1684438575684	1684438604817	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_112	1684438575494	1684438604818	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_148	1684438575558	1684438604818	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_166	1684438575686	1684438604818	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_150	1684438575558	1684438604818	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_151	1684438575559	1684438604819	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_173	1684438575687	1684438604819	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_147	1684438575556	1684438604819	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_153	1684438575561	1684438604819	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_81	1684438575688	1684438604819	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_160	1684438575562	1684438604819	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_161	1684438575677	1684438604820	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_148	1684438575558	1684438604820	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_171	1684438575681	1684438604820	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_94	1684438575782	1684438604820	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_150	1684438575559	1684438604821	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_159	1684438575682	1684438604820	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_96	1684438575783	1684438604821	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_151	1684438575560	1684438604821	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_153	1684438575561	1684438604821	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_164	1684438575685	1684438604822	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_99	1684438575784	1684438604822	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_160	1684438575562	1684438604822	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_161	1684438575677	1684438604822	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_167	1684438575680	1684438604823	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_100	1684438575785	1684438604823	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_165	1684438575686	1684438604823	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_171	1684438575681	1684438604823	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_159	1684438575684	1684438604824	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_166	1684438575687	1684438604824	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_101	1684438575786	1684438604824	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_173	1684438575688	1684438604824	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_94	1684438575782	1684438604825	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		wc-blocks-vendors-style.css?ver=8.9.2	1684438575849	1684438604825	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_163	1684438575686	1684438604825	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_96	1684438575783	1684438604826	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_165	1684438575688	1684438604826	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		wc-blocks-style.css?ver=8.9.2	1684438575851	1684438604826	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_99	1684438575784	1684438604827	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_173	1684438575691	1684438604827	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_81	1684438575693	1684438604828	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		jquery.selectBox.css?ver=1.2.0	1684438575852	1684438604828	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_100	1684438575785	1684438604828	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_94	1684438575783	1684438604829	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		font-awesome.css?ver=4.7.0	1684438575852	1684438604829	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		wc-blocks-vendors-style.css?ver=8.9.2	1684438575849	1684438604829	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_96	1684438575784	1684438604830	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		style.css?ver=3.0.20	1684438575853	1684438604830	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		wc-blocks-style.css?ver=8.9.2	1684438575850	1684438604830	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_140	1684438575854	1684438604831	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_99	1684438575784	1684438604831	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		jquery.selectBox.css?ver=1.2.0	1684438575851	1684438604831	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_100	1684438575786	1684438604832	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_162	1684438575914	1684438604832	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		font-awesome.css?ver=4.7.0	1684438575852	1684438604832	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		wc-blocks-vendors-style.css?ver=8.9.2	1684438575849	1684438604833	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		style.css?ver=3.0.20	1684438575853	1684438604834	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		wc-blocks-style.css?ver=8.9.2	1684438575850	1684438604834	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_140	1684438575854	1684438604835	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_162	1684438575914	1684438604835	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		jquery.selectBox.css?ver=1.2.0	1684438575851	1684438604836	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		font-awesome.css?ver=4.7.0	1684438575852	1684438604837	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		style.css?ver=3.0.20	1684438575853	1684438604838	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_140	1684438575854	1684438604839	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		request_162	1684438575914	1684438604840	KO	i.n.h.s.SslHandshakeTimeoutException: handshake timed out after 10000ms
+REQUEST		megamenu.css?ver=6.2.1	1684438604243	1684438626331	OK	 
+REQUEST		request_95	1684438575321	1684438626334	OK	 
+REQUEST		request_146	1684438575495	1684438626338	OK	 
+REQUEST		request_147	1684438575556	1684438626339	OK	 
+REQUEST		request_150	1684438575559	1684438626340	OK	 
+REQUEST		request_151	1684438575560	1684438626340	OK	 
+REQUEST		request_160	1684438575562	1684438626341	OK	 
+REQUEST		request_161	1684438575677	1684438626341	OK	 
+REQUEST		request_159	1684438575682	1684438626342	OK	 
+REQUEST		request_156	1684438585997	1684438626352	KO	j.i.IOException: Premature close
+REQUEST		request_145	1684438586390	1684438626353	KO	j.i.IOException: Premature close
+REQUEST		request_106	1684438604291	1684438626369	OK	 
+REQUEST		request_122	1684438604292	1684438626371	OK	 
+REQUEST		request_105	1684438604290	1684438626378	OK	 
+REQUEST		request_104	1684438604288	1684438626382	OK	 
+REQUEST		request_124	1684438604294	1684438626393	OK	 
+REQUEST		fstyle.css?ver=6.2.1	1684438626333	1684438626435	OK	 
+REQUEST		request_157	1684438604279	1684438626500	OK	 
+REQUEST		request_174	1684438604283	1684438626504	OK	 
+REQUEST		request_158	1684438604281	1684438626505	OK	 
+REQUEST		dashicons.min.css?ver=6.2.1	1684438626437	1684438626530	OK	 
+REQUEST		request_175	1684438604285	1684438626590	KO	status.find.in([200, 209], 304), found 400
+REQUEST		colorbox.css?ver=6.2.1	1684438626532	1684438626637	OK	 
+REQUEST		request_125	1684438626369	1684438626659	OK	 
+REQUEST		request_127	1684438626372	1684438626661	OK	 
+REQUEST		select2.css?ver=7.2.2	1684438604297	1684438626716	OK	 
+REQUEST		request_123	1684438604293	1684438626718	OK	 
+REQUEST		request_176	1684438604286	1684438626719	OK	 
+REQUEST		woocommerce-smallscreen.css?ver=7.2.2	1684438604301	1684438626727	OK	 
+REQUEST		woocommerce-layout.css?ver=7.2.2	1684438604299	1684438626733	OK	 
+REQUEST		prettyPhoto.css?ver=6.2.1	1684438626638	1684438626737	OK	 
+REQUEST		request_115	1684438604275	1684438626798	OK	 
+REQUEST		request_114	1684438604274	1684438626803	OK	 
+REQUEST		request_116	1684438604276	1684438626804	OK	 
+REQUEST		request_117	1684438604277	1684438626805	OK	 
+REQUEST		woocommerce.css?ver=7.2.2	1684438604302	1684438626825	OK	 
+REQUEST		owl.carousel.css?ver=1.0.0	1684438626734	1684438626830	OK	 
+REQUEST		big-store-menu.css?ver=1.0.0	1684438626738	1684438626842	OK	 
+REQUEST		font-awesome.min.css?ver=4.7.0	1684438604296	1684438626843	OK	 
+REQUEST		request_118	1684438604278	1684438626877	OK	 
+REQUEST		font-awesome.css?ver=1.0.0	1684438626717	1684438626925	OK	 
+REQUEST		request_113	1684438604273	1684438626927	OK	 
+REQUEST		style.css?ver=1.0.0	1684438626831	1684438626929	OK	 
+REQUEST		quick-view.css?ver=6.2.1	1684438626843	1684438626937	OK	 
+REQUEST		f-style.css?ver=6.2.1	1684438626845	1684438626943	OK	 
+REQUEST		request_119	1684438626799	1684438626950	OK	 
+REQUEST		request_120	1684438626803	1684438626954	OK	 
+REQUEST		request_121	1684438626804	1684438626955	OK	 
+REQUEST		animate.css?ver=1.0.0	1684438626729	1684438627016	OK	 
+REQUEST		style.css?ver=1.0.0	1684438626830	1684438627018	OK	 
+REQUEST		jquery-migrate.min.js?ver=3.4.0	1684438626931	1684438627023	OK	 
+REQUEST		megamenu.js?ver=6.2.1	1684438626938	1684438627031	OK	 
+REQUEST		jquery.selectBox.min.js?ver=1.2.0	1684438626944	1684438627043	OK	 
+REQUEST		request_129	1684438626878	1684438627048	OK	 
+REQUEST		jquery.min.js?ver=3.6.4	1684438626926	1684438627101	OK	 
+REQUEST		request_131	1684438626950	1684438627102	OK	 
+REQUEST		request_132	1684438626955	1684438627105	OK	 
+REQUEST		request_133	1684438626956	1684438627106	OK	 
+REQUEST		request_130	1684438626927	1684438627108	OK	 
+REQUEST		jquery.yith-wcwl.min.js?ver=3.0.20	1684438627017	1684438627111	OK	 
+REQUEST		hoverIntent.min.js?ver=1.10.2	1684438627020	1684438627112	OK	 
+REQUEST		jquery.blockUI.min.js?ver=2.7.0-wc.7.2.2	1684438627024	1684438627117	OK	 
+REQUEST		add-to-cart.min.js?ver=7.2.2	1684438627032	1684438627125	OK	 
+REQUEST		js.cookie.min.js?ver=2.1.4-wc.7.2.2	1684438627043	1684438627140	OK	 
+REQUEST		woocommerce.min.js?ver=7.2.2	1684438627102	1684438627191	OK	 
+REQUEST		address-i18n.min.js?ver=7.2.2	1684438627112	1684438627203	OK	 
+REQUEST		country-select.min.js?ver=7.2.2	1684438627111	1684438627204	OK	 
+REQUEST		cart.min.js?ver=7.2.2	1684438627118	1684438627209	OK	 
+REQUEST		request_134	1684438627048	1684438627216	OK	 
+REQUEST		cart-fragments.min.js?ver=7.2.2	1684438627141	1684438627237	OK	 
+REQUEST		request_135	1684438627102	1684438627253	OK	 
+REQUEST		request_136	1684438627106	1684438627257	OK	 
+REQUEST		request_137	1684438627106	1684438627258	OK	 
+REQUEST		fscript.js?ver=1	1684438627192	1684438627282	OK	 
+REQUEST		request_139	1684438627109	1684438627292	OK	 
+REQUEST		woocompare.min.js?ver=2.4.5	1684438627204	1684438627294	OK	 
+REQUEST		jquery.colorbox-min.js?ver=1.4.21	1684438627205	1684438627300	OK	 
+REQUEST		jquery.prettyPhoto.min.js?ver=3.1.6	1684438627209	1684438627302	OK	 
+REQUEST		selectWoo.full.min.js?ver=1.0.9-wc.7.2.2	1684438627125	1684438627307	OK	 
+REQUEST		effect.min.js?ver=1.13.2	1684438627238	1684438627334	OK	 
+REQUEST		core.min.js?ver=1.13.2	1684438627283	1684438627376	OK	 
+REQUEST		menu.min.js?ver=1.13.2	1684438627295	1684438627387	OK	 
+REQUEST		regenerator-runtime.min.js?ver=0.13.11	1684438627303	1684438627397	OK	 
+REQUEST		wp-polyfill-inert.min.js?ver=3.1.2	1684438627301	1684438627398	OK	 
+REQUEST		wp-polyfill.min.js?ver=3.15.0	1684438627307	1684438627399	OK	 
+REQUEST		hooks.min.js?ver=4169d3cf8e8d95a3d6d5	1684438627376	1684438627467	OK	 
+REQUEST		dom-ready.min.js?ver=392bdd43726760d1f3ca	1684438627335	1684438627474	OK	 
+REQUEST		i18n.min.js?ver=9e794f35a71bb98672ae	1684438627387	1684438627486	OK	 
+REQUEST		a11y.min.js?ver=ecce20f002eda4c19664	1684438627397	1684438627493	OK	 
+REQUEST		imagesloaded.min.js?ver=4.1.4	1684438627399	1684438627493	OK	 
+REQUEST		autocomplete.min.js?ver=1.13.2	1684438627398	1684438627494	OK	 
+REQUEST		big-store-menu.js?ver=1.0.0	1684438627468	1684438627557	OK	 
+REQUEST		request_128	1684438626806	1684438627563	OK	 
+REQUEST		big-store-accordian-menu.js?ver=1.0.0	1684438627486	1684438627578	OK	 
+REQUEST		big-store-custom.js?ver=1.0.0	1684438627493	1684438627584	OK	 
+REQUEST		quick-view.js?ver=6.2.1	1684438627495	1684438627589	OK	 
+REQUEST		woocommerce.js?ver=1.0.0	1684438627494	1684438627595	OK	 
+REQUEST		datepicker.min.js?ver=1.13.2	1684438627557	1684438627647	OK	 
+REQUEST		owl.carousel.js?ver=1.0.1	1684438627475	1684438627666	OK	 
+REQUEST		f-script.js?ver=1.5.4	1684438627579	1684438627671	OK	 
+REQUEST		underscore.min.js?ver=1.13.4	1684438627584	1684438627675	OK	 
+REQUEST		wp-util.min.js?ver=6.2.1	1684438627589	1684438627682	OK	 
+REQUEST		add-to-cart-variation.min.js?ver=7.2.2	1684438627595	1684438627688	OK	 
+REQUEST		jquery.flexslider.min.js?ver=2.7.2-wc.7.2.2	1684438627648	1684438627747	OK	 
+REQUEST		request_3	1684438627667	1684438627763	OK	 
+REQUEST		request_4	1684438627671	1684438627766	OK	 
+REQUEST		request_5	1684438627675	1684438627770	OK	 
+REQUEST		request_7	1684438627689	1684438627782	OK	 
+REQUEST		request_8	1684438627747	1684438627836	OK	 
+REQUEST		request_10	1684438627767	1684438627856	OK	 
+REQUEST		request_9	1684438627765	1684438627863	OK	 
+REQUEST		request_11	1684438627771	1684438627866	OK	 
+REQUEST		request_25	1684438627783	1684438627882	OK	 
+REQUEST		request_30	1684438627837	1684438627927	OK	 
+REQUEST		request_31	1684438627857	1684438627964	OK	 
+REQUEST		request_70	1684438627867	1684438627966	OK	 
+REQUEST		request_6	1684438627682	1684438627967	OK	 
+REQUEST		request_68	1684438627865	1684438627971	OK	 
+REQUEST		request_71	1684438627883	1684438627975	OK	 
+REQUEST		request_76	1684438627927	1684438628016	OK	 
+REQUEST		request_85	1684438627967	1684438628065	OK	 
+REQUEST		request_77	1684438627965	1684438628066	OK	 
+REQUEST		request_88	1684438627976	1684438628071	OK	 
+REQUEST		request_86	1684438627970	1684438628073	OK	 
+REQUEST		request_87	1684438627972	1684438628082	OK	 
+REQUEST		request_89	1684438628016	1684438628104	OK	 
+REQUEST		request_90	1684438628065	1684438628186	OK	 
+REQUEST		request_91	1684438628067	1684438628186	OK	 
+REQUEST		request_102	1684438628073	1684438628187	OK	 
+REQUEST		request_138	1684438628105	1684438628191	OK	 
+REQUEST		request_97	1684438628072	1684438628777	OK	 
+REQUEST		request_103	1684438628082	1684438628779	KO	status.find.in([200, 209], 304), found 403
+REQUEST		request_97 Redirect 1	1684438628778	1684438629785	OK	 
+REQUEST		request_177	1684438630788	1684438630935	OK	 
+REQUEST		request_181	1684438630938	1684438630945	OK	 
+REQUEST		request_178	1684438630938	1684438631044	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_179	1684438630939	1684438631089	OK	 
+REQUEST		megamenu.css?ver=6.2.1	1684438600672	1684438631786	OK	 
+REQUEST		request_182	1684438630936	1684438631788	KO	status.find.in([200, 209], 304), found 403
+REQUEST		request_143	1684438575103	1684438631807	OK	 
+REQUEST		request_144	1684438575114	1684438631808	OK	 
+REQUEST		request_95	1684438575321	1684438631809	OK	 
+REQUEST		request_147	1684438575558	1684438631809	OK	 
+REQUEST		request_153	1684438575563	1684438631809	OK	 
+REQUEST		request_171	1684438575681	1684438631809	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_163	1684438575684	1684438631809	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_164	1684438575685	1684438631810	OK	 
+REQUEST		request_81	1684438575690	1684438631815	OK	 
+REQUEST		request_101	1684438575787	1684438631816	OK	 
+REQUEST		request_156	1684438587037	1684438631827	KO	j.i.IOException: Premature close
+REQUEST		request_145	1684438587043	1684438631827	KO	j.i.IOException: Premature close
+REQUEST		request_157	1684438600732	1684438631827	KO	j.n.c.ClosedChannelException
+REQUEST		request_158	1684438600734	1684438631827	KO	j.n.c.ClosedChannelException
+REQUEST		request_176	1684438600744	1684438631827	KO	j.n.c.ClosedChannelException
+REQUEST		request_175	1684438600743	1684438631828	KO	j.n.c.ClosedChannelException
+REQUEST		request_174	1684438600739	1684438631828	KO	j.n.c.ClosedChannelException
+REQUEST		request_124	1684438631817	1684438631830	OK	 
+REQUEST		request_123	1684438631815	1684438631840	OK	 
+REQUEST		request_104	1684438600746	1684438631841	OK	 
+REQUEST		request_106	1684438600750	1684438631843	OK	 
+REQUEST		request_105	1684438600748	1684438631844	OK	 
+REQUEST		request_122	1684438600751	1684438631845	OK	 
+REQUEST		request_125	1684438631831	1684438631858	OK	 
+REQUEST		fstyle.css?ver=6.2.1	1684438631787	1684438631894	OK	 
+REQUEST		request_180	1684438630939	1684438631903	KO	status.find.in([200, 209], 304), found 400
+REQUEST		dashicons.min.css?ver=6.2.1	1684438631895	1684438632000	OK	 
+REQUEST		select2.css?ver=7.2.2	1684438600755	1684438632078	OK	 
+REQUEST		colorbox.css?ver=6.2.1	1684438632000	1684438632103	OK	 
+REQUEST		woocommerce-smallscreen.css?ver=7.2.2	1684438600758	1684438632107	OK	 
+REQUEST		woocommerce-layout.css?ver=7.2.2	1684438600757	1684438632166	OK	 
+REQUEST		prettyPhoto.css?ver=6.2.1	1684438632079	1684438632169	OK	 
+REQUEST		font-awesome.css?ver=1.0.0	1684438632103	1684438632206	OK	 
+REQUEST		font-awesome.min.css?ver=4.7.0	1684438600752	1684438632207	OK	 
+REQUEST		woocommerce.css?ver=7.2.2	1684438600759	1684438632247	OK	 
+REQUEST		big-store-menu.css?ver=1.0.0	1684438632169	1684438632255	OK	 
+REQUEST		owl.carousel.css?ver=1.0.0	1684438632167	1684438632267	OK	 
+REQUEST		request_116	1684438600728	1684438632274	OK	 
+REQUEST		request_115	1684438600727	1684438632282	OK	 
+REQUEST		style.css?ver=1.0.0	1684438632208	1684438632297	OK	 
+REQUEST		quick-view.css?ver=6.2.1	1684438632249	1684438632336	OK	 
+REQUEST		request_117	1684438600729	1684438632338	OK	 
+REQUEST		request_114	1684438600726	1684438632339	OK	 
+REQUEST		f-style.css?ver=6.2.1	1684438632256	1684438632340	OK	 
+REQUEST		animate.css?ver=1.0.0	1684438632108	1684438632389	OK	 
+REQUEST		request_113	1684438600725	1684438632391	OK	 
+REQUEST		request_118	1684438600730	1684438632394	OK	 
+REQUEST		jquery-migrate.min.js?ver=3.4.0	1684438632298	1684438632395	OK	 
+REQUEST		style.css?ver=1.0.0	1684438632207	1684438632410	OK	 
+REQUEST		megamenu.js?ver=6.2.1	1684438632336	1684438632420	OK	 
+REQUEST		jquery.selectBox.min.js?ver=1.2.0	1684438632340	1684438632424	OK	 
+REQUEST		jquery.yith-wcwl.min.js?ver=3.0.20	1684438632390	1684438632485	OK	 
+REQUEST		hoverIntent.min.js?ver=1.10.2	1684438632395	1684438632485	OK	 
+REQUEST		jquery.min.js?ver=3.6.4	1684438632268	1684438632488	OK	 
+REQUEST		add-to-cart.min.js?ver=7.2.2	1684438632420	1684438632503	OK	 
+REQUEST		js.cookie.min.js?ver=2.1.4-wc.7.2.2	1684438632424	1684438632513	OK	 
+REQUEST		request_121	1684438632338	1684438632514	OK	 
+REQUEST		request_128	1684438632339	1684438632515	OK	 
+REQUEST		jquery.blockUI.min.js?ver=2.7.0-wc.7.2.2	1684438632411	1684438632517	OK	 
+REQUEST		woocommerce.min.js?ver=7.2.2	1684438632485	1684438632574	OK	 
+REQUEST		country-select.min.js?ver=7.2.2	1684438632486	1684438632576	OK	 
+REQUEST		cart.min.js?ver=7.2.2	1684438632503	1684438632586	OK	 
+REQUEST		address-i18n.min.js?ver=7.2.2	1684438632488	1684438632589	OK	 
+REQUEST		cart-fragments.min.js?ver=7.2.2	1684438632517	1684438632618	OK	 
+REQUEST		fscript.js?ver=1	1684438632574	1684438632664	OK	 
+REQUEST		jquery.colorbox-min.js?ver=1.4.21	1684438632587	1684438632671	OK	 
+REQUEST		woocompare.min.js?ver=2.4.5	1684438632576	1684438632677	OK	 
+REQUEST		selectWoo.full.min.js?ver=1.0.9-wc.7.2.2	1684438632514	1684438632681	OK	 
+REQUEST		request_131	1684438632515	1684438632684	OK	 
+REQUEST		request_132	1684438632515	1684438632685	OK	 
+REQUEST		jquery.prettyPhoto.min.js?ver=3.1.6	1684438632590	1684438632691	OK	 
+REQUEST		effect.min.js?ver=1.13.2	1684438632619	1684438632721	OK	 
+REQUEST		core.min.js?ver=1.13.2	1684438632665	1684438632764	OK	 
+REQUEST		menu.min.js?ver=1.13.2	1684438632671	1684438632765	OK	 
+REQUEST		regenerator-runtime.min.js?ver=0.13.11	1684438632681	1684438632766	OK	 
+REQUEST		wp-polyfill-inert.min.js?ver=3.1.2	1684438632677	1684438632768	OK	 
+REQUEST		wp-polyfill.min.js?ver=3.15.0	1684438632691	1684438632793	OK	 
+REQUEST		dom-ready.min.js?ver=392bdd43726760d1f3ca	1684438632721	1684438632824	OK	 
+REQUEST		i18n.min.js?ver=9e794f35a71bb98672ae	1684438632766	1684438632850	OK	 
+REQUEST		a11y.min.js?ver=ecce20f002eda4c19664	1684438632767	1684438632851	OK	 
+REQUEST		request_133	1684438632684	1684438632853	OK	 
+REQUEST		hooks.min.js?ver=4169d3cf8e8d95a3d6d5	1684438632765	1684438632854	OK	 
+REQUEST		request_134	1684438632685	1684438632855	OK	 
+REQUEST		autocomplete.min.js?ver=1.13.2	1684438632768	1684438632857	OK	 
+REQUEST		imagesloaded.min.js?ver=4.1.4	1684438632793	1684438632892	OK	 
+REQUEST		request_183	1684438632904	1684438632912	OK	 
+REQUEST		request_187	1684438632914	1684438632923	OK	 
+REQUEST		big-store-menu.js?ver=1.0.0	1684438632825	1684438632926	OK	 
+REQUEST		big-store-accordian-menu.js?ver=1.0.0	1684438632851	1684438632936	OK	 
+REQUEST		big-store-custom.js?ver=1.0.0	1684438632854	1684438632943	OK	 
+REQUEST		woocommerce.js?ver=1.0.0	1684438632857	1684438632985	OK	 
+REQUEST		request_120	1684438632282	1684438632986	OK	 
+REQUEST		quick-view.js?ver=6.2.1	1684438632892	1684438632992	OK	 
+REQUEST		request_188	1684438632914	1684438632995	OK	 
+REQUEST		request_119	1684438632274	1684438633008	OK	 
+REQUEST		owl.carousel.js?ver=1.0.1	1684438632850	1684438633016	OK	 
+REQUEST		f-script.js?ver=1.5.4	1684438632936	1684438633020	OK	 
+REQUEST		request_135	1684438632853	1684438633022	OK	 
+REQUEST		request_136	1684438632855	1684438633024	OK	 
+REQUEST		datepicker.min.js?ver=1.13.2	1684438632927	1684438633029	OK	 
+REQUEST		underscore.min.js?ver=1.13.4	1684438632943	1684438633032	OK	 
+REQUEST		request_129	1684438632392	1684438633055	OK	 
+REQUEST		wp-util.min.js?ver=6.2.1	1684438632985	1684438633079	OK	 
+REQUEST		request_186	1684438632916	1684438633081	KO	status.find.in([200, 209], 304), found 400
+REQUEST		add-to-cart-variation.min.js?ver=7.2.2	1684438632993	1684438633093	OK	 
+REQUEST		request_184	1684438632915	1684438633095	OK	 
+REQUEST		jquery.flexslider.min.js?ver=2.7.2-wc.7.2.2	1684438633016	1684438633100	OK	 
+REQUEST		request_3	1684438633020	1684438633107	OK	 
+REQUEST		request_5	1684438633032	1684438633121	OK	 
+REQUEST		request_4	1684438633030	1684438633132	OK	 
+REQUEST		request_130	1684438632394	1684438633134	OK	 
+REQUEST		request_185	1684438632915	1684438633157	OK	 
+REQUEST		request_190	1684438632913	1684438633163	KO	status.find.in([200, 209], 304), found 403
+REQUEST		request_8	1684438633101	1684438633207	OK	 
+REQUEST		request_9	1684438633107	1684438633209	OK	 
+REQUEST		request_7	1684438633093	1684438633209	OK	 
+REQUEST		request_10	1684438633122	1684438633213	OK	 
+REQUEST		request_11	1684438633133	1684438633235	OK	 
+REQUEST		request_25	1684438633208	1684438633292	OK	 
+REQUEST		request_30	1684438633209	1684438633294	OK	 
+REQUEST		request_68	1684438633214	1684438633304	OK	 
+REQUEST		request_31	1684438633210	1684438633309	OK	 
+REQUEST		request_70	1684438633236	1684438633338	OK	 
+REQUEST		request_71	1684438633293	1684438633382	OK	 
+REQUEST		request_76	1684438633294	1684438633384	OK	 
+REQUEST		request_6	1684438633079	1684438633385	OK	 
+REQUEST		request_77	1684438633305	1684438633426	OK	 
+REQUEST		request_85	1684438633309	1684438633427	OK	 
+REQUEST		request_86	1684438633338	1684438633469	OK	 
+REQUEST		request_87	1684438633383	1684438633470	OK	 
+REQUEST		request_88	1684438633384	1684438633472	OK	 
+REQUEST		request_89	1684438633386	1684438633478	OK	 
+REQUEST		request_90	1684438633426	1684438633517	OK	 
+REQUEST		request_91	1684438633428	1684438633528	OK	 
+REQUEST		request_102	1684438633471	1684438633557	OK	 
+REQUEST		request_138	1684438633478	1684438633573	OK	 
+REQUEST		request_139	1684438633008	1684438633589	OK	 
+REQUEST		request_137	1684438632986	1684438633642	OK	 
+REQUEST		request_189	1684438632916	1684438633786	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_103	1684438633472	1684438634133	KO	status.find.in([200, 209], 304), found 403
+REQUEST		request_97	1684438633469	1684438634133	OK	 
+REQUEST		request_97 Redirect 1	1684438634133	1684438634674	OK	 
+REQUEST		request_191	1684438634787	1684438634796	OK	 
+REQUEST		request_192	1684438634797	1684438634804	OK	 
+REQUEST		request_193	1684438634797	1684438634858	OK	 
+REQUEST		request_177	1684438635677	1684438635808	OK	 
+REQUEST		request_181	1684438635810	1684438635823	OK	 
+REQUEST		megamenu.css?ver=6.2.1	1684438604782	1684438635854	OK	 
+REQUEST		request_95	1684438575321	1684438635855	OK	 
+REQUEST		request_167	1684438575680	1684438635855	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_163	1684438575684	1684438635856	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_81	1684438575689	1684438635859	OK	 
+REQUEST		request_101	1684438575786	1684438635860	OK	 
+REQUEST		megamenu.css?ver=6.2.1	1684438604789	1684438635864	OK	 
+REQUEST		request_95	1684438575321	1684438635866	OK	 
+REQUEST		request_146	1684438575495	1684438635866	OK	 
+REQUEST		request_164	1684438575687	1684438635866	OK	 
+REQUEST		request_166	1684438575690	1684438635867	OK	 
+REQUEST		request_101	1684438575787	1684438635867	OK	 
+REQUEST		request_156	1684438585998	1684438635869	KO	j.i.IOException: Premature close
+REQUEST		request_145	1684438586385	1684438635869	KO	j.i.IOException: Premature close
+REQUEST		request_157	1684438604816	1684438635869	KO	j.n.c.ClosedChannelException
+REQUEST		request_158	1684438604817	1684438635869	KO	j.n.c.ClosedChannelException
+REQUEST		request_174	1684438604821	1684438635869	KO	j.n.c.ClosedChannelException
+REQUEST		request_175	1684438604822	1684438635869	KO	j.n.c.ClosedChannelException
+REQUEST		request_176	1684438604823	1684438635869	KO	j.n.c.ClosedChannelException
+REQUEST		request_124	1684438635860	1684438635872	OK	 
+REQUEST		request_156	1684438585997	1684438635875	KO	j.i.IOException: Premature close
+REQUEST		request_145	1684438586385	1684438635875	KO	j.i.IOException: Premature close
+REQUEST		request_157	1684438604819	1684438635875	KO	j.n.c.ClosedChannelException
+REQUEST		request_158	1684438604820	1684438635875	KO	j.n.c.ClosedChannelException
+REQUEST		request_174	1684438604824	1684438635875	KO	j.n.c.ClosedChannelException
+REQUEST		request_175	1684438604826	1684438635875	KO	j.n.c.ClosedChannelException
+REQUEST		request_176	1684438604826	1684438635876	KO	j.n.c.ClosedChannelException
+REQUEST		request_123	1684438635859	1684438635883	OK	 
+REQUEST		request_124	1684438635868	1684438635896	OK	 
+REQUEST		request_104	1684438604825	1684438635901	OK	 
+REQUEST		request_125	1684438635873	1684438635902	OK	 
+REQUEST		request_106	1684438604827	1684438635913	OK	 
+REQUEST		request_105	1684438604826	1684438635914	OK	 
+REQUEST		request_104	1684438604828	1684438635914	OK	 
+REQUEST		request_122	1684438604828	1684438635914	OK	 
+REQUEST		request_105	1684438604829	1684438635926	OK	 
+REQUEST		request_106	1684438604830	1684438635926	OK	 
+REQUEST		request_178	1684438635810	1684438635926	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_122	1684438604831	1684438635927	OK	 
+REQUEST		request_125	1684438635896	1684438635929	OK	 
+REQUEST		request_123	1684438604832	1684438635941	OK	 
+REQUEST		fstyle.css?ver=6.2.1	1684438635854	1684438635947	OK	 
+REQUEST		fstyle.css?ver=6.2.1	1684438635865	1684438635965	OK	 
+REQUEST		request_182	1684438635809	1684438635966	KO	status.find.in([200, 209], 304), found 403
+REQUEST		request_179	1684438635810	1684438635988	OK	 
+REQUEST		request_180	1684438635810	1684438635988	KO	status.find.in([200, 209], 304), found 400
+REQUEST		dashicons.min.css?ver=6.2.1	1684438635948	1684438636041	OK	 
+REQUEST		dashicons.min.css?ver=6.2.1	1684438635965	1684438636087	OK	 
+REQUEST		colorbox.css?ver=6.2.1	1684438636041	1684438636134	OK	 
+REQUEST		request_127	1684438635915	1684438636176	OK	 
+REQUEST		colorbox.css?ver=6.2.1	1684438636087	1684438636192	OK	 
+REQUEST		prettyPhoto.css?ver=6.2.1	1684438636134	1684438636227	OK	 
+REQUEST		woocommerce-smallscreen.css?ver=7.2.2	1684438604833	1684438636230	OK	 
+REQUEST		woocommerce-layout.css?ver=7.2.2	1684438604832	1684438636261	OK	 
+REQUEST		woocommerce-smallscreen.css?ver=7.2.2	1684438604837	1684438636272	OK	 
+REQUEST		prettyPhoto.css?ver=6.2.1	1684438636192	1684438636304	OK	 
+REQUEST		woocommerce-layout.css?ver=7.2.2	1684438604836	1684438636305	OK	 
+REQUEST		select2.css?ver=7.2.2	1684438604830	1684438636306	OK	 
+REQUEST		select2.css?ver=7.2.2	1684438604835	1684438636307	OK	 
+REQUEST		font-awesome.css?ver=1.0.0	1684438636227	1684438636319	OK	 
+REQUEST		font-awesome.min.css?ver=4.7.0	1684438604829	1684438636320	OK	 
+REQUEST		request_116	1684438604816	1684438636321	OK	 
+REQUEST		request_116	1684438604812	1684438636329	OK	 
+REQUEST		request_118	1684438604814	1684438636330	OK	 
+REQUEST		request_118	1684438604818	1684438636340	OK	 
+REQUEST		owl.carousel.css?ver=1.0.0	1684438636262	1684438636356	OK	 
+REQUEST		request_117	1684438604813	1684438636357	OK	 
+REQUEST		request_115	1684438604811	1684438636360	OK	 
+REQUEST		request_113	1684438604809	1684438636363	OK	 
+REQUEST		request_114	1684438604810	1684438636373	OK	 
+REQUEST		request_117	1684438604817	1684438636385	OK	 
+REQUEST		request_113	1684438604813	1684438636391	OK	 
+REQUEST		font-awesome.min.css?ver=4.7.0	1684438604834	1684438636394	OK	 
+REQUEST		woocommerce.css?ver=7.2.2	1684438604838	1684438636394	OK	 
+REQUEST		request_114	1684438604814	1684438636395	OK	 
+REQUEST		owl.carousel.css?ver=1.0.0	1684438636305	1684438636398	OK	 
+REQUEST		big-store-menu.css?ver=1.0.0	1684438636307	1684438636404	OK	 
+REQUEST		animate.css?ver=1.0.0	1684438636304	1684438636406	OK	 
+REQUEST		big-store-menu.css?ver=1.0.0	1684438636306	1684438636410	OK	 
+REQUEST		style.css?ver=1.0.0	1684438636321	1684438636413	OK	 
+REQUEST		request_115	1684438604815	1684438636439	OK	 
+REQUEST		quick-view.css?ver=6.2.1	1684438636356	1684438636450	OK	 
+REQUEST		font-awesome.css?ver=1.0.0	1684438636273	1684438636475	OK	 
+REQUEST		request_119	1684438636329	1684438636483	OK	 
+REQUEST		request_120	1684438636330	1684438636484	OK	 
+REQUEST		style.css?ver=1.0.0	1684438636395	1684438636490	OK	 
+REQUEST		request_120	1684438636340	1684438636526	OK	 
+REQUEST		animate.css?ver=1.0.0	1684438636231	1684438636526	OK	 
+REQUEST		quick-view.css?ver=6.2.1	1684438636398	1684438636527	OK	 
+REQUEST		style.css?ver=1.0.0	1684438636320	1684438636533	OK	 
+REQUEST		f-style.css?ver=6.2.1	1684438636404	1684438636534	OK	 
+REQUEST		woocommerce.css?ver=7.2.2	1684438604834	1684438636535	OK	 
+REQUEST		jquery.min.js?ver=3.6.4	1684438636406	1684438636535	OK	 
+REQUEST		request_121	1684438636357	1684438636536	OK	 
+REQUEST		request_128	1684438636361	1684438636536	OK	 
+REQUEST		f-style.css?ver=6.2.1	1684438636411	1684438636536	OK	 
+REQUEST		request_129	1684438636364	1684438636537	OK	 
+REQUEST		request_130	1684438636373	1684438636544	OK	 
+REQUEST		jquery-migrate.min.js?ver=3.4.0	1684438636451	1684438636546	OK	 
+REQUEST		request_121	1684438636385	1684438636552	OK	 
+REQUEST		request_128	1684438636391	1684438636565	OK	 
+REQUEST		request_129	1684438636396	1684438636566	OK	 
+REQUEST		jquery-migrate.min.js?ver=3.4.0	1684438636476	1684438636574	OK	 
+REQUEST		megamenu.js?ver=6.2.1	1684438636491	1684438636577	OK	 
+REQUEST		jquery.min.js?ver=3.6.4	1684438636413	1684438636623	OK	 
+REQUEST		megamenu.js?ver=6.2.1	1684438636527	1684438636624	OK	 
+REQUEST		jquery.selectBox.min.js?ver=1.2.0	1684438636527	1684438636625	OK	 
+REQUEST		jquery.selectBox.min.js?ver=1.2.0	1684438636534	1684438636627	OK	 
+REQUEST		jquery.yith-wcwl.min.js?ver=3.0.20	1684438636535	1684438636632	OK	 
+REQUEST		hoverIntent.min.js?ver=1.10.2	1684438636535	1684438636632	OK	 
+REQUEST		jquery.yith-wcwl.min.js?ver=3.0.20	1684438636535	1684438636638	OK	 
+REQUEST		hoverIntent.min.js?ver=1.10.2	1684438636537	1684438636638	OK	 
+REQUEST		request_132	1684438636484	1684438636645	OK	 
+REQUEST		request_131	1684438636483	1684438636646	OK	 
+REQUEST		jquery.blockUI.min.js?ver=2.7.0-wc.7.2.2	1684438636547	1684438636647	OK	 
+REQUEST		style.css?ver=1.0.0	1684438636394	1684438636667	OK	 
+REQUEST		jquery.blockUI.min.js?ver=2.7.0-wc.7.2.2	1684438636574	1684438636668	OK	 
+REQUEST		add-to-cart.min.js?ver=7.2.2	1684438636577	1684438636668	OK	 
+REQUEST		request_131	1684438636526	1684438636688	OK	 
+REQUEST		request_134	1684438636536	1684438636704	OK	 
+REQUEST		request_133	1684438636536	1684438636707	OK	 
+REQUEST		request_135	1684438636537	1684438636707	OK	 
+REQUEST		js.cookie.min.js?ver=2.1.4-wc.7.2.2	1684438636625	1684438636745	OK	 
+REQUEST		js.cookie.min.js?ver=2.1.4-wc.7.2.2	1684438636624	1684438636745	OK	 
+REQUEST		add-to-cart.min.js?ver=7.2.2	1684438636624	1684438636746	OK	 
+REQUEST		woocommerce.min.js?ver=7.2.2	1684438636632	1684438636746	OK	 
+REQUEST		woocommerce.min.js?ver=7.2.2	1684438636627	1684438636747	OK	 
+REQUEST		country-select.min.js?ver=7.2.2	1684438636633	1684438636747	OK	 
+REQUEST		request_132	1684438636552	1684438636747	OK	 
+REQUEST		address-i18n.min.js?ver=7.2.2	1684438636639	1684438636748	OK	 
+REQUEST		request_133	1684438636565	1684438636748	OK	 
+REQUEST		country-select.min.js?ver=7.2.2	1684438636638	1684438636748	OK	 
+REQUEST		request_134	1684438636566	1684438636749	OK	 
+REQUEST		cart.min.js?ver=7.2.2	1684438636647	1684438636749	OK	 
+REQUEST		request_136	1684438636544	1684438636749	OK	 
+REQUEST		cart.min.js?ver=7.2.2	1684438636668	1684438636753	OK	 
+REQUEST		address-i18n.min.js?ver=7.2.2	1684438636667	1684438636753	OK	 
+REQUEST		selectWoo.full.min.js?ver=1.0.9-wc.7.2.2	1684438636668	1684438636754	OK	 
+REQUEST		request_137	1684438636645	1684438636800	OK	 
+REQUEST		request_139	1684438636646	1684438636801	OK	 
+REQUEST		effect.min.js?ver=1.13.2	1684438636754	1684438636848	OK	 
+REQUEST		jquery.prettyPhoto.min.js?ver=3.1.6	1684438636754	1684438636848	OK	 
+REQUEST		jquery.colorbox-min.js?ver=1.4.21	1684438636753	1684438636849	OK	 
+REQUEST		cart-fragments.min.js?ver=7.2.2	1684438636746	1684438636850	OK	 
+REQUEST		request_135	1684438636688	1684438636850	OK	 
+REQUEST		cart-fragments.min.js?ver=7.2.2	1684438636746	1684438636850	OK	 
+REQUEST		selectWoo.full.min.js?ver=1.0.9-wc.7.2.2	1684438636746	1684438636851	OK	 
+REQUEST		fscript.js?ver=1	1684438636747	1684438636853	OK	 
+REQUEST		jquery.prettyPhoto.min.js?ver=3.1.6	1684438636749	1684438636856	OK	 
+REQUEST		fscript.js?ver=1	1684438636746	1684438636856	OK	 
+REQUEST		woocompare.min.js?ver=2.4.5	1684438636747	1684438636856	OK	 
+REQUEST		woocompare.min.js?ver=2.4.5	1684438636748	1684438636860	OK	 
+REQUEST		jquery.colorbox-min.js?ver=1.4.21	1684438636748	1684438636861	OK	 
+REQUEST		request_136	1684438636748	1684438636929	OK	 
+REQUEST		request_137	1684438636748	1684438636930	OK	 
+REQUEST		request_139	1684438636749	1684438636932	OK	 
+REQUEST		core.min.js?ver=1.13.2	1684438636848	1684438636934	OK	 
+REQUEST		menu.min.js?ver=1.13.2	1684438636849	1684438636967	OK	 
+REQUEST		core.min.js?ver=1.13.2	1684438636851	1684438636967	OK	 
+REQUEST		wp-polyfill-inert.min.js?ver=3.1.2	1684438636849	1684438636967	OK	 
+REQUEST		regenerator-runtime.min.js?ver=0.13.11	1684438636850	1684438636968	OK	 
+REQUEST		effect.min.js?ver=1.13.2	1684438636850	1684438636968	OK	 
+REQUEST		menu.min.js?ver=1.13.2	1684438636853	1684438636968	OK	 
+REQUEST		wp-polyfill-inert.min.js?ver=3.1.2	1684438636856	1684438636969	OK	 
+REQUEST		wp-polyfill.min.js?ver=3.15.0	1684438636856	1684438636969	OK	 
+REQUEST		regenerator-runtime.min.js?ver=0.13.11	1684438636861	1684438636969	OK	 
+REQUEST		dom-ready.min.js?ver=392bdd43726760d1f3ca	1684438636857	1684438636969	OK	 
+REQUEST		wp-polyfill.min.js?ver=3.15.0	1684438636862	1684438636969	OK	 
+REQUEST		request_119	1684438636321	1684438636979	OK	 
+REQUEST		request_183	1684438636989	1684438636998	OK	 
+REQUEST		request_187	1684438636999	1684438637007	OK	 
+REQUEST		hooks.min.js?ver=4169d3cf8e8d95a3d6d5	1684438636934	1684438637057	OK	 
+REQUEST		i18n.min.js?ver=9e794f35a71bb98672ae	1684438636967	1684438637057	OK	 
+REQUEST		a11y.min.js?ver=ecce20f002eda4c19664	1684438636967	1684438637058	OK	 
+REQUEST		dom-ready.min.js?ver=392bdd43726760d1f3ca	1684438636967	1684438637060	OK	 
+REQUEST		autocomplete.min.js?ver=1.13.2	1684438636968	1684438637062	OK	 
+REQUEST		hooks.min.js?ver=4169d3cf8e8d95a3d6d5	1684438636968	1684438637063	OK	 
+REQUEST		i18n.min.js?ver=9e794f35a71bb98672ae	1684438636968	1684438637065	OK	 
+REQUEST		a11y.min.js?ver=ecce20f002eda4c19664	1684438636969	1684438637067	OK	 
+REQUEST		imagesloaded.min.js?ver=4.1.4	1684438636969	1684438637068	OK	 
+REQUEST		big-store-menu.js?ver=1.0.0	1684438636969	1684438637069	OK	 
+REQUEST		imagesloaded.min.js?ver=4.1.4	1684438636970	1684438637073	OK	 
+REQUEST		autocomplete.min.js?ver=1.13.2	1684438636969	1684438637073	OK	 
+REQUEST		request_188	1684438636999	1684438637075	OK	 
+REQUEST		request_190	1684438636999	1684438637138	KO	status.find.in([200, 209], 304), found 403
+REQUEST		big-store-custom.js?ver=1.0.0	1684438637058	1684438637143	OK	 
+REQUEST		big-store-accordian-menu.js?ver=1.0.0	1684438637057	1684438637145	OK	 
+REQUEST		request_130	1684438636439	1684438637146	OK	 
+REQUEST		request_185	1684438637000	1684438637147	OK	 
+REQUEST		big-store-menu.js?ver=1.0.0	1684438637060	1684438637150	OK	 
+REQUEST		woocommerce.js?ver=1.0.0	1684438637063	1684438637152	OK	 
+REQUEST		request_184	1684438637000	1684438637155	OK	 
+REQUEST		owl.carousel.js?ver=1.0.1	1684438637063	1684438637179	OK	 
+REQUEST		quick-view.js?ver=6.2.1	1684438637068	1684438637179	OK	 
+REQUEST		big-store-accordian-menu.js?ver=1.0.0	1684438637065	1684438637180	OK	 
+REQUEST		datepicker.min.js?ver=1.13.2	1684438637069	1684438637180	OK	 
+REQUEST		big-store-custom.js?ver=1.0.0	1684438637068	1684438637180	OK	 
+REQUEST		quick-view.js?ver=6.2.1	1684438637073	1684438637181	OK	 
+REQUEST		woocommerce.js?ver=1.0.0	1684438637073	1684438637182	OK	 
+REQUEST		owl.carousel.js?ver=1.0.1	1684438637057	1684438637229	OK	 
+REQUEST		f-script.js?ver=1.5.4	1684438637143	1684438637232	OK	 
+REQUEST		underscore.min.js?ver=1.13.4	1684438637145	1684438637233	OK	 
+REQUEST		datepicker.min.js?ver=1.13.2	1684438637150	1684438637238	OK	 
+REQUEST		wp-util.min.js?ver=6.2.1	1684438637152	1684438637247	OK	 
+REQUEST		request_189	1684438637000	1684438637262	KO	status.find.in([200, 209], 304), found 400
+REQUEST		f-script.js?ver=1.5.4	1684438637179	1684438637270	OK	 
+REQUEST		underscore.min.js?ver=1.13.4	1684438637180	1684438637273	OK	 
+REQUEST		wp-util.min.js?ver=6.2.1	1684438637180	1684438637276	OK	 
+REQUEST		add-to-cart-variation.min.js?ver=7.2.2	1684438637179	1684438637276	OK	 
+REQUEST		jquery.flexslider.min.js?ver=2.7.2-wc.7.2.2	1684438637180	1684438637277	OK	 
+REQUEST		add-to-cart-variation.min.js?ver=7.2.2	1684438637181	1684438637280	OK	 
+REQUEST		jquery.flexslider.min.js?ver=2.7.2-wc.7.2.2	1684438637182	1684438637284	OK	 
+REQUEST		request_3	1684438637229	1684438637317	OK	 
+REQUEST		request_5	1684438637233	1684438637318	OK	 
+REQUEST		request_3	1684438637238	1684438637328	OK	 
+REQUEST		request_5	1684438637274	1684438637377	OK	 
+REQUEST		request_7	1684438637276	1684438637408	OK	 
+REQUEST		request_7	1684438637280	1684438637408	OK	 
+REQUEST		request_8	1684438637277	1684438637408	OK	 
+REQUEST		request_186	1684438637000	1684438637410	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_4	1684438637270	1684438637414	OK	 
+REQUEST		request_4	1684438637233	1684438637415	OK	 
+REQUEST		request_8	1684438637284	1684438637416	OK	 
+REQUEST		request_9	1684438637317	1684438637416	OK	 
+REQUEST		request_10	1684438637319	1684438637416	OK	 
+REQUEST		request_9	1684438637329	1684438637427	OK	 
+REQUEST		request_10	1684438637377	1684438637504	OK	 
+REQUEST		request_11	1684438637408	1684438637510	OK	 
+REQUEST		request_25	1684438637409	1684438637512	OK	 
+REQUEST		request_31	1684438637416	1684438637513	OK	 
+REQUEST		request_30	1684438637415	1684438637514	OK	 
+REQUEST		request_68	1684438637417	1684438637515	OK	 
+REQUEST		request_11	1684438637409	1684438637517	OK	 
+REQUEST		request_6	1684438637247	1684438637517	OK	 
+REQUEST		request_31	1684438637428	1684438637518	OK	 
+REQUEST		request_25	1684438637415	1684438637518	OK	 
+REQUEST		request_30	1684438637416	1684438637534	OK	 
+REQUEST		request_68	1684438637505	1684438637598	OK	 
+REQUEST		request_77	1684438637514	1684438637600	OK	 
+REQUEST		request_6	1684438637276	1684438637602	OK	 
+REQUEST		request_76	1684438637514	1684438637609	OK	 
+REQUEST		request_71	1684438637518	1684438637610	OK	 
+REQUEST		request_85	1684438637516	1684438637610	OK	 
+REQUEST		request_70	1684438637511	1684438637611	OK	 
+REQUEST		request_71	1684438637512	1684438637611	OK	 
+REQUEST		request_76	1684438637519	1684438637613	OK	 
+REQUEST		request_86	1684438637518	1684438637613	OK	 
+REQUEST		request_70	1684438637517	1684438637617	OK	 
+REQUEST		request_77	1684438637534	1684438637635	OK	 
+REQUEST		request_87	1684438637600	1684438637688	OK	 
+REQUEST		request_85	1684438637599	1684438637693	OK	 
+REQUEST		request_89	1684438637610	1684438637697	OK	 
+REQUEST		request_88	1684438637609	1684438637698	OK	 
+REQUEST		request_87	1684438637610	1684438637703	OK	 
+REQUEST		request_88	1684438637613	1684438637704	OK	 
+REQUEST		request_90	1684438637611	1684438637706	OK	 
+REQUEST		request_86	1684438637609	1684438637707	OK	 
+REQUEST		request_91	1684438637611	1684438637709	OK	 
+REQUEST		request_89	1684438637617	1684438637718	OK	 
+REQUEST		request_90	1684438637635	1684438637734	OK	 
+REQUEST		request_102	1684438637689	1684438637784	OK	 
+REQUEST		request_138	1684438637698	1684438637784	OK	 
+REQUEST		request_91	1684438637693	1684438637786	OK	 
+REQUEST		request_102	1684438637704	1684438637796	OK	 
+REQUEST		request_138	1684438637718	1684438637817	OK	 
+REQUEST		request_97	1684438637703	1684438638446	OK	 
+REQUEST		request_97	1684438637613	1684438638446	OK	 
+REQUEST		request_191	1684438638411	1684438638448	OK	 
+REQUEST		request_192	1684438638449	1684438638457	OK	 
+REQUEST		request_103	1684438637697	1684438638490	KO	status.find.in([200, 209], 304), found 403
+REQUEST		request_103	1684438637707	1684438638492	KO	status.find.in([200, 209], 304), found 403
+REQUEST		request_193	1684438638449	1684438638513	OK	 
+REQUEST		request_97 Redirect 1	1684438638447	1684438639016	OK	 
+REQUEST		request_97 Redirect 1	1684438638447	1684438639016	OK	 
+REQUEST		megamenu.css?ver=6.2.1	1684438604782	1684438639855	OK	 
+REQUEST		request_159	1684438575681	1684438639857	OK	 
+REQUEST		request_156	1684438585998	1684438639865	KO	j.i.IOException: Premature close
+REQUEST		request_145	1684438586386	1684438639865	KO	j.i.IOException: Premature close
+REQUEST		request_157	1684438604808	1684438639865	KO	j.n.c.ClosedChannelException
+REQUEST		request_158	1684438604809	1684438639865	KO	j.n.c.ClosedChannelException
+REQUEST		request_174	1684438604814	1684438639866	KO	j.n.c.ClosedChannelException
+REQUEST		request_175	1684438604816	1684438639866	KO	j.n.c.ClosedChannelException
+REQUEST		request_122	1684438604822	1684438639893	OK	 
+REQUEST		request_124	1684438604824	1684438639896	OK	 
+REQUEST		request_106	1684438604821	1684438639897	OK	 
+REQUEST		request_105	1684438604820	1684438639897	OK	 
+REQUEST		request_104	1684438604819	1684438639898	OK	 
+REQUEST		request_123	1684438604823	1684438639902	OK	 
+REQUEST		request_125	1684438639894	1684438639916	OK	 
+REQUEST		request_127	1684438639896	1684438639917	OK	 
+REQUEST		fstyle.css?ver=6.2.1	1684438639856	1684438639954	OK	 
+REQUEST		request_176	1684438604817	1684438640042	OK	 
+REQUEST		dashicons.min.css?ver=6.2.1	1684438639954	1684438640053	OK	 
+REQUEST		colorbox.css?ver=6.2.1	1684438640053	1684438640148	OK	 
+REQUEST		request_177	1684438640018	1684438640158	OK	 
+REQUEST		request_177	1684438640017	1684438640160	OK	 
+REQUEST		request_181	1684438640159	1684438640167	OK	 
+REQUEST		request_181	1684438640161	1684438640169	OK	 
+REQUEST		select2.css?ver=7.2.2	1684438604827	1684438640199	OK	 
+REQUEST		woocommerce-smallscreen.css?ver=7.2.2	1684438604829	1684438640215	OK	 
+REQUEST		prettyPhoto.css?ver=6.2.1	1684438640148	1684438640250	OK	 
+REQUEST		woocommerce-layout.css?ver=7.2.2	1684438604828	1684438640251	OK	 
+REQUEST		request_178	1684438640161	1684438640260	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_178	1684438640160	1684438640261	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_180	1684438640160	1684438640279	KO	status.find.in([200, 209], 304), found 400
+REQUEST		font-awesome.css?ver=1.0.0	1684438640199	1684438640285	OK	 
+REQUEST		request_179	1684438640160	1684438640305	OK	 
+REQUEST		font-awesome.min.css?ver=4.7.0	1684438604825	1684438640337	OK	 
+REQUEST		request_179	1684438640162	1684438640337	OK	 
+REQUEST		big-store-menu.css?ver=1.0.0	1684438640251	1684438640340	OK	 
+REQUEST		owl.carousel.css?ver=1.0.0	1684438640250	1684438640346	OK	 
+REQUEST		request_115	1684438604803	1684438640357	OK	 
+REQUEST		request_117	1684438604805	1684438640367	OK	 
+REQUEST		request_116	1684438604804	1684438640367	OK	 
+REQUEST		request_118	1684438604807	1684438640370	OK	 
+REQUEST		request_114	1684438604801	1684438640371	OK	 
+REQUEST		request_182	1684438640159	1684438640412	KO	status.find.in([200, 209], 304), found 403
+REQUEST		woocommerce.css?ver=7.2.2	1684438604830	1684438640422	OK	 
+REQUEST		style.css?ver=1.0.0	1684438640338	1684438640426	OK	 
+REQUEST		quick-view.css?ver=6.2.1	1684438640341	1684438640428	OK	 
+REQUEST		request_113	1684438604800	1684438640434	OK	 
+REQUEST		f-style.css?ver=6.2.1	1684438640346	1684438640439	OK	 
+REQUEST		style.css?ver=1.0.0	1684438640286	1684438640474	OK	 
+REQUEST		animate.css?ver=1.0.0	1684438640215	1684438640475	OK	 
+REQUEST		request_180	1684438640162	1684438640491	KO	status.find.in([200, 209], 304), found 400
+REQUEST		jquery-migrate.min.js?ver=3.4.0	1684438640426	1684438640516	OK	 
+REQUEST		megamenu.js?ver=6.2.1	1684438640428	1684438640518	OK	 
+REQUEST		request_119	1684438640358	1684438640521	OK	 
+REQUEST		request_120	1684438640367	1684438640534	OK	 
+REQUEST		request_121	1684438640368	1684438640534	OK	 
+REQUEST		jquery.yith-wcwl.min.js?ver=3.0.20	1684438640475	1684438640560	OK	 
+REQUEST		hoverIntent.min.js?ver=1.10.2	1684438640475	1684438640562	OK	 
+REQUEST		jquery.selectBox.min.js?ver=1.2.0	1684438640439	1684438640568	OK	 
+REQUEST		jquery.min.js?ver=3.6.4	1684438640422	1684438640597	OK	 
+REQUEST		add-to-cart.min.js?ver=7.2.2	1684438640518	1684438640604	OK	 
+REQUEST		request_128	1684438640370	1684438640686	OK	 
+REQUEST		jquery.blockUI.min.js?ver=2.7.0-wc.7.2.2	1684438640517	1684438640688	OK	 
+REQUEST		request_130	1684438640434	1684438640688	OK	 
+REQUEST		request_182	1684438640161	1684438640689	KO	status.find.in([200, 209], 304), found 403
+REQUEST		request_131	1684438640521	1684438640691	OK	 
+REQUEST		js.cookie.min.js?ver=2.1.4-wc.7.2.2	1684438640560	1684438640772	OK	 
+REQUEST		cart.min.js?ver=7.2.2	1684438640604	1684438640776	OK	 
+REQUEST		woocommerce.min.js?ver=7.2.2	1684438640563	1684438640782	OK	 
+REQUEST		country-select.min.js?ver=7.2.2	1684438640568	1684438640783	OK	 
+REQUEST		address-i18n.min.js?ver=7.2.2	1684438640597	1684438640784	OK	 
+REQUEST		request_136	1684438640691	1684438640853	OK	 
+REQUEST		cart-fragments.min.js?ver=7.2.2	1684438640772	1684438640854	OK	 
+REQUEST		request_133	1684438640534	1684438640855	OK	 
+REQUEST		request_132	1684438640534	1684438640856	OK	 
+REQUEST		request_134	1684438640686	1684438640858	OK	 
+REQUEST		fscript.js?ver=1	1684438640776	1684438640864	OK	 
+REQUEST		selectWoo.full.min.js?ver=1.0.9-wc.7.2.2	1684438640688	1684438640867	OK	 
+REQUEST		woocompare.min.js?ver=2.4.5	1684438640782	1684438640867	OK	 
+REQUEST		request_194	1684438640859	1684438640867	OK	 
+REQUEST		jquery.prettyPhoto.min.js?ver=3.1.6	1684438640784	1684438640873	OK	 
+REQUEST		request_135	1684438640689	1684438640874	OK	 
+REQUEST		jquery.colorbox-min.js?ver=1.4.21	1684438640784	1684438640876	OK	 
+REQUEST		effect.min.js?ver=1.13.2	1684438640855	1684438640938	OK	 
+REQUEST		core.min.js?ver=1.13.2	1684438640864	1684438640951	OK	 
+REQUEST		wp-polyfill-inert.min.js?ver=3.1.2	1684438640867	1684438640953	OK	 
+REQUEST		menu.min.js?ver=1.13.2	1684438640867	1684438640955	OK	 
+REQUEST		regenerator-runtime.min.js?ver=0.13.11	1684438640873	1684438640963	OK	 
+REQUEST		wp-polyfill.min.js?ver=3.15.0	1684438640876	1684438640968	OK	 
+REQUEST		request_137	1684438640853	1684438641016	OK	 
+REQUEST		dom-ready.min.js?ver=392bdd43726760d1f3ca	1684438640938	1684438641020	OK	 
+REQUEST		request_139	1684438640855	1684438641020	OK	 
+REQUEST		hooks.min.js?ver=4169d3cf8e8d95a3d6d5	1684438640951	1684438641038	OK	 
+REQUEST		i18n.min.js?ver=9e794f35a71bb98672ae	1684438640954	1684438641039	OK	 
+REQUEST		a11y.min.js?ver=ecce20f002eda4c19664	1684438640955	1684438641044	OK	 
+REQUEST		autocomplete.min.js?ver=1.13.2	1684438640963	1684438641050	OK	 
+REQUEST		imagesloaded.min.js?ver=4.1.4	1684438640968	1684438641062	OK	 
+REQUEST		big-store-menu.js?ver=1.0.0	1684438641020	1684438641102	OK	 
+REQUEST		big-store-accordian-menu.js?ver=1.0.0	1684438641039	1684438641125	OK	 
+REQUEST		big-store-custom.js?ver=1.0.0	1684438641044	1684438641134	OK	 
+REQUEST		woocommerce.js?ver=1.0.0	1684438641051	1684438641139	OK	 
+REQUEST		quick-view.js?ver=6.2.1	1684438641062	1684438641156	OK	 
+REQUEST		datepicker.min.js?ver=1.13.2	1684438641102	1684438641184	OK	 
+REQUEST		owl.carousel.js?ver=1.0.1	1684438641038	1684438641211	OK	 
+REQUEST		f-script.js?ver=1.5.4	1684438641126	1684438641212	OK	 
+REQUEST		underscore.min.js?ver=1.13.4	1684438641134	1684438641224	OK	 
+REQUEST		wp-util.min.js?ver=6.2.1	1684438641140	1684438641234	OK	 
+REQUEST		request_129	1684438640371	1684438641243	OK	 
+REQUEST		add-to-cart-variation.min.js?ver=7.2.2	1684438641156	1684438641248	OK	 
+REQUEST		jquery.flexslider.min.js?ver=2.7.2-wc.7.2.2	1684438641184	1684438641266	OK	 
+REQUEST		request_3	1684438641212	1684438641329	OK	 
+REQUEST		request_5	1684438641224	1684438641330	OK	 
+REQUEST		request_7	1684438641248	1684438641342	OK	 
+REQUEST		request_8	1684438641266	1684438641349	OK	 
+REQUEST		request_4	1684438641212	1684438641412	OK	 
+REQUEST		request_6	1684438641234	1684438641416	OK	 
+REQUEST		request_9	1684438641329	1684438641419	OK	 
+REQUEST		request_10	1684438641330	1684438641420	OK	 
+REQUEST		request_183	1684438641413	1684438641422	OK	 
+REQUEST		request_187	1684438641423	1684438641432	OK	 
+REQUEST		request_25	1684438641350	1684438641433	OK	 
+REQUEST		request_11	1684438641343	1684438641436	OK	 
+REQUEST		request_188	1684438641423	1684438641498	OK	 
+REQUEST		request_30	1684438641413	1684438641499	OK	 
+REQUEST		request_68	1684438641420	1684438641506	OK	 
+REQUEST		request_31	1684438641417	1684438641507	OK	 
+REQUEST		request_70	1684438641420	1684438641511	OK	 
+REQUEST		request_71	1684438641433	1684438641516	OK	 
+REQUEST		request_76	1684438641436	1684438641530	OK	 
+REQUEST		request_189	1684438641424	1684438641549	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_185	1684438641424	1684438641563	OK	 
+REQUEST		request_184	1684438641424	1684438641574	OK	 
+REQUEST		request_77	1684438641500	1684438641587	OK	 
+REQUEST		request_190	1684438641423	1684438641596	KO	status.find.in([200, 209], 304), found 403
+REQUEST		request_85	1684438641506	1684438641596	OK	 
+REQUEST		request_86	1684438641507	1684438641597	OK	 
+REQUEST		request_88	1684438641516	1684438641601	OK	 
+REQUEST		request_87	1684438641511	1684438641606	OK	 
+REQUEST		request_89	1684438641531	1684438641624	OK	 
+REQUEST		request_186	1684438641424	1684438641626	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_90	1684438641587	1684438641673	OK	 
+REQUEST		request_91	1684438641596	1684438641685	OK	 
+REQUEST		request_102	1684438641601	1684438641686	OK	 
+REQUEST		request_183	1684438641689	1684438641698	OK	 
+REQUEST		request_187	1684438641699	1684438641711	OK	 
+REQUEST		request_138	1684438641625	1684438641718	OK	 
+REQUEST		request_188	1684438641699	1684438641776	OK	 
+REQUEST		request_184	1684438641700	1684438641847	OK	 
+REQUEST		request_185	1684438641700	1684438641866	OK	 
+REQUEST		request_190	1684438641699	1684438641921	KO	status.find.in([200, 209], 304), found 403
+REQUEST		request_103	1684438641607	1684438642015	KO	status.find.in([200, 209], 304), found 403
+REQUEST		request_97	1684438641597	1684438642018	OK	 
+REQUEST		request_215	1684438642009	1684438642035	OK	 
+REQUEST		request_202	1684438642009	1684438642076	OK	 
+REQUEST		request_203	1684438642010	1684438642115	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_212	1684438640869	1684438642144	OK	 
+REQUEST		request_201	1684438642010	1684438642152	OK	 
+REQUEST		request_205	1684438642010	1684438642152	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_195	1684438642010	1684438642167	OK	 
+REQUEST		request_197	1684438642034	1684438642168	OK	 
+REQUEST		request_204	1684438642010	1684438642208	OK	 
+REQUEST		request_186	1684438641700	1684438642209	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_199	1684438642009	1684438642219	OK	 
+REQUEST		request_196	1684438642033	1684438642222	OK	 
+REQUEST		request_206	1684438642115	1684438642257	OK	 
+REQUEST		request_208	1684438642152	1684438642295	OK	 
+REQUEST		request_207	1684438642152	1684438642323	KO	status.find.is(404), but actually found 400
+REQUEST		request_189	1684438641700	1684438642348	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_200	1684438642009	1684438642348	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_210	1684438642219	1684438642355	OK	 
+REQUEST		request_97 Redirect 1	1684438642018	1684438642399	OK	 
+REQUEST		request_214	1684438642326	1684438642436	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_213	1684438642295	1684438642446	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_211	1684438642257	1684438642468	OK	 
+REQUEST		request_198	1684438642034	1684438642525	OK	 
+REQUEST		request_209	1684438642208	1684438642555	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_191	1684438642628	1684438642635	OK	 
+REQUEST		request_192	1684438642635	1684438642643	OK	 
+REQUEST		request_193	1684438642635	1684438642701	OK	 
+REQUEST		request_191	1684438643349	1684438643362	OK	 
+REQUEST		request_192	1684438643363	1684438643372	OK	 
+REQUEST		request_193	1684438643363	1684438643425	OK	 
+REQUEST		request_177	1684438643400	1684438643541	OK	 
+REQUEST		request_181	1684438643542	1684438643548	OK	 
+REQUEST		request_179	1684438643542	1684438643695	OK	 
+REQUEST		request_182	1684438643541	1684438643702	KO	status.find.in([200, 209], 304), found 403
+REQUEST		request_178	1684438643542	1684438643705	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_180	1684438643542	1684438644269	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_194	1684438644514	1684438644523	OK	 
+REQUEST		request_215	1684438644525	1684438644536	OK	 
+REQUEST		request_202	1684438644525	1684438644584	OK	 
+REQUEST		request_203	1684438644526	1684438644630	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_197	1684438644527	1684438644668	OK	 
+REQUEST		request_200	1684438644525	1684438644669	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_195	1684438644526	1684438644674	OK	 
+REQUEST		request_199	1684438644525	1684438644674	OK	 
+REQUEST		request_198	1684438644527	1684438644704	OK	 
+REQUEST		request_204	1684438644526	1684438644704	OK	 
+REQUEST		request_196	1684438644527	1684438644706	OK	 
+REQUEST		request_201	1684438644525	1684438644717	OK	 
+REQUEST		request_206	1684438644630	1684438644776	OK	 
+REQUEST		request_212	1684438644524	1684438644780	OK	 
+REQUEST		request_207	1684438644669	1684438644786	KO	status.find.is(404), but actually found 400
+REQUEST		request_209	1684438644704	1684438644811	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_208	1684438644674	1684438644832	OK	 
+REQUEST		request_205	1684438644526	1684438644868	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_210	1684438644717	1684438644872	OK	 
+REQUEST		request_213	1684438644786	1684438644890	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_214	1684438644811	1684438644909	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_211	1684438644776	1684438644932	OK	 
+REQUEST		request_183	1684438645271	1684438645278	OK	 
+REQUEST		request_187	1684438645279	1684438645288	OK	 
+REQUEST		request_188	1684438645279	1684438645356	OK	 
+REQUEST		request_184	1684438645280	1684438645413	OK	 
+REQUEST		request_189	1684438645281	1684438645425	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_185	1684438645280	1684438645434	OK	 
+REQUEST		request_190	1684438645279	1684438645451	KO	status.find.in([200, 209], 304), found 403
+REQUEST		request_186	1684438645280	1684438645646	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_216	1684438646556	1684438646630	OK	 
+REQUEST		request_191	1684438646646	1684438646654	OK	 
+REQUEST		request_192	1684438646655	1684438646661	OK	 
+REQUEST		request_193	1684438646655	1684438646716	OK	 
+REQUEST		request_194	1684438648702	1684438648711	OK	 
+REQUEST		request_215	1684438648713	1684438648722	OK	 
+REQUEST		request_202	1684438648713	1684438648782	OK	 
+REQUEST		request_203	1684438648714	1684438648827	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_212	1684438648712	1684438648833	OK	 
+REQUEST		request_200	1684438648714	1684438648843	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_195	1684438648716	1684438648848	OK	 
+REQUEST		request_205	1684438648715	1684438648849	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_197	1684438648716	1684438648849	OK	 
+REQUEST		request_198	1684438648716	1684438648860	OK	 
+REQUEST		request_201	1684438648714	1684438648867	OK	 
+REQUEST		request_196	1684438648716	1684438648872	OK	 
+REQUEST		request_199	1684438648713	1684438648895	OK	 
+REQUEST		request_204	1684438648715	1684438648921	OK	 
+REQUEST		request_209	1684438648867	1684438648970	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_206	1684438648827	1684438648975	OK	 
+REQUEST		request_216	1684438648933	1684438648998	OK	 
+REQUEST		request_207	1684438648843	1684438649061	KO	status.find.is(404), but actually found 400
+REQUEST		request_211	1684438648921	1684438649069	OK	 
+REQUEST		request_213	1684438648970	1684438649069	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_214	1684438648975	1684438649075	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_208	1684438648849	1684438649122	OK	 
+REQUEST		request_210	1684438648895	1684438649224	OK	 
+REQUEST		request_194	1684438649426	1684438649434	OK	 
+REQUEST		request_215	1684438649435	1684438649456	OK	 
+REQUEST		request_202	1684438649435	1684438649510	OK	 
+REQUEST		request_203	1684438649436	1684438649559	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_200	1684438649436	1684438649568	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_197	1684438649437	1684438649577	OK	 
+REQUEST		request_195	1684438649437	1684438649582	OK	 
+REQUEST		request_199	1684438649435	1684438649586	OK	 
+REQUEST		request_198	1684438649437	1684438649589	OK	 
+REQUEST		request_205	1684438649436	1684438649596	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_196	1684438649437	1684438649615	OK	 
+REQUEST		request_204	1684438649436	1684438649619	OK	 
+REQUEST		request_201	1684438649436	1684438649695	OK	 
+REQUEST		request_212	1684438649435	1684438649695	OK	 
+REQUEST		request_206	1684438649559	1684438649748	OK	 
+REQUEST		request_208	1684438649586	1684438649760	OK	 
+REQUEST		request_210	1684438649619	1684438649781	OK	 
+REQUEST		request_211	1684438649695	1684438650031	OK	 
+REQUEST		request_214	1684438649760	1684438650032	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_213	1684438649748	1684438650032	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_207	1684438649568	1684438650032	KO	status.find.is(404), but actually found 400
+REQUEST		request_209	1684438649596	1684438650032	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_194	1684438652718	1684438652728	OK	 
+REQUEST		request_215	1684438652729	1684438652741	OK	 
+REQUEST		request_202	1684438652729	1684438652791	OK	 
+REQUEST		request_203	1684438652730	1684438652849	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_200	1684438652729	1684438652851	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_195	1684438652732	1684438652874	OK	 
+REQUEST		request_212	1684438652729	1684438652875	OK	 
+REQUEST		request_198	1684438652733	1684438652878	OK	 
+REQUEST		request_201	1684438652730	1684438652881	OK	 
+REQUEST		request_205	1684438652731	1684438652888	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_199	1684438652729	1684438652895	OK	 
+REQUEST		request_197	1684438652733	1684438652912	OK	 
+REQUEST		request_196	1684438652732	1684438652949	OK	 
+REQUEST		request_207	1684438652851	1684438652950	KO	status.find.is(404), but actually found 400
+REQUEST		request_204	1684438652730	1684438652952	OK	 
+REQUEST		request_206	1684438652850	1684438653021	OK	 
+REQUEST		request_209	1684438652888	1684438653022	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_210	1684438652895	1684438653065	OK	 
+REQUEST		request_213	1684438652952	1684438653066	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_208	1684438652881	1684438653091	OK	 
+REQUEST		request_211	1684438652950	1684438653091	OK	 
+REQUEST		request_214	1684438653022	1684438653118	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_216	1684438653226	1684438653293	OK	 
+REQUEST		request_216	1684438654033	1684438654107	OK	 
+REQUEST		request_216	1684438657120	1684438657181	OK	 
+REQUEST		request_217	1684438658631	1684438658691	OK	 
+REQUEST		request_229	1684438658692	1684438658806	OK	 
+REQUEST		request_221	1684438658772	1684438658837	OK	 
+REQUEST		request_222	1684438658773	1684438658882	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_224	1684438658773	1684438658888	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_223	1684438658773	1684438658936	OK	 
+REQUEST		request_218	1684438658772	1684438658942	OK	 
+REQUEST		request_220	1684438658773	1684438658953	OK	 
+REQUEST		request_226	1684438658888	1684438659027	OK	 
+REQUEST		request_225	1684438658882	1684438659030	OK	 
+REQUEST		request_227	1684438658936	1684438659031	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_228	1684438658942	1684438659047	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_219	1684438658773	1684438659081	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_217	1684438661000	1684438661063	OK	 
+REQUEST		request_229	1684438661064	1684438661089	OK	 
+REQUEST		request_221	1684438661064	1684438661128	OK	 
+REQUEST		request_222	1684438661065	1684438661183	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_219	1684438661064	1684438661187	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_218	1684438661064	1684438661200	OK	 
+REQUEST		request_224	1684438661065	1684438661213	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_223	1684438661065	1684438661218	OK	 
+REQUEST		request_220	1684438661065	1684438661219	OK	 
+REQUEST		request_227	1684438661200	1684438661308	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_225	1684438661183	1684438661320	OK	 
+REQUEST		request_226	1684438661188	1684438661333	OK	 
+REQUEST		request_228	1684438661213	1684438661800	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_217	1684438665294	1684438665357	OK	 
+REQUEST		request_229	1684438665358	1684438665388	OK	 
+REQUEST		request_221	1684438665358	1684438665418	OK	 
+REQUEST		request_224	1684438665359	1684438665466	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_220	1684438665358	1684438665498	OK	 
+REQUEST		request_219	1684438665358	1684438665505	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_223	1684438665358	1684438665517	OK	 
+REQUEST		request_218	1684438665358	1684438665519	OK	 
+REQUEST		request_227	1684438665505	1684438665604	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_225	1684438665466	1684438665612	OK	 
+REQUEST		request_228	1684438665517	1684438665623	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_226	1684438665498	1684438665647	OK	 
+REQUEST		request_222	1684438665358	1684438665691	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_217	1684438666110	1684438666173	OK	 
+REQUEST		request_221	1684438666174	1684438666294	OK	 
+REQUEST		request_222	1684438666174	1684438666294	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_219	1684438666174	1684438666310	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_220	1684438666174	1684438666319	OK	 
+REQUEST		request_229	1684438666173	1684438666323	OK	 
+REQUEST		request_223	1684438666174	1684438666325	OK	 
+REQUEST		request_218	1684438666174	1684438666403	OK	 
+REQUEST		request_227	1684438666319	1684438666416	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_228	1684438666325	1684438666426	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_225	1684438666295	1684438666447	OK	 
+REQUEST		request_226	1684438666310	1684438666463	OK	 
+REQUEST		request_224	1684438666174	1684438667046	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_217	1684438669183	1684438669275	OK	 
+REQUEST		request_229	1684438669276	1684438669308	OK	 
+REQUEST		request_221	1684438669276	1684438669342	OK	 
+REQUEST		request_223	1684438669277	1684438669423	OK	 
+REQUEST		request_218	1684438669276	1684438669427	OK	 
+REQUEST		request_220	1684438669277	1684438669430	OK	 
+REQUEST		request_224	1684438669277	1684438669513	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_227	1684438669430	1684438669545	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_225	1684438669423	1684438669562	OK	 
+REQUEST		request_226	1684438669427	1684438669574	OK	 
+REQUEST		request_222	1684438669277	1684438669581	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_228	1684438669513	1684438669611	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_219	1684438669277	1684438669629	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_230	1684438674083	1684438674436	OK	 
+REQUEST		request_261	1684438674452	1684438674559	OK	 
+REQUEST		request_250	1684438674452	1684438674559	OK	 
+REQUEST		request_246	1684438674453	1684438674595	OK	 
+REQUEST		request_252	1684438674508	1684438674608	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_245	1684438674504	1684438674620	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_262	1684438674452	1684438674640	OK	 
+REQUEST		request_244	1684438674504	1684438674652	OK	 
+REQUEST		request_251	1684438674507	1684438674664	OK	 
+REQUEST		request_248	1684438674504	1684438674681	OK	 
+REQUEST		request_236	1684438674557	1684438674681	OK	 
+REQUEST		request_241	1684438674437	1684438674728	OK	 
+REQUEST		request_257	1684438674620	1684438674749	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_247	1684438674453	1684438674764	OK	 
+REQUEST		request_253	1684438674608	1684438674769	OK	 
+REQUEST		request_259	1684438674664	1684438674771	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_258	1684438674652	1684438674792	OK	 
+REQUEST		request_231	1684438674536	1684438674802	KO	status.find.in([200, 209], 304), found 404
+REQUEST		request_234	1684438674557	1684438674810	OK	 
+REQUEST		request_260	1684438674451	1684438674812	OK	 
+REQUEST		request_237	1684438674681	1684438674813	OK	 
+REQUEST		request_232	1684438674536	1684438674813	OK	 
+REQUEST		request_233	1684438674556	1684438674914	OK	 
+REQUEST		request_255	1684438674503	1684438674979	OK	 
+REQUEST		request_256	1684438674503	1684438674994	OK	 
+REQUEST		request_240	1684438674454	1684438675012	OK	 
+REQUEST		request_235	1684438674557	1684438675013	OK	 
+REQUEST		request_254	1684438674503	1684438675044	OK	 
+REQUEST		request_243	1684438674802	1684438675046	KO	status.find.in([200, 209], 304), found 404
+REQUEST		request_249	1684438674504	1684438675071	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_238	1684438674479	1684438675086	OK	 
+REQUEST		request_239	1684438674508	1684438675101	OK	 
+REQUEST		request_242	1684438674478	1684438675145	OK	 
+REQUEST		request_263	1684438676146	1684438676155	OK	 
+REQUEST		request_264	1684438676155	1684438676308	OK	 
+REQUEST		request_265	1684438676155	1684438676759	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_230	1684438676801	1684438677015	OK	 
+REQUEST		request_261	1684438677017	1684438677025	OK	 
+REQUEST		request_250	1684438677016	1684438677077	OK	 
+REQUEST		request_245	1684438677019	1684438677133	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_232	1684438677020	1684438677133	OK	 
+REQUEST		request_262	1684438677017	1684438677137	OK	 
+REQUEST		request_252	1684438677020	1684438677138	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_254	1684438677018	1684438677143	OK	 
+REQUEST		request_238	1684438677018	1684438677149	OK	 
+REQUEST		request_255	1684438677018	1684438677151	OK	 
+REQUEST		request_246	1684438677017	1684438677163	OK	 
+REQUEST		request_244	1684438677019	1684438677170	OK	 
+REQUEST		request_239	1684438677020	1684438677178	OK	 
+REQUEST		request_256	1684438677018	1684438677178	OK	 
+REQUEST		request_247	1684438677017	1684438677179	OK	 
+REQUEST		request_251	1684438677020	1684438677179	OK	 
+REQUEST		request_242	1684438677017	1684438677182	OK	 
+REQUEST		request_248	1684438677019	1684438677183	OK	 
+REQUEST		request_240	1684438677017	1684438677217	OK	 
+REQUEST		request_260	1684438677016	1684438677233	OK	 
+REQUEST		request_257	1684438677138	1684438677239	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_236	1684438677021	1684438677271	OK	 
+REQUEST		request_234	1684438677021	1684438677271	OK	 
+REQUEST		request_231	1684438677020	1684438677283	KO	status.find.in([200, 209], 304), found 404
+REQUEST		request_253	1684438677133	1684438677283	OK	 
+REQUEST		request_241	1684438677016	1684438677291	OK	 
+REQUEST		request_259	1684438677179	1684438677308	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_233	1684438677021	1684438677314	OK	 
+REQUEST		request_258	1684438677170	1684438677353	OK	 
+REQUEST		request_237	1684438677134	1684438677401	OK	 
+REQUEST		request_243	1684438677271	1684438677519	KO	status.find.in([200, 209], 304), found 404
+REQUEST		request_235	1684438677021	1684438677573	OK	 
+REQUEST		request_249	1684438677019	1684438678445	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_263	1684438679447	1684438679462	OK	 
+REQUEST		request_265	1684438679463	1684438679606	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_264	1684438679463	1684438679624	OK	 
+REQUEST		request_266	1684438679760	1684438679768	OK	 
+REQUEST		request_274	1684438680156	1684438680591	OK	 
+REQUEST		request_268	1684438680583	1684438680741	OK	 
+REQUEST		request_230	1684438680692	1684438680773	OK	 
+REQUEST		request_261	1684438680775	1684438680801	OK	 
+REQUEST		request_250	1684438680775	1684438680859	OK	 
+REQUEST		request_269	1684438680583	1684438680865	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_262	1684438680775	1684438680889	OK	 
+REQUEST		request_270	1684438680583	1684438680897	OK	 
+REQUEST		request_246	1684438680775	1684438680899	OK	 
+REQUEST		request_245	1684438680794	1684438680902	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_252	1684438680795	1684438680921	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_234	1684438680798	1684438680942	OK	 
+REQUEST		request_236	1684438680799	1684438680942	OK	 
+REQUEST		request_232	1684438680797	1684438680943	OK	 
+REQUEST		request_244	1684438680794	1684438680943	OK	 
+REQUEST		request_251	1684438680795	1684438680950	OK	 
+REQUEST		request_255	1684438680793	1684438680955	OK	 
+REQUEST		request_256	1684438680794	1684438680958	OK	 
+REQUEST		request_238	1684438680793	1684438680961	OK	 
+REQUEST		request_242	1684438680793	1684438680969	OK	 
+REQUEST		request_241	1684438680774	1684438680971	OK	 
+REQUEST		request_248	1684438680794	1684438680976	OK	 
+REQUEST		request_249	1684438680794	1684438681001	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_247	1684438680775	1684438681013	OK	 
+REQUEST		request_240	1684438680792	1684438681026	OK	 
+REQUEST		request_267	1684438680156	1684438681043	OK	 
+REQUEST		request_257	1684438680921	1684438681076	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_259	1684438680950	1684438681079	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_231	1684438680796	1684438681081	KO	status.find.in([200, 209], 304), found 404
+REQUEST		request_254	1684438680793	1684438681082	OK	 
+REQUEST		request_260	1684438680774	1684438681087	OK	 
+REQUEST		request_239	1684438680795	1684438681099	OK	 
+REQUEST		request_258	1684438680943	1684438681099	OK	 
+REQUEST		request_233	1684438680797	1684438681141	OK	 
+REQUEST		request_253	1684438680902	1684438681143	OK	 
+REQUEST		request_243	1684438680942	1684438681190	KO	status.find.in([200, 209], 304), found 404
+REQUEST		request_237	1684438680942	1684438681197	OK	 
+REQUEST		request_235	1684438680798	1684438681279	OK	 
+REQUEST		request_271	1684438679770	1684438681435	OK	 
+REQUEST		request_230	1684438682046	1684438682148	OK	 
+REQUEST		request_261	1684438682150	1684438682161	OK	 
+REQUEST		request_250	1684438682150	1684438682370	OK	 
+REQUEST		request_252	1684438682158	1684438682370	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_244	1684438682151	1684438682371	OK	 
+REQUEST		request_251	1684438682158	1684438682371	OK	 
+REQUEST		request_248	1684438682152	1684438682371	OK	 
+REQUEST		request_245	1684438682152	1684438682372	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_272	1684438680156	1684438682372	OK	 
+REQUEST		request_263	1684438682280	1684438682765	OK	 
+REQUEST		request_231	1684438682159	1684438682775	KO	status.find.in([200, 209], 304), found 404
+REQUEST		request_249	1684438682152	1684438682776	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_257	1684438682371	1684438682777	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_258	1684438682371	1684438682777	OK	 
+REQUEST		request_253	1684438682370	1684438682777	OK	 
+REQUEST		request_266	1684438682626	1684438682783	OK	 
+REQUEST		request_262	1684438682150	1684438682788	OK	 
+REQUEST		request_274	1684438682784	1684438682797	OK	 
+REQUEST		request_234	1684438682159	1684438682905	OK	 
+REQUEST		request_236	1684438682160	1684438682907	OK	 
+REQUEST		request_254	1684438682151	1684438682908	OK	 
+REQUEST		request_256	1684438682151	1684438682909	OK	 
+REQUEST		request_255	1684438682151	1684438682909	OK	 
+REQUEST		request_265	1684438682766	1684438682910	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_270	1684438682784	1684438682923	OK	 
+REQUEST		request_241	1684438682149	1684438682925	OK	 
+REQUEST		request_242	1684438682151	1684438682937	OK	 
+REQUEST		request_264	1684438682766	1684438682941	OK	 
+REQUEST		request_240	1684438682150	1684438682952	OK	 
+REQUEST		request_239	1684438682159	1684438682956	OK	 
+REQUEST		request_268	1684438682785	1684438682957	OK	 
+REQUEST		request_238	1684438682151	1684438682968	OK	 
+REQUEST		request_260	1684438682149	1684438682971	OK	 
+REQUEST		request_267	1684438682784	1684438682985	OK	 
+REQUEST		request_259	1684438682371	1684438682990	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_232	1684438682159	1684438682990	OK	 
+REQUEST		request_247	1684438682150	1684438683016	OK	 
+REQUEST		request_246	1684438682150	1684438683024	OK	 
+REQUEST		request_237	1684438682775	1684438683041	OK	 
+REQUEST		request_233	1684438682159	1684438683044	OK	 
+REQUEST		request_269	1684438682785	1684438683061	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_243	1684438682906	1684438683145	KO	status.find.in([200, 209], 304), found 404
+REQUEST		request_271	1684438682783	1684438683224	OK	 
+REQUEST		request_235	1684438682160	1684438683264	OK	 
+REQUEST		request_272	1684438682784	1684438683649	OK	 
+REQUEST		request_263	1684438684265	1684438684275	OK	 
+REQUEST		request_265	1684438684276	1684438684378	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_264	1684438684276	1684438684417	OK	 
+REQUEST		request_230	1684438684631	1684438684846	OK	 
+REQUEST		request_261	1684438684849	1684438684862	OK	 
+REQUEST		request_250	1684438684849	1684438684912	OK	 
+REQUEST		request_262	1684438684849	1684438684934	OK	 
+REQUEST		request_234	1684438684853	1684438684988	OK	 
+REQUEST		request_245	1684438684851	1684438684989	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_231	1684438684852	1684438684991	KO	status.find.in([200, 209], 304), found 404
+REQUEST		request_252	1684438684852	1684438684991	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_248	1684438684851	1684438684993	OK	 
+REQUEST		request_233	1684438684853	1684438685009	OK	 
+REQUEST		request_251	1684438684852	1684438685014	OK	 
+REQUEST		request_246	1684438684849	1684438685015	OK	 
+REQUEST		request_244	1684438684851	1684438685015	OK	 
+REQUEST		request_260	1684438684848	1684438685031	OK	 
+REQUEST		request_247	1684438684850	1684438685043	OK	 
+REQUEST		request_249	1684438684851	1684438685050	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_254	1684438684851	1684438685083	OK	 
+REQUEST		request_256	1684438684851	1684438685084	OK	 
+REQUEST		request_255	1684438684851	1684438685091	OK	 
+REQUEST		request_257	1684438684991	1684438685091	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_232	1684438684852	1684438685098	OK	 
+REQUEST		request_241	1684438684848	1684438685100	OK	 
+REQUEST		request_236	1684438684853	1684438685101	OK	 
+REQUEST		request_242	1684438684850	1684438685103	OK	 
+REQUEST		request_238	1684438684850	1684438685121	OK	 
+REQUEST		request_258	1684438684993	1684438685132	OK	 
+REQUEST		request_253	1684438684989	1684438685132	OK	 
+REQUEST		request_259	1684438685015	1684438685152	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_240	1684438684850	1684438685216	OK	 
+REQUEST		request_239	1684438684852	1684438685240	OK	 
+REQUEST		request_243	1684438684991	1684438685241	KO	status.find.in([200, 209], 304), found 404
+REQUEST		request_237	1684438684989	1684438685281	OK	 
+REQUEST		request_235	1684438684853	1684438685948	OK	 
+REQUEST		request_266	1684438685943	1684438685953	OK	 
+REQUEST		request_274	1684438685955	1684438685965	OK	 
+REQUEST		request_269	1684438685955	1684438686051	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_268	1684438685955	1684438686106	OK	 
+REQUEST		request_271	1684438685954	1684438686146	OK	 
+REQUEST		request_270	1684438685955	1684438686211	OK	 
+REQUEST		request_267	1684438685955	1684438686290	OK	 
+REQUEST		request_275	1684438686374	1684438686382	OK	 
+REQUEST		request_281	1684438686382	1684438686390	OK	 
+REQUEST		request_277	1684438686382	1684438686505	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_279	1684438686383	1684438686505	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_272	1684438685954	1684438686517	OK	 
+REQUEST		request_276	1684438686382	1684438686523	OK	 
+REQUEST		request_278	1684438686383	1684438686531	OK	 
+REQUEST		request_263	1684438686949	1684438686958	OK	 
+REQUEST		request_265	1684438686958	1684438687073	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_264	1684438686958	1684438687102	OK	 
+REQUEST		request_266	1684438687419	1684438687429	OK	 
+REQUEST		request_274	1684438687430	1684438687441	OK	 
+REQUEST		request_269	1684438687431	1684438687553	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_270	1684438687430	1684438687567	OK	 
+REQUEST		request_268	1684438687431	1684438687614	OK	 
+REQUEST		request_271	1684438687429	1684438687614	OK	 
+REQUEST		request_267	1684438687430	1684438687616	OK	 
+REQUEST		request_275	1684438687651	1684438687658	OK	 
+REQUEST		request_281	1684438687659	1684438687666	OK	 
+REQUEST		request_279	1684438687659	1684438687770	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_276	1684438687659	1684438687802	OK	 
+REQUEST		request_278	1684438687659	1684438687804	OK	 
+REQUEST		request_272	1684438687430	1684438687921	OK	 
+REQUEST		request_277	1684438687659	1684438688006	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_266	1684438690104	1684438690113	OK	 
+REQUEST		request_274	1684438690114	1684438690124	OK	 
+REQUEST		request_269	1684438690116	1684438690229	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_270	1684438690115	1684438690246	OK	 
+REQUEST		request_268	1684438690116	1684438690267	OK	 
+REQUEST		request_271	1684438690113	1684438690276	OK	 
+REQUEST		request_267	1684438690115	1684438690292	OK	 
+REQUEST		request_275	1684438690518	1684438690528	OK	 
+REQUEST		request_281	1684438690529	1684438690536	OK	 
+REQUEST		request_279	1684438690529	1684438690672	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_278	1684438690529	1684438690673	OK	 
+REQUEST		request_276	1684438690529	1684438690674	OK	 
+REQUEST		request_277	1684438690529	1684438690687	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_272	1684438690114	1684438690734	OK	 
+REQUEST		request_275	1684438691922	1684438691935	OK	 
+REQUEST		request_281	1684438691936	1684438691944	OK	 
+REQUEST		request_279	1684438691936	1684438692049	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_276	1684438691936	1684438692087	OK	 
+REQUEST		request_277	1684438691936	1684438692187	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_278	1684438691936	1684438692232	OK	 
+REQUEST		request_275	1684438694735	1684438694743	OK	 
+REQUEST		request_281	1684438694743	1684438694750	OK	 
+REQUEST		request_279	1684438694744	1684438694845	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_276	1684438694743	1684438694885	OK	 
+REQUEST		request_278	1684438694744	1684438694887	OK	 
+REQUEST		request_277	1684438694743	1684438694898	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_282	1684438698533	1684438698685	OK	 
+REQUEST		request_284	1684438698716	1684438698775	OK	 
+REQUEST		request_298	1684438698716	1684438698775	OK	 
+REQUEST		request_283	1684438698716	1684438698841	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_288	1684438698717	1684438698842	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_291	1684438698719	1684438698910	OK	 
+REQUEST		request_289	1684438698718	1684438698911	OK	 
+REQUEST		request_292	1684438698719	1684438698911	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_286	1684438698715	1684438698911	OK	 
+REQUEST		request_287	1684438698716	1684438698922	OK	 
+REQUEST		request_299	1684438698716	1684438698956	OK	 
+REQUEST		request_295	1684438698842	1684438698968	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_296	1684438698775	1684438698978	OK	 
+REQUEST		request_294	1684438698841	1684438698981	OK	 
+REQUEST		request_285	1684438698685	1684438698997	OK	 
+REQUEST		request_290	1684438698718	1684438699042	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_300	1684438698716	1684438699906	OK	 
+REQUEST		request_293	1684438698720	1684438699954	OK	 
+REQUEST		request_282	1684438700007	1684438700152	OK	 
+REQUEST		request_298	1684438700154	1684438700166	OK	 
+REQUEST		request_284	1684438700154	1684438700166	OK	 
+REQUEST		request_283	1684438700154	1684438700264	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_292	1684438700156	1684438700270	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_288	1684438700155	1684438700271	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_291	1684438700156	1684438700305	OK	 
+REQUEST		request_287	1684438700154	1684438700323	OK	 
+REQUEST		request_285	1684438700153	1684438700324	OK	 
+REQUEST		request_289	1684438700155	1684438700326	OK	 
+REQUEST		request_299	1684438700154	1684438700343	OK	 
+REQUEST		request_295	1684438700271	1684438700367	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_300	1684438700154	1684438700374	OK	 
+REQUEST		request_296	1684438700157	1684438700398	OK	 
+REQUEST		request_294	1684438700264	1684438700409	OK	 
+REQUEST		request_293	1684438700157	1684438700435	OK	 
+REQUEST		request_286	1684438700154	1684438700491	OK	 
+REQUEST		request_290	1684438700155	1684438700537	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_301	1684438701955	1684438702138	OK	 
+REQUEST		request_306	1684438702138	1684438702146	OK	 
+REQUEST		request_303	1684438702138	1684438702147	OK	 
+REQUEST		request_302	1684438702139	1684438702246	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_305	1684438702145	1684438702269	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_304	1684438702145	1684438702285	OK	 
+REQUEST		request_301	1684438702538	1684438702826	OK	 
+REQUEST		request_282	1684438702688	1684438702831	OK	 
+REQUEST		request_303	1684438702826	1684438702837	OK	 
+REQUEST		request_306	1684438702826	1684438702837	OK	 
+REQUEST		request_284	1684438702833	1684438702857	OK	 
+REQUEST		request_298	1684438702834	1684438702858	OK	 
+REQUEST		request_302	1684438702826	1684438702927	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_305	1684438702827	1684438702951	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_283	1684438702834	1684438702969	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_286	1684438702833	1684438702980	OK	 
+REQUEST		request_289	1684438702834	1684438702980	OK	 
+REQUEST		request_288	1684438702834	1684438702981	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_291	1684438702835	1684438702993	OK	 
+REQUEST		request_287	1684438702833	1684438703003	OK	 
+REQUEST		request_299	1684438702833	1684438703046	OK	 
+REQUEST		request_304	1684438702827	1684438703046	OK	 
+REQUEST		request_300	1684438702833	1684438703047	OK	 
+REQUEST		request_296	1684438702835	1684438703076	OK	 
+REQUEST		request_295	1684438702980	1684438703081	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_292	1684438702835	1684438703088	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_294	1684438702969	1684438703106	OK	 
+REQUEST		request_293	1684438702835	1684438703135	OK	 
+REQUEST		request_290	1684438702834	1684438703166	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_285	1684438702832	1684438703267	OK	 
+REQUEST		request_282	1684438704233	1684438704407	OK	 
+REQUEST		request_284	1684438704409	1684438704418	OK	 
+REQUEST		request_298	1684438704409	1684438704431	OK	 
+REQUEST		request_292	1684438704411	1684438704519	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_283	1684438704409	1684438704525	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_286	1684438704408	1684438704550	OK	 
+REQUEST		request_289	1684438704410	1684438704561	OK	 
+REQUEST		request_291	1684438704411	1684438704572	OK	 
+REQUEST		request_285	1684438704408	1684438704573	OK	 
+REQUEST		request_287	1684438704408	1684438704577	OK	 
+REQUEST		request_299	1684438704408	1684438704640	OK	 
+REQUEST		request_300	1684438704409	1684438704640	OK	 
+REQUEST		request_288	1684438704410	1684438704649	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_295	1684438704525	1684438704649	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_294	1684438704519	1684438704659	OK	 
+REQUEST		request_296	1684438704412	1684438704663	OK	 
+REQUEST		request_290	1684438704410	1684438704682	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_293	1684438704411	1684438704873	OK	 
+REQUEST		request_301	1684438705269	1684438705433	OK	 
+REQUEST		request_303	1684438705434	1684438705440	OK	 
+REQUEST		request_306	1684438705434	1684438705442	OK	 
+REQUEST		request_302	1684438705434	1684438705534	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_305	1684438705434	1684438705544	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_304	1684438705434	1684438705565	OK	 
+REQUEST		request_307	1684438706287	1684438706423	OK	 
+REQUEST		request_314	1684438706424	1684438706431	OK	 
+REQUEST		request_311	1684438706424	1684438706486	OK	 
+REQUEST		request_308	1684438706424	1684438706527	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_313	1684438706427	1684438706529	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_312	1684438706427	1684438706585	OK	 
+REQUEST		request_310	1684438706426	1684438706585	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_309	1684438706426	1684438706585	OK	 
+REQUEST		request_301	1684438706874	1684438707027	OK	 
+REQUEST		request_303	1684438707027	1684438707035	OK	 
+REQUEST		request_306	1684438707028	1684438707037	OK	 
+REQUEST		request_302	1684438707028	1684438707130	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_305	1684438707029	1684438707145	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_304	1684438707028	1684438707171	OK	 
+REQUEST		request_307	1684438707047	1684438707184	OK	 
+REQUEST		request_314	1684438707185	1684438707194	OK	 
+REQUEST		request_311	1684438707184	1684438707248	OK	 
+REQUEST		request_282	1684438706899	1684438707282	OK	 
+REQUEST		request_308	1684438707185	1684438707290	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_284	1684438707284	1684438707298	OK	 
+REQUEST		request_298	1684438707284	1684438707299	OK	 
+REQUEST		request_313	1684438707185	1684438707301	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_310	1684438707185	1684438707309	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_312	1684438707185	1684438707328	OK	 
+REQUEST		request_309	1684438707185	1684438707332	OK	 
+REQUEST		request_292	1684438707285	1684438707396	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_288	1684438707284	1684438707407	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_283	1684438707284	1684438707421	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_289	1684438707284	1684438707435	OK	 
+REQUEST		request_286	1684438707283	1684438707439	OK	 
+REQUEST		request_291	1684438707285	1684438707472	OK	 
+REQUEST		request_300	1684438707283	1684438707472	OK	 
+REQUEST		request_296	1684438707286	1684438707479	OK	 
+REQUEST		request_295	1684438707407	1684438707511	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_293	1684438707285	1684438707520	OK	 
+REQUEST		request_287	1684438707283	1684438707639	OK	 
+REQUEST		request_299	1684438707283	1684438707691	OK	 
+REQUEST		request_285	1684438707282	1684438707699	OK	 
+REQUEST		request_290	1684438707284	1684438707708	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_294	1684438707396	1684438707740	OK	 
+REQUEST		request_315	1684438708587	1684438708726	OK	 
+REQUEST		request_317	1684438709200	1684438709334	OK	 
+REQUEST		request_316	1684438709200	1684438709523	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_315	1684438709333	1684438709523	OK	 
+REQUEST		request_317	1684438709524	1684438709534	OK	 
+REQUEST		request_307	1684438709566	1684438709937	OK	 
+REQUEST		request_316	1684438709524	1684438709937	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_314	1684438709938	1684438709952	OK	 
+REQUEST		request_311	1684438709938	1684438710181	OK	 
+REQUEST		request_319	1684438709524	1684438710182	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_319	1684438709200	1684438710182	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_310	1684438709940	1684438710182	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_313	1684438709941	1684438710182	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_312	1684438709941	1684438710183	OK	 
+REQUEST		request_309	1684438709940	1684438710183	OK	 
+REQUEST		request_301	1684438709752	1684438710183	OK	 
+REQUEST		request_308	1684438709938	1684438710184	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_303	1684438710184	1684438710192	OK	 
+REQUEST		request_306	1684438710184	1684438710194	OK	 
+REQUEST		request_318	1684438708727	1684438710393	OK	 
+REQUEST		request_305	1684438710184	1684438710394	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_302	1684438710184	1684438710395	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_304	1684438710184	1684438710395	OK	 
+REQUEST		request_318	1684438709524	1684438710580	OK	 
+REQUEST		request_307	1684438711172	1684438711403	OK	 
+REQUEST		request_314	1684438711403	1684438711415	OK	 
+REQUEST		request_311	1684438711403	1684438711607	OK	 
+REQUEST		request_313	1684438711404	1684438711607	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_308	1684438711403	1684438711607	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_312	1684438711404	1684438711608	OK	 
+REQUEST		request_310	1684438711404	1684438711608	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_309	1684438711404	1684438711608	OK	 
+REQUEST		request_315	1684438712185	1684438712502	OK	 
+REQUEST		request_317	1684438712504	1684438712511	OK	 
+REQUEST		request_316	1684438712504	1684438712712	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_319	1684438712503	1684438712869	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_318	1684438712503	1684438712869	OK	 
+REQUEST		request_315	1684438713610	1684438713753	OK	 
+REQUEST		request_317	1684438713754	1684438713762	OK	 
+REQUEST		request_316	1684438713754	1684438713866	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_319	1684438713754	1684438713871	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_318	1684438713754	1684438713906	OK	 
+REQUEST		request_307	1684438714396	1684438714535	OK	 
+REQUEST		request_314	1684438714536	1684438714545	OK	 
+REQUEST		request_311	1684438714536	1684438714598	OK	 
+REQUEST		request_320	1684438714396	1684438714628	OK	 
+REQUEST		request_329	1684438714629	1684438714638	OK	 
+REQUEST		request_330	1684438714629	1684438714638	OK	 
+REQUEST		request_313	1684438714537	1684438714678	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_308	1684438714536	1684438714679	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_310	1684438714537	1684438714679	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_309	1684438714537	1684438714689	OK	 
+REQUEST		request_320	1684438714583	1684438714715	OK	 
+REQUEST		request_329	1684438714715	1684438714724	OK	 
+REQUEST		request_330	1684438714715	1684438714725	OK	 
+REQUEST		request_312	1684438714537	1684438714725	OK	 
+REQUEST		request_323	1684438714629	1684438714748	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_327	1684438714637	1684438714749	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_325	1684438714636	1684438714752	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_324	1684438714636	1684438714779	OK	 
+REQUEST		request_322	1684438714629	1684438714792	OK	 
+REQUEST		request_327	1684438714717	1684438714823	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_323	1684438714716	1684438714827	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_322	1684438714716	1684438714865	OK	 
+REQUEST		request_325	1684438714716	1684438714871	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_324	1684438714716	1684438714880	OK	 
+REQUEST		request_332	1684438714749	1684438714886	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_326	1684438714716	1684438714904	OK	 
+REQUEST		request_326	1684438714636	1684438714908	OK	 
+REQUEST		request_331	1684438714748	1684438714923	OK	 
+REQUEST		request_332	1684438714827	1684438714930	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_331	1684438714823	1684438714960	OK	 
+REQUEST		request_321	1684438714628	1684438716730	KO	status.find.in([200, 209], 304), found 401
+REQUEST		request_321	1684438714715	1684438716797	KO	status.find.in([200, 209], 304), found 401
+REQUEST		request_320	1684438716869	1684438717003	OK	 
+REQUEST		request_329	1684438717004	1684438717014	OK	 
+REQUEST		request_330	1684438717004	1684438717017	OK	 
+REQUEST		request_315	1684438716727	1684438717034	OK	 
+REQUEST		request_317	1684438717035	1684438717086	OK	 
+REQUEST		request_325	1684438717005	1684438717113	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_323	1684438717004	1684438717120	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_327	1684438717005	1684438717150	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_326	1684438717005	1684438717157	OK	 
+REQUEST		request_322	1684438717004	1684438717161	OK	 
+REQUEST		request_316	1684438717035	1684438717176	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_324	1684438717004	1684438717189	OK	 
+REQUEST		request_318	1684438717035	1684438717224	OK	 
+REQUEST		request_332	1684438717120	1684438717233	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_319	1684438717035	1684438717234	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_331	1684438717113	1684438717288	OK	 
+REQUEST		request_321	1684438717004	1684438717299	KO	status.find.in([200, 209], 304), found 401
+REQUEST		request_320	1684438717909	1684438718019	OK	 
+REQUEST		request_330	1684438718020	1684438718032	OK	 
+REQUEST		request_329	1684438718020	1684438718033	OK	 
+REQUEST		request_325	1684438718021	1684438718128	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_323	1684438718020	1684438718128	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_327	1684438718021	1684438718147	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_326	1684438718021	1684438718159	OK	 
+REQUEST		request_322	1684438718020	1684438718172	OK	 
+REQUEST		request_324	1684438718020	1684438718172	OK	 
+REQUEST		request_332	1684438718128	1684438718262	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_331	1684438718128	1684438718280	OK	 
+REQUEST		request_321	1684438718020	1684438718591	KO	status.find.in([200, 209], 304), found 401
+REQUEST		request_333	1684438718731	1684438718912	OK	 
+REQUEST		request_333	1684438718799	1684438718991	OK	 
+REQUEST		request_334	1684438718912	1684438719012	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_334	1684438718991	1684438719106	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_333	1684438719302	1684438719512	OK	 
+REQUEST		request_334	1684438719513	1684438719612	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_333	1684438720592	1684438721019	OK	 
+REQUEST		request_334	1684438721020	1684438721143	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_335	1684438721016	1684438721156	OK	 
+REQUEST		request_335	1684438721107	1684438721262	OK	 
+REQUEST		request_336	1684438721157	1684438721268	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_336	1684438721262	1684438721404	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_320	1684438721236	1684438721610	OK	 
+REQUEST		request_329	1684438721611	1684438721647	OK	 
+REQUEST		request_330	1684438721611	1684438721647	OK	 
+REQUEST		request_325	1684438721612	1684438721713	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_327	1684438721612	1684438721724	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_323	1684438721612	1684438721747	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_322	1684438721611	1684438721750	OK	 
+REQUEST		request_335	1684438721613	1684438721762	OK	 
+REQUEST		request_326	1684438721612	1684438721762	OK	 
+REQUEST		request_324	1684438721612	1684438721786	OK	 
+REQUEST		request_331	1684438721713	1684438721866	OK	 
+REQUEST		request_332	1684438721725	1684438721867	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_336	1684438721762	1684438721870	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_321	1684438721611	1684438721909	KO	status.find.in([200, 209], 304), found 401
+REQUEST		request_335	1684438723144	1684438723298	OK	 
+REQUEST		request_336	1684438723298	1684438723407	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_337	1684438723270	1684438723423	OK	 
+REQUEST		request_338	1684438723423	1684438723525	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_337	1684438723406	1684438723571	OK	 
+REQUEST		request_338	1684438723572	1684438723688	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_337	1684438723872	1684438724029	OK	 
+REQUEST		request_333	1684438723911	1684438724066	OK	 
+REQUEST		request_338	1684438724029	1684438724148	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_334	1684438724066	1684438724167	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_337	1684438725407	1684438725541	OK	 
+REQUEST		request_338	1684438725541	1684438725637	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_339	1684438725528	1684438725679	OK	 
+REQUEST		request_340	1684438725680	1684438725782	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_339	1684438725690	1684438725834	OK	 
+REQUEST		request_340	1684438725834	1684438725934	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_339	1684438726149	1684438726285	OK	 
+REQUEST		request_335	1684438726169	1684438726320	OK	 
+REQUEST		request_340	1684438726285	1684438726387	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_336	1684438726320	1684438726446	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_339	1684438727638	1684438727796	OK	 
+REQUEST		request_341	1684438727783	1684438727960	OK	 
+REQUEST		request_340	1684438727796	1684438728047	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_342	1684438727960	1684438728071	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_341	1684438727936	1684438728086	OK	 
+REQUEST		request_342	1684438728086	1684438728194	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_341	1684438728388	1684438728560	OK	 
+REQUEST		request_337	1684438728448	1684438728607	OK	 
+REQUEST		request_338	1684438728607	1684438728703	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_342	1684438728560	1684438728709	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_341	1684438730049	1684438730192	OK	 
+REQUEST		request_343	1684438730071	1684438730216	OK	 
+REQUEST		request_342	1684438730192	1684438730291	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_344	1684438730217	1684438730328	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_343	1684438730194	1684438730331	OK	 
+REQUEST		request_344	1684438730332	1684438730445	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_339	1684438730704	1684438730850	OK	 
+REQUEST		request_343	1684438730710	1684438730861	OK	 
+REQUEST		request_340	1684438730851	1684438730967	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_344	1684438730862	1684438731007	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_343	1684438732292	1684438732896	OK	 
+REQUEST		request_345	1684438732329	1684438732897	OK	 
+REQUEST		request_345	1684438732446	1684438732908	OK	 
+REQUEST		request_344	1684438732897	1684438732995	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_346	1684438732908	1684438733017	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_346	1684438732897	1684438733022	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_345	1684438733007	1684438733151	OK	 
+REQUEST		request_341	1684438732967	1684438733151	OK	 
+REQUEST		request_346	1684438733152	1684438733247	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_342	1684438733152	1684438733252	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_345	1684438734996	1684438735135	OK	 
+REQUEST		request_347	1684438735018	1684438735152	OK	 
+REQUEST		request_347	1684438735022	1684438735189	OK	 
+REQUEST		request_348	1684438735152	1684438735254	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_346	1684438735136	1684438735258	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_348	1684438735190	1684438735305	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_347	1684438735248	1684438735409	OK	 
+REQUEST		request_343	1684438735253	1684438735411	OK	 
+REQUEST		request_348	1684438735409	1684438735504	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_344	1684438735412	1684438735508	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_349	1684438736254	1684438736400	OK	 
+REQUEST		request_349	1684438736306	1684438736484	OK	 
+REQUEST		request_350	1684438736400	1684438736519	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_350	1684438736485	1684438736600	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_349	1684438736505	1684438736652	OK	 
+REQUEST		request_350	1684438736652	1684438736767	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_347	1684438737259	1684438737535	OK	 
+REQUEST		request_348	1684438737536	1684438737635	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_345	1684438737509	1684438737656	OK	 
+REQUEST		request_346	1684438737656	1684438737756	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_351	1684438738602	1684438738772	OK	 
+REQUEST		request_349	1684438738636	1684438738793	OK	 
+REQUEST		request_351	1684438738520	1684438738895	OK	 
+REQUEST		request_352	1684438738772	1684438738895	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_351	1684438738767	1684438738912	OK	 
+REQUEST		request_350	1684438738793	1684438738921	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_352	1684438738895	1684438739000	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_352	1684438738912	1684438739008	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_347	1684438739756	1684438739894	OK	 
+REQUEST		request_348	1684438739894	1684438739993	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_353	1684438740903	1684438741126	OK	 
+REQUEST		request_351	1684438740922	1684438741126	OK	 
+REQUEST		request_356	1684438741134	1684438741145	OK	 
+REQUEST		request_362	1684438741134	1684438741146	OK	 
+REQUEST		request_357	1684438741134	1684438741201	OK	 
+REQUEST		request_365	1684438741136	1684438741230	OK	 
+REQUEST		request_352	1684438741127	1684438741244	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_361	1684438741134	1684438741245	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_354	1684438741134	1684438741245	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_349	1684438740998	1684438741255	OK	 
+REQUEST		request_353	1684438741063	1684438741265	OK	 
+REQUEST		request_353	1684438741063	1684438741271	OK	 
+REQUEST		request_359	1684438741134	1684438741276	OK	 
+REQUEST		request_356	1684438741267	1684438741277	OK	 
+REQUEST		request_362	1684438741267	1684438741277	OK	 
+REQUEST		request_356	1684438741272	1684438741281	OK	 
+REQUEST		request_362	1684438741272	1684438741284	OK	 
+REQUEST		request_363	1684438741136	1684438741289	OK	 
+REQUEST		request_360	1684438741133	1684438741306	OK	 
+REQUEST		request_357	1684438741267	1684438741330	OK	 
+REQUEST		request_357	1684438741272	1684438741342	OK	 
+REQUEST		request_350	1684438741256	1684438741350	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_365	1684438741268	1684438741360	OK	 
+REQUEST		request_354	1684438741267	1684438741363	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_361	1684438741267	1684438741368	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_365	1684438741273	1684438741380	OK	 
+REQUEST		request_354	1684438741272	1684438741380	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_364	1684438741136	1684438741386	OK	 
+REQUEST		request_359	1684438741267	1684438741400	OK	 
+REQUEST		request_358	1684438741266	1684438741412	OK	 
+REQUEST		request_359	1684438741272	1684438741412	OK	 
+REQUEST		request_361	1684438741272	1684438741424	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_358	1684438741271	1684438741440	OK	 
+REQUEST		request_360	1684438741272	1684438741456	OK	 
+REQUEST		request_364	1684438741273	1684438741502	OK	 
+REQUEST		request_364	1684438741268	1684438741648	OK	 
+REQUEST		request_360	1684438741266	1684438741649	OK	 
+REQUEST		request_358	1684438741133	1684438741649	OK	 
+REQUEST		request_363	1684438741268	1684438741650	OK	 
+USER	FlujoOriginacionCheckOut	END	1684438741661
+USER	FlujoOriginacionCheckOut	END	1684438741661
+REQUEST		request_363	1684438741273	1684438741693	OK	 
+USER	FlujoOriginacionCheckOut	END	1684438741699
+REQUEST		request_353	1684438743245	1684438743710	OK	 
+REQUEST		request_351	1684438743360	1684438743710	OK	 
+REQUEST		request_356	1684438743711	1684438743725	OK	 
+REQUEST		request_362	1684438743712	1684438743727	OK	 
+REQUEST		request_357	1684438743711	1684438743779	OK	 
+REQUEST		request_365	1684438743713	1684438743812	OK	 
+REQUEST		request_364	1684438743713	1684438743814	OK	 
+REQUEST		request_354	1684438743712	1684438743815	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_361	1684438743712	1684438743832	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_363	1684438743713	1684438743868	OK	 
+REQUEST		request_359	1684438743712	1684438743868	OK	 
+REQUEST		request_358	1684438743711	1684438743869	OK	 
+REQUEST		request_360	1684438743711	1684438743917	OK	 
+USER	FlujoOriginacionCheckOut	END	1684438743923
+REQUEST		request_352	1684438743711	1684438744528	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_353	1684438746531	1684438746680	OK	 
+REQUEST		request_362	1684438746682	1684438746693	OK	 
+REQUEST		request_356	1684438746682	1684438746693	OK	 
+REQUEST		request_357	1684438746682	1684438746762	OK	 
+REQUEST		request_365	1684438746683	1684438746783	OK	 
+REQUEST		request_364	1684438746683	1684438746785	OK	 
+REQUEST		request_354	1684438746682	1684438746786	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_358	1684438746681	1684438746840	OK	 
+REQUEST		request_361	1684438746682	1684438746840	KO	status.find.in([200, 209], 304), found 400
+REQUEST		request_363	1684438746683	1684438746840	OK	 
+REQUEST		request_360	1684438746682	1684438746848	OK	 
+REQUEST		request_359	1684438746682	1684438746884	OK	 
+USER	FlujoOriginacionCheckOut	END	1684438746900

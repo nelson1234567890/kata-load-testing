@@ -1,0 +1,10 @@
+{
+  "simulation": "bnpl.FlujoOriginacionCheckOutCorregido",
+  "simulationId": "flujooriginacioncheckoutcorregido-20230518222328548",
+  "start": 1684448609949,
+  "description": "",
+  "scenarios": ["FlujoOriginacionCheckOut"],
+  "assertions": [
+
+  ]
+}
