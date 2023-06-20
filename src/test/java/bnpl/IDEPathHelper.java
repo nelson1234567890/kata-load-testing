@@ -1,5 +1,8 @@
 package bnpl;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.net.URISyntaxException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -12,6 +15,10 @@ public class IDEPathHelper {
   static final Path mavenBinariesDirectory;
   static final Path resultsDirectory;
   static final Path recorderConfigFile;
+  private static final Logger LOGGER = LoggerFactory.getLogger(IDEPathHelper.class);
+  private IDEPathHelper() {
+    LOGGER.info("IDEPathHelper");
+  }
 
   static {
     try {
