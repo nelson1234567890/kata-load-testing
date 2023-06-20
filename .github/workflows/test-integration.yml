@@ -15,13 +15,13 @@ jobs:
     with:
       aws-region: "us-east-1"
       command-install: 'mvn clean install -DskipTests'
-      command-execute: 'mvn test -P load'
+      command-execute: 'mvn gatling:test'
       java-version: "17"
       use-aws-credentials: false
       dependencies-file-cache: '**/pom.xml'
       folder-libraries-cache: '~/.m2'
-      files-to-export: report/**
-      name-file-report: 'results.html'
+      files-to-export: /target/gatling/**
+      name-file-report: 'index.html'
       prefix-team: 'AE-CP'
     secrets:
       DIG_READER_GITHUB_ACCESS_TOKEN: ${{ secrets.DIG_READER_GITHUB_ACCESS_TOKEN }}
