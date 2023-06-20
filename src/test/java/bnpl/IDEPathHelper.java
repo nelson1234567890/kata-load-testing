@@ -15,10 +15,6 @@ public class IDEPathHelper {
   static final Path mavenBinariesDirectory;
   static final Path resultsDirectory;
   static final Path recorderConfigFile;
-  private static final Logger LOGGER = LoggerFactory.getLogger(IDEPathHelper.class);
-  private IDEPathHelper() {
-    LOGGER.info("IDEPathHelper");
-  }
 
   static {
     try {

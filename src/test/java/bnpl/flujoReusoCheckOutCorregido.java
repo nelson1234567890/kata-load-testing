@@ -19,11 +19,6 @@ public class flujoReusoCheckOutCorregido extends Simulation {
     .inferHtmlResources(AllowList(), DenyList(".*\\.js", ".*\\.css", ".*\\.gif", ".*\\.jpeg", ".*\\.jpg", ".*\\.ico", ".*\\.woff", ".*\\.woff2", ".*\\.(t|o)tf", ".*\\.png", ".*detectportal\\.firefox\\.com.*"))
   ;
 
-  private static final Logger LOGGER = LoggerFactory.getLogger(flujoReusoCheckOutCorregido.class);
-  private flujoReusoCheckOutCorregido() {
-    LOGGER.info("flujoReusoCheckOutCorregido");
-  }
-
   private Map<CharSequence, String> headers_0 = Map.ofEntries(
     Map.entry("accept", "*/*"),
     Map.entry("accept-encoding", "gzip, deflate, br"),
