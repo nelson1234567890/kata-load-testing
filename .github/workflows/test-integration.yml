@@ -13,14 +13,15 @@ jobs:
   integration-load-tests:
     uses: bancodebogota/bbog-dig-do-testing-pipeline/.github/workflows/test_load_integration.yml@v2
     with:
-      environment: st
+      aws-region: "us-east-1"
       command-install: 'mvn clean install -DskipTests'
       command-execute: 'mvn test -P load'
-      repository: 'bbog-bnpl-cp-load-testing'
-      files-to-export: >
-        report/**
+      java-version: "17"
+      use-aws-credentials: false
       dependencies-file-cache: '**/pom.xml'
       folder-libraries-cache: '~/.m2'
+      files-to-export: report/**
+      name-file-report: 'results.html'
       prefix-team: 'AE-CP'
     secrets:
       DIG_READER_GITHUB_ACCESS_TOKEN: ${{ secrets.DIG_READER_GITHUB_ACCESS_TOKEN }}
