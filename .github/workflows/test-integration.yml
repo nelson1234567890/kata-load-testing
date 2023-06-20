@@ -20,7 +20,7 @@ jobs:
       use-aws-credentials: false
       dependencies-file-cache: '**/pom.xml'
       folder-libraries-cache: '~/.m2'
-      files-to-export: /target/gatling
+      files-to-export: target/gatling
       name-file-report: 'index.html'
       prefix-team: 'AE-CP'
     secrets:
