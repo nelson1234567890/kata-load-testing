@@ -1359,8 +1359,6 @@ public class flujoReusoCheckOutCorregido extends Simulation {
     );
 
   {
-	  //setUp(scn.injectOpen(atOnceUsers(1))).protocols(httpProtocol);
-      //setUp(scn.inject(constantUsersPerSec(12))).protocols(httpProtocol);
     setUp(
             scn.injectOpen(
                     nothingFor(5),
