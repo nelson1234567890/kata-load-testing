@@ -9,7 +9,9 @@ import java.nio.file.Paths;
 import static java.util.Objects.requireNonNull;
 
 public class IDEPathHelper {
-
+  private IDEPathHelper() {
+    throw new IllegalStateException("Utility class");
+  }
   static final Path mavenSourcesDirectory;
   static final Path mavenResourcesDirectory;
   static final Path mavenBinariesDirectory;

@@ -19,6 +19,7 @@ public class flujoReusoCheckOutCorregido extends Simulation {
     .inferHtmlResources(AllowList(), DenyList(".*\\.js", ".*\\.css", ".*\\.gif", ".*\\.jpeg", ".*\\.jpg", ".*\\.ico", ".*\\.woff", ".*\\.woff2", ".*\\.(t|o)tf", ".*\\.png", ".*detectportal\\.firefox\\.com.*"))
   ;
 
+  String iP1 = "181.32.219.40";
   private Map<CharSequence, String> headers_0 = Map.ofEntries(
     Map.entry("accept", "*/*"),
     Map.entry("accept-encoding", "gzip, deflate, br"),
@@ -731,7 +732,7 @@ public class flujoReusoCheckOutCorregido extends Simulation {
     Map.entry("x-companyid", "8002911234"),
     Map.entry("x-custidentnum", "1000117216"),
     Map.entry("x-custidenttype", "CC"),
-    Map.entry("x-ipaddr", "181.32.219.40"),
+    Map.entry("x-ipaddr", iP1),
     Map.entry("x-journey", "OTP"),
     Map.entry("x-name", "AliadosEcommerce"),
     Map.entry("x-rquid", "5ee4b344-b18d-4436-b76b-a16e048983a8"),
@@ -769,7 +770,7 @@ public class flujoReusoCheckOutCorregido extends Simulation {
     Map.entry("x-companyid", "8002911234"),
     Map.entry("x-custidentnum", "1000117216"),
     Map.entry("x-custidenttype", "CC"),
-    Map.entry("x-ipaddr", "181.32.219.40"),
+    Map.entry("x-ipaddr", iP1),
     Map.entry("x-journey", "OTP"),
     Map.entry("x-name", "AliadosEcommerce"),
     Map.entry("x-rquid", "5ee4b344-b18d-4436-b76b-a16e048983a8"),
