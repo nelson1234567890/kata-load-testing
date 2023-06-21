@@ -3,56 +3,47 @@ package bnpl;
 import io.gatling.javaapi.core.ScenarioBuilder;
 import io.gatling.javaapi.core.Simulation;
 import io.gatling.javaapi.http.HttpProtocolBuilder;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.*;
 import java.util.Map;
-import java.util.Scanner;
-import java.util.logging.LogManager;
-
 import static io.gatling.javaapi.core.CoreDsl.*;
 import static io.gatling.javaapi.http.HttpDsl.http;
-
-
 
 
 public class flujoReusoCheckOutCorregido extends Simulation {
   private static final int USER_COUNT = Integer.parseInt(System.getProperty("USERS", "30"));
   private static final int RAMP_DURATION = Integer.parseInt(System.getProperty("RAMP_DURATION", "20"));
+
+  String valueAccept="accept";
+  String valueAcceptParamats="gzip, deflate, br";
+
   private HttpProtocolBuilder httpProtocol = http
     .baseUrl("https://api-bnpl-sbx.labdigbdbstgae.com")
     .inferHtmlResources(AllowList(), DenyList(".*\\.js", ".*\\.css", ".*\\.gif", ".*\\.jpeg", ".*\\.jpg", ".*\\.ico", ".*\\.woff", ".*\\.woff2", ".*\\.(t|o)tf", ".*\\.png", ".*detectportal\\.firefox\\.com.*"))
   ;
 
   public flujoReusoCheckOutCorregido() throws IOException {
-    // Do nothing because of X and Y.
   }
-
 
   public String lecturaTXT() throws IOException {
     String iP1 = null;
-
     FileReader archivo= null;
     BufferedReader lector = null ;
-      try{
-        archivo = new FileReader("src/test/java/ip");
-        lector = new BufferedReader(archivo);
-        iP1 = lector.readLine();
-      }finally {
-        if (lector != null) {
-          lector.close();
-        }
+    try{
+      archivo = new FileReader("src/test/java/ip");
+      lector = new BufferedReader(archivo);
+      iP1 = lector.readLine();
+    }finally {
+      if (lector != null) {
+        lector.close();
       }
-
+    }
     return iP1;
-
-
   }
 
+
   private Map<CharSequence, String> headers_0 = Map.ofEntries(
-    Map.entry("accept", "*/*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "*/*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("content-type", "text/plain;charset=UTF-8"),
     Map.entry("origin", "https://wp-ae-stg.labdigitalbdbstaging.co"),
@@ -66,8 +57,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_1 = Map.ofEntries(
-    Map.entry("accept", "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
     Map.entry("sec-ch-ua-mobile", "?0"),
@@ -79,8 +70,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_2 = Map.ofEntries(
-    Map.entry("accept", "*/*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "*/*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("access-control-request-headers", "x-auth-token,x-custom-headers,x-strcode"),
     Map.entry("access-control-request-method", "GET"),
@@ -92,8 +83,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_3 = Map.ofEntries(
-    Map.entry("accept", "*/*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "*/*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("access-control-request-headers", "x-auth-token,x-custom-headers,x-strcode"),
     Map.entry("access-control-request-method", "POST"),
@@ -105,8 +96,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_4 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://wp-ae-stg.labdigitalbdbstaging.co"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -120,27 +111,10 @@ public class flujoReusoCheckOutCorregido extends Simulation {
     Map.entry("x-custom-headers", "MTkzLDI4LDM5LDEyMiwyNDgsNTUsMjU0LDEzMywyMzYsMTc0LDIzNCw5Myw5MywzMSw2NCwxNzMsMTUxLDI0LDE2MSwyNTQsMjA3LDIyNywxMjcsNjcsMjQwLDE2MCwyMTYsNjEsMTcyLDgxLDEzOSwyMDgsMTM0LDUxLDEwOSwxMzgsMTUzLDEyOSwxOTYsMTU2LDkzLDMxLDMyLDE4NCwxNTYsODIsMTIzLDUsMzAsOSwzMyw4MCwyMzUsMTE3LDQ0LDU0LDI1MCwzMCw3LDU2LDE0OCw2OCwxOTYsMjIxLDEwMiwxODIsMjYsMjUsMTg5LDU4LDEwMywyMTQsMjMxLDE5NywxMjYsMTI0LDI4LDEzNSwyMzgsMTgxLDYxLDYxLDE2OCw1NywxODAsMjE3LDExNywyNTQsMTE2LDEzOSw0NSwxODQsNDksNTEsMTY4LDIwMywxNDMsMTU4LDExMCwxLDE1LDE1Niw2NCwxMCwxMjYsMTc4LDI1LDE3OSwyNDIsMTQ1LDE0OSwxOTEsMTg5LDY3LDI0NCwxNjAsMzUsMjMxLDE2NCw0NSwyNSwxMTksMTE2LDg5LDE0NCwyMTEsMjIyLDcwLDE3NSwzMSwxODAsNiwxMDIsMzUsMTA4LDM2LDIwNywyMjEsNDUsMTE0LDMxLDgzLDIyNyw2OCwxMTQsNzksMTUwLDEwOSw5OCwyMjksMjEyLDcsNDQsMTIwLDIwLDc2LDM5LDEyNywzMyw5MCwwLDE3NSwxMDYsMTMsMjEzLDExNSwxNTksOTYsOTcsMTU5LDIxOSwyMDUsODUsMTgxLDcwLDE2MywxOTYsMTc2LDE5OCwyMDgsMTA4LDIwOCwxMjUsNDksMTkyLDIxNyw4NCwyMDYsNTksMjYsNTUsMzEsMTAyLDUyLDE3NSwyMTUsMjM5LDE0NywyOSw4NSwxNjIsMTIsMjQzLDEyNiw4NywxOTcsMjM5LDI1NSw0MywxNzcsMTA1LDExMywxOTksNDksMjM2LDg0LDYxLDk1LDIzNiwyNTAsMjMsNDMsOTksMjksMjgsMTEsMTQyLDI1MiwxOSw0NCw3MiwxODgsOTUsMywxMjUsMTMwLDI0NCwxMjQsMTU2LDEzMiwyMzEsMjIwLDI1LDE5MSwyMTAsNDUsMjQyLDI0MCwzNSwxMzEsMTE4LDcxLDI0MCwyNDgsMTM5LDIxMyw5MiwxNCwyMzYsNjQsMjQxLDQxLDE5Nyw1NiwxMjcsMTQ3LDUsNzUsNTksMTQ0LDI0NiwyMjIsNDUsMjIwLDE5MCwxOTUsNzgsNjQsMTg3LDcwLDYwLDU0LDE2NCw0MiwxMCwxOTAsODAsMzksMTYwLDIzOCwxOSwyNDIsMTQ4LDEyMiwyMTAsMTUyLDEzMywyNDUsNjAsMjIwLDEyNywyMDMsMTk4LDEyMSwxMjYsMiwxNDksMjA2LDc4LDQ4LDE0NCw3LDE2MiwyMywxODgsMTc0LDEwOCwxNjMsMTEyLDk4LDIxOSwxMzUsNTQsMjQ4LDE4MywyMzIsMTUwLDAsMTk4LDUxLDM4LDE0NiwxNjcsMTQ5LDExMSwxNDEsMTYwLDIxNiwxNTUsMjMxLDE1OSwxNTIsMjE2LDE0OSwyNDIsOTAsMzMsMTk2LDE3MSwxODQsMjQsMjEwLDE4NywzNSwxNDYsMTQ2LDYzLDk1LDEyMSwyMjQsMjI0LDg3LDIxNiwxMTcsMTcwLDc4LDI5LDE0OCw2LDY2LDIxNywxODEsMTQsMTc4LDE1MSwxNTYsMSwxOTYsNTksNTEsMjM2LDEzMSwxNTksMzIsODcsMTI5LDg1LDM0LDIyOSw4MywxNDcsNzQsMTYsNDgsMjM2LDMzLDQwLDIwOSwxODksNTcsMTQxLDEzNCw4OSwxNTIsNTgsMjA4LDE1MCwxMDksMjA2LDc0LDI5LDEyMCw2MSw3OSw0NSwyMzMsMTg3LDg2LDE5NCwxNTMsMjUwLDIzLDIzNyw0OSwyMTMsMTM2LDE4Niw3NywyMTUsMjEzLDM0LDIxOCwyMyw5OCw3NiwyMTksMTk2LDU2LDE2MCwzMywyLDI0MywxMTksNCwxOSwxMzUsMTU3LDI5LDIxNSwxNzMsMzksMTg0LDU1LDgxLDEzNiw5NywxOTQsOTksMTgxLDE5NiwxNDUsMTM2LDg3LDUzLDkyLDE0LDEzLDE0NCwxNjEsMzMsMTA2LDM3LDc0LDE3MywxMTAsMzcsNDksMiwzNiwyMzQsOSw5MiwxNDQsMjM4LDQ1LDkzLDI1NCwxOTQsMTI0LDEwNiw1Nyw5LDI1MiwyMDcsMjAyLDIwNywxOTksNjMsMTExLDUsMTQ1LDYxLDIzMCwxMzUsMjE0LDEzMSwyOSw0Niw4OSwyNTMsNDEsMTAwLDIxLDEwMSwxNjMsMTk1LDEzNCw2NCw1NywxODMsMjM5LDQ5LDE1MSw1LDE3NCwyMCwxNCwxNjMsMTAsMjQzLDEzMywxNzksMTU5LDE3MywxMTIsMjIzLDY0LDI0OSw3NSwxMDcsMjEzLDAsNTksMTM2LDg3LDM4LDI1MSwyNyw3NCwyMzksMjAxLDE0Miw0Niw2MiwyMjksMTIzLDU2LDcwLDY1LDMyLDE3NCwxNzksMTU0LDI1MCwxMywxNjAsNTYsMTQ0LDEwNywyNDgsOTksMjA4LDE5MiwxMSw1MCwxNzQsMTg1LDEyOSwyMjMsMTQ0LDc5LDExMiwxODgsMzQsMTIzLDc0LDcxLDQ2LDE0OCwyMCwxNTUsMjA0LDkwLDIwOSwyMzgsMTkwLDE2NSwyLDE0MSw3NiwxOTQsMTEwLDE4LDY0LDIzMSwxNDYsMTAwLDE2LDI1Myw0MCwzMSw4MSwxNSwyMzQsMTIsMjQyLDk2LDQsNTMsMTM2LDEwNiwyMjUsMTIzLDI0MSwyNDcsNDcsMTAxLDY1LDk4LDE5NiwxNzEsMTcxLDQ1LDE5LDMsMjA1LDE4NCwxMDIsMjM3LDkzLDIxOCwyNTAsNyw2Myw1MywyNCwxODUsMTIsMzAsNzMsNDQsMjUyLDI0NCwyMjAsMjI2LDEwMCwxMTUsNTMsMjQ0LDc3LDE4MSw5NCw5MywyNTUsMTE2LDEyMiw2LDE5OCwyMjgsMTAzLDcyLDIzMSwxOTcsMjM5LDE0NCw2Miw3OCwxMjgsMTUyLDIxMCwyMDgsMTYxLDEzNCwyNTUsMCw2NCw2MCwyMjMsMCwxMjksMTAyLDUwLDE1OSwxOTYsODUsMTAwLDE3MywyMCwxOTYsODMsNDUsMTgyLDE0NiwxNywxMDMsMjEyLDE3OCw5MSwyNDEsMTcxLDEwMSwyNywxOTMsMTY0LDE0NCwxNjksMTQsNywxMDksMjM2LDU4LDI5LDIwNCw5MywyMjgsMTcsNTYsMTk4LDE3NiwxMjIsMjQwLDIyMyw5NiwzNiwyMjQsNjEsMTY3LDEwNiwxNSw2MSwxMCw5NSw0MSwyNDcsMjIxLDE4MCw1NiwxNDcsMTAxLDIxMCwxNTIsMjA5LDE4OCwxNTYsMTIsMTMsMTA5LDI1NSwyMTAsMTkyLDE1NywxNzYsNTQsMjQ3LDIsMjQzLDEyMiwxMjgsOTYsMTg5LDU3LDE2NywzMCw2MSw0LDE0NCwxMDAsMTk0LDYzLDY5LDIzMiwyLDgsMTY4LDExLDMzLDE1MCwxODMsMTQ2LDI0OCw2MCwyNDEsMTEzLDEwMywxMTQsMjAxLDk1LDMzLDk0LDIzOSw1MSw5OCwyMzMsMzYsMzMsOTMsOTMsMTM4LDI0MCwyMywxOTIsMTAzLDE1Niw0NCwyMzQsMTgxLDE1LDE4LDM3LDEyMyw0MywxMDgsNTIsMTM5LDEzLDIwMSwxMzUsODIsNzEsOTQsMjQsMjQxLDExOSwxNzAsMTY1LDM1LDE0NCw5LDExOSwxNzQsMTUxLDE1NywyMzYsNSwyNSwxMDAsMTMwLDU0LDIxOCwyMzgsMTE3LDIzNiwxMjEsNjksMjQ5LDE5MCw4Nyw4OSwyNDksMTU3LDExNCw5Nyw3NywyNDksOTYsMTA3LDIzNSwyMCwxMzAsNzUsMzAsMTcxLDI0NiwyMSwyNDMsMjQzLDE2MCwxMTQsOTEsMTM0LDIyMCw4Nyw4MSwxODcsMjU1LDI1MCwxODAsNjQsMjI2LDEyLDExNiwyMjYsMTE2LDIzMSwxNzQsODAsMjMwLDUwLDcyLDExNywzMiwxOTgsNTEsOTksMjI1LDU2LDAsMjE3LDIxOCwxODgsMjE4LDgyLDIxNywxNDEsMjM4LDE2MSwxMTUsMjQ2LDEyNCwxNTksMjIyLDE2NSw4Niw5MSwxNjgsMjMwLDE0NCwyMCwzNiwyMzYsOCwxODAsOTEsMTc4LDUxLDIzMCw5NCw2MSwxNzQsNDEsMywxOTUsNDcsMjMxLDE0NCw1NywyNTQsMTY3LDgsMjI5LDU4LDI1MywxNTcsNDEsMTQwLDIzMSw2NCwxNDUsNDYsMTc2LDE2LDE1MiwxOTksMTQ3LDY3LDE4MiwxMTksNzUsNDIsMjEwLDc0LDIzMSw4Nyw5Niw3MiwyMTQsNDAsMTI4LDQzLDE1OSwxODYsMjEwLDQxLDI1LDIxMCwxODEsMjA2LDc4LDMzLDE0OSw4NiwxMTQsMTYsMTkzLDYyLDIyOCwyMTAsMTI4LDEzNywzMCw2NCwzOSwxMDcsMjE0LDEzOCw2MSwyMTUsMjA3LDE4MywxNjcsOSwxNzYsMzMsMTExLDEwMCw3MiwxOTMsMTg3LDExNSw0LDU5LDM4LDMwLDQwLDEyOCw4OSwzMiwxMDgsMTA1LDI4LDI1NCwxODUsMTM4LDIzMiwyMzMsMjYsMTk0LDEzNSwyNTUsNDYsMjQ5LDY0LDI0NywyOCwxNjksMzYsMjA0LDMzLDUyLDg1LDE5NiwyMDcsMjQ1LDY3LDY3LDE2NywzNCwxMjksMTYxLDg1LDIxNSwyMTcsMjA5LDIxNiw1LDMxLDksMTAyLDI0OCwyMjMsMjM3LDIyNSwzMiwxMzgsMjM2LDEwMywxNCwxMTUsMiwxNTMsMjU1LDk1LDE1LDIzLDE1OSwxMjksMjI0LDIxMSwxNDQsMTA3LDExNSwxOTAsOCwyMjYsMTksMTM2LDE0MCwxMTEsMjQ0LDIyMiwyMTksOSwxNiw1NCwxMDMsMTIwLDEyNywzOCwxMyw5MCwxMTgsMTU1LDE0MSwyMTMsNjUsMTQzLDE4LDEwNiwxMzIsMTU1LDQ3"),
     Map.entry("x-strcode", "4cc8dcd3053fcc058a07dc7026b0478e")
   );
-  
-  //private Map<CharSequence, String> headers_9 = Map.ofEntries(
-   // Map.entry("accept", "application/json, text/plain, */*"),
-   /* Map.entry("accept-encoding", "gzip, deflate, br"),
-    Map.entry("accept-language", "es-ES,es;q=0.9"),
-    Map.entry("origin", "https://wp-ae-stg.labdigitalbdbstaging.co"),
-    Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
-    Map.entry("sec-ch-ua-mobile", "?0"),
-    Map.entry("sec-ch-ua-platform", "macOS"),
-    Map.entry("sec-fetch-dest", "empty"),
-    Map.entry("sec-fetch-mode", "cors"),
-    Map.entry("sec-fetch-site", "cross-site"),
-    Map.entry("user-agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"),
-    Map.entry("x-auth-token", "5ee4b344-b18d-4436-b76b-a16e048983a8"),
-    Map.entry("x-custom-headers", "MTcyLDE4NSw4MywxOTUsMTE2LDc4LDE3OCwxNCwyNCwxODAsNjAsMTcxLDI1NCwxNzcsOSwxMiwxNTEsMjQsMTYxLDI1NCwyMDcsMjI3LDEyNyw2NywyNDAsMTYwLDIxNiw2MSwxNzIsODEsMTM5LDIwOCwxMzQsMTcsMzcsMTM4LDEzNywxNzUsMjAzLDE1OCw5OSwzMSwxMDAsMTg3LDE0MCw3NCwxMjAsNywzMiwxLDExMCw4MCwyNTEsMTE3LDQ0LDU0LDI1MCwzMCw3LDU2LDE0OCw2OCwxOTYsMjIxLDEwMiwxODIsMjYsMjUsMTg5LDU4LDEwMywyMTMsMjMxLDI0MywxMjYsMTI1LDI4LDE4MSwxNjUsMTgyLDYxLDQ5LDE3NCw1NiwxNjQsMjM1LDEyMywyNTMsNzQsMTg5LDEwMiwxODcsMzMsNTEsMTY4LDIwMywxNDMsMTU4LDExMCwxLDE1LDE1Niw2NCwxMCwxMjYsMTc4LDI1LDE3OSwyNDIsMTQ1LDE0OSwxODgsMTczLDg3LDI0NywxNjIsMzUsMjIxLDIzNiw0NSw5LDExMSw2MSw4OCwxNDQsMjIzLDIxNiw3MCwxOTEsMTksMjUxLDQsNjQsMzUsMTA4LDM2LDIwNywyMjEsNDUsMTE0LDMxLDgzLDIyNyw2OCwxMTQsNzksMTUwLDEwOSw5OCwyMjksMjEyLDIsNDcsNzgsNjIsMTAwLDM3LDg5LDIyLDEwMiwwLDI0Miw3NywzNSwyNDksMTEyLDE1NSw3Myw5MywxNjUsMTQ0LDI1Miw4NSwyNTIsMjEsMTY5LDIzOSwxNzIsMjMxLDIxNCwxMCwyMDgsMzksMCwxNjQsMTg3LDEyNSwyNDgsMjEsNTksMTEwLDUxLDExOCwzOSwxNzUsMjEwLDI1NSwxNjUsMTAxLDg2LDE0NCw1MCwyNTAsNjcsODYsMjAxLDE4MCwyMDEsNDAsMTU5LDgyLDY5LDIwMSw0OSwxNzUsODQsNjMsODgsMjMzLDI1MSw2MiwyOSwxMTYsNiw0OCw0NiwxODEsMjQ1LDQwLDExNiwzMywxNTEsOTgsMTIsMTI1LDE0MSwxOTQsOTAsMjE4LDE1OCwxODgsMjU0LDI1LDE4MSwyMDgsMTksMjQyLDI1MSwzNSwxODEsMTE3LDcxLDIyMSwyMDYsMjAwLDIzMSwxMDMsNjAsMjAzLDY1LDIxMiwyNywyNTAsOCwxMTIsMTg1LDIsNzksNDAsMjM5LDI0NiwyMjAsNDcsMTM4LDE4NSwyMTksMzgsOTIsMTQ1LDg5LDcyLDQ5LDE1MSw0NCw0LDEyOCw3NCwyMCwxNTIsMjQyLDE5LDI0MCwxNDksMTE4LDE5OCwxNDcsMjI1LDI1MCwyOCwyMjcsNzcsMjUzLDE2Myw5OCw2OCw2MCwyMDIsMTk4LDkzLDM1LDE2OSw2LDIxMywxMSwxNzIsMTI5LDUzLDE4Nyw3OSwxMDMsMjAyLDE1OSw1NSwyNTQsMjU1LDE1NCwyMTEsMjUsMjM1LDc5LDEyNiwxNjMsMjExLDE2OCw0NiwxODcsMTc3LDE5MiwxNzQsMjA2LDE0MSwxNzcsMTMxLDE4NiwxMzMsMTAwLDM4LDI0NywxMzcsMTU4LDEyMSwyMDgsMTcxLDksMTg5LDE0Niw3Miw3OSwxMTksMjI0LDIyNCw5NSwyMDAsNjYsMTcyLDY2LDYzLDE2Miw0NCw5MywyNDIsMTc4LDEyMywxMzIsMjM5LDEzMCwxMDMsMTU0LDkxLDU5LDIxNSwxNjUsMTk4LDYzLDg1LDE4Myw2OSw0MywyMzEsNjcsMjExLDk3LDUxLDU2LDE1OSwzOSw5NSwyNTUsMjUxLDYwLDI1MCwyMzEsODksMTY4LDU4LDI1NCwyMDksOTMsMTg2LDk2LDk1LDg1LDQzLDk3LDExLDIxMSwxODQsMTI0LDIwOSwxMjgsMTc4LDQ1LDI0OCw0NywyMDMsMTg2LDE2Myw4MSwxMzgsMTM3LDM5LDI0Miw5OSw5MiwxMjEsMjEyLDE5Nyw2MCwxNDYsMjAsMTgsMjUxLDk0LDQsMTYsMTgyLDI0OSwyNCwxNzMsMTY2LDc0LDE4MiwxMDUsMTAzLDIxMywxMTgsMTU2LDQsMTM4LDIwMCwxNDAsMTM1LDEzLDAsNzgsNzksNTAsMTY3LDE2MywxNSwxMDYsOCw4OCwxNzQsOTQsMjEsMTA2LDE4LDI2LDIxOCwyNSw4OSwxNzMsMjMzLDExOSw4OSwyMTcsMjMyLDg1LDk4LDc3LDEzLDE5NCwyNDEsMTc1LDI0OCwyNTQsODAsMTA0LDI1LDE5MSw4MSwyMzEsMTU5LDIzNCwxNzMsMTksNDcsODgsMjE1LDQ3LDc1LDcsMTEzLDE1NiwyMTgsMTM0LDkyLDEsMTU3LDIzMyw2NiwyNDIsMTcsMjE5LDQxLDQsMTQ2LDksMTcwLDEzNiwxNzQsMjUwLDEzMSw3MiwyMTcsMTEwLDE5MiwxMTksNzAsMjU1LDAsMTIsMTQyLDMwLDQ2LDIxMiw1NSw3MiwyMzIsMTc2LDE2Miw2MiwyOCwxNjMsNzIsNTIsNjYsMTMsNTYsMTI5LDIwNCwxNTksMjEwLDMzLDIyNiwzNSwxNDUsMTA3LDI0NCwxMDMsMjMwLDI0OCw0MSwzMiwxMzUsMTU1LDE4MywxMjgsMTg0LDExMiwxMTEsMTk5LDM3LDM5LDk5LDczLDQ0LDEyOCw1MCwxNTUsMjUyLDExMCwxOTQsMTcyLDE3NywxOTQsMTEwLDE2OCw5OSwxODAsNjgsNDEsNzAsMjI5LDE1OCwzNyw2MCwxOTYsNTUsOTUsOTgsNTEsMTQ1LDEwOCwyMzEsNSw0MSwxMjAsMTQ0LDUyLDIzNyw0OSwyMzAsMTg4LDM1LDY5LDk1LDk4LDI0NSwyMzIsMTY4LDIyLDE5LDYzLDI1NCwyMDYsMjEsMjA1LDk1LDE3NCwyMjAsNCw4LDksNDEsMjI4LDYxLDI5LDkwLDQ5LDE5OCwxNTcsMjI2LDI1NCwxMjIsMTAxLDQ5LDI0NCwxMTgsMjM2LDEyNyw1OSwyNTEsODksNzksNjksMjQ1LDIwNCwxMTksMTI1LDIwOSwxOTYsMTkzLDE4OCwzOSw2LDE3OCwyMjAsMjExLDE5MywyMTgsMTkwLDI1NCw1LDk3LDgxLDIzNywzNCwxNTMsMzEsNDIsMTU5LDIxMiw4NCw5NSwxNzUsMCwyMjYsOTgsNDgsMTM2LDE0NiwxOSwwLDEzNywxMzgsNjQsMTUxLDE0MSw4MSw0NywxODAsMTYwLDIyNCwxNTgsNTUsMzEsMzMsMjI4LDUzLDEwMywxODYsMTE1LDE4Nyw1NSw1MywxOTMsMTUzLDIsMTI4LDIxNiw5NiwzNiwyMDIsNjIsMTQzLDEyNSwzOCwzNCwyNiw2MCwxMjQsMTkzLDIzMiwxODAsNDIsMTg2LDEwMCwyNDgsMTM0LDI1NSwxNzUsMTcwLDYyLDIyLDgwLDI1NSwyNDQsMjA3LDE1MywxNjQsMTEzLDIyNCwxNSwyMTAsODMsMTg5LDcsMjMyLDEyNiwxODgsNDQsNjEsMTAsMTQ3LDE4LDIwMSw4NiwxMTksMjMzLDEzLDE0LDE2OSwxMDksMzQsMjA2LDE4MiwxNzIsMjI3LDMxLDIyMiwyNyw2OSw1NCwyMDIsMTE0LDU3LDEyNywyMjMsNSwxMjIsMjAzLDQ4LDg2LDkwLDIyLDIyOSwxODIsOTksMjMzLDczLDE4NywxMjAsMTc3LDEzNCw2MSw0NSwyNSw0Myw3OCw0LDc2LDE2NSwzMiwyNDQsMTM0LDEyMCwxMDQsMTExLDU4LDIyMiw4OCwyMTksMTY1LDExLDE3NSwxMywxMjAsMTg2LDE4NCwxODgsMTY5LDQxLDAsMjcsMjExLDY0LDE1NywyNDksMTAyLDIzMiw5MywxMDIsMTY2LDE0MSwxMTksMTE4LDIwOSwyNTUsMjMsMTEwLDI5LDE5OCwxMTQsMTIzLDI0MSwyNywxNTcsMTE4LDMyLDE5MCwxNzMsNTksMjQwLDIyMSwxNTgsODgsODksMTU4LDIwNywxMjIsMTEsMTYyLDIwOCwxMzAsMjUxLDkzLDIyNywxMDQsODcsMjUyLDExNywyNDcsMTcwLDEwMiwxNDksNDUsNzgsOTMsNDksMjUxLDExOSwxMDEsMTcxLDMwLDUsMjQ1LDE3MywxNzEsMjQ0LDY5LDIzMCwxNDIsMjM2LDE4MSwxMjAsMTgxLDExMywyNDAsMjI4"),
-    Map.entry("x-strcode", "08e2c1030fef96f2f0f319540ca21edf")
-  );*/
-  
+
   private Map<CharSequence, String> headers_12 = Map.ofEntries(
-    Map.entry("accept", "*/*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "*/*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://wp-ae-stg.labdigitalbdbstaging.co"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -153,8 +127,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_13 = Map.ofEntries(
-    Map.entry("accept", "*/*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "*/*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
     Map.entry("sec-ch-ua-mobile", "?0"),
@@ -167,8 +141,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_14 = Map.ofEntries(
-    Map.entry("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
     Map.entry("sec-ch-ua-mobile", "?0"),
@@ -183,8 +157,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_15 = Map.ofEntries(
-    Map.entry("accept", "*/*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "*/*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
     Map.entry("sec-ch-ua-mobile", "?0"),
@@ -197,8 +171,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_16 = Map.ofEntries(
-    Map.entry("accept", "*/*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "*/*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("content-type", "application/x-protobuffer"),
     Map.entry("origin", "https://www.google.com"),
@@ -213,8 +187,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_19 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://wp-ae-stg.labdigitalbdbstaging.co"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -230,8 +204,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_20 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://wp-ae-stg.labdigitalbdbstaging.co"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -247,8 +221,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_22 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://wp-ae-stg.labdigitalbdbstaging.co"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -264,8 +238,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_24 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://wp-ae-stg.labdigitalbdbstaging.co"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -281,8 +255,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_26 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://wp-ae-stg.labdigitalbdbstaging.co"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -298,8 +272,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_28 = Map.ofEntries(
-    Map.entry("accept", "*/*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "*/*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("access-control-request-headers", "x-auth-token,x-custom-headers,x-strcode"),
     Map.entry("access-control-request-method", "PUT"),
@@ -311,8 +285,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_31 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://wp-ae-stg.labdigitalbdbstaging.co"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -328,8 +302,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_32 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://wp-ae-stg.labdigitalbdbstaging.co"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -345,8 +319,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_33 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("content-type", "application/x-www-form-urlencoded"),
     Map.entry("origin", "https://wp-ae-stg.labdigitalbdbstaging.co"),
@@ -363,8 +337,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_34 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("content-type", "application/x-www-form-urlencoded"),
     Map.entry("origin", "https://wp-ae-stg.labdigitalbdbstaging.co"),
@@ -381,8 +355,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_36 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://wp-ae-stg.labdigitalbdbstaging.co"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -398,8 +372,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_37 = Map.ofEntries(
-    Map.entry("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
     Map.entry("sec-ch-ua-mobile", "?0"),
@@ -412,8 +386,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_38 = Map.ofEntries(
-    Map.entry("accept", "application/json"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("content-type", "application/json; charset=utf-8"),
     Map.entry("origin", "https://authenticatormock.labdigitalbdbstaging.co"),
@@ -427,8 +401,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_39 = Map.ofEntries(
-    Map.entry("accept", "*/*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "*/*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("access-control-request-headers", "content-type"),
     Map.entry("access-control-request-method", "POST"),
@@ -440,8 +414,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_40 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("content-type", "application/json"),
     Map.entry("origin", "https://authenticatormock.labdigitalbdbstaging.co"),
@@ -455,8 +429,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_41 = Map.ofEntries(
-    Map.entry("accept", "*/*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "*/*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("access-control-request-headers", "aditional-info,channel,content-type,product"),
     Map.entry("access-control-request-method", "POST"),
@@ -468,8 +442,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_42 = Map.ofEntries(
-    Map.entry("accept", "*/*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "*/*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("access-control-request-headers", "content-type"),
     Map.entry("access-control-request-method", "GET"),
@@ -481,8 +455,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_43 = Map.ofEntries(
-    Map.entry("accept", "application/json"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("aditional-info", "private-ip=null;"),
     Map.entry("channel", "WEB"),
@@ -499,8 +473,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_48 = Map.ofEntries(
-    Map.entry("accept", "*/*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "*/*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -513,8 +487,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_50 = Map.ofEntries(
-    Map.entry("accept", "*/*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "*/*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
     Map.entry("sec-ch-ua-mobile", "?0"),
@@ -526,8 +500,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_51 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -540,8 +514,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_52 = Map.ofEntries(
-    Map.entry("accept", "*/*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "*/*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("access-control-request-headers", "x-accesstoken,x-auth-token,x-custom-headers,x-strcode"),
     Map.entry("access-control-request-method", "GET"),
@@ -553,8 +527,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_53 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -571,8 +545,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_54 = Map.ofEntries(
-    Map.entry("accept", "application/json"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -586,8 +560,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_55 = Map.ofEntries(
-    Map.entry("accept", "*/*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "*/*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("access-control-request-headers", "x-auth-token,x-custom-headers,x-strcode"),
     Map.entry("access-control-request-method", "POST"),
@@ -599,8 +573,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_56 = Map.ofEntries(
-    Map.entry("accept", "*/*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "*/*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("access-control-request-headers", "x-strcode"),
     Map.entry("access-control-request-method", "GET"),
@@ -612,8 +586,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_57 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("content-type", "text/plain"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
@@ -630,8 +604,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_59 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -648,8 +622,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_60 = Map.ofEntries(
-    Map.entry("accept", "*/*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "*/*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("access-control-request-headers", "x-accesstoken,x-auth-token,x-custom-headers,x-strcode"),
     Map.entry("access-control-request-method", "POST"),
@@ -661,8 +635,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_61 = Map.ofEntries(
-    Map.entry("accept", "*/*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "*/*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("content-type", "text/plain"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
@@ -676,8 +650,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_62 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("content-type", "text/plain"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
@@ -695,8 +669,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_65 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("content-type", "text/plain"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
@@ -714,8 +688,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_67 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("content-type", "text/plain"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
@@ -732,8 +706,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_70 = Map.ofEntries(
-    Map.entry("accept", "*/*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "*/*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("access-control-request-headers", "x-accesstoken,x-auth-token,x-channel,x-companyid,x-custidentnum,x-custidenttype,x-ipaddr,x-journey,x-name,x-rquid,x-strcode"),
     Map.entry("access-control-request-method", "POST"),
@@ -745,8 +719,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_71 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -770,8 +744,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_72 = Map.ofEntries(
-    Map.entry("accept", "*/*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "*/*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("access-control-request-headers", "x-accesstoken,x-auth-token,x-channel,x-companyid,x-custidentnum,x-custidenttype,x-ipaddr,x-journey,x-name,x-rquid,x-strcode"),
     Map.entry("access-control-request-method", "GET"),
@@ -783,8 +757,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_73 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -808,8 +782,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_75 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("content-type", "text/plain"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
@@ -827,8 +801,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_78 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("content-type", "text/plain"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
@@ -845,8 +819,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_80 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -863,8 +837,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_82 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -881,8 +855,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_84 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -899,8 +873,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_86 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -917,8 +891,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_88 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -935,8 +909,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_90 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -953,8 +927,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_92 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -971,8 +945,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_95 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("content-type", "text/plain"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
@@ -990,8 +964,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_102 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
     Map.entry("sec-ch-ua", "Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99"),
@@ -1008,8 +982,8 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   );
   
   private Map<CharSequence, String> headers_104 = Map.ofEntries(
-    Map.entry("accept", "application/json, text/plain, */*"),
-    Map.entry("accept-encoding", "gzip, deflate, br"),
+    Map.entry(valueAccept, "application/json, text/plain, */*"),
+    Map.entry("accept-encoding", valueAcceptParamats),
     Map.entry("accept-language", "es-ES,es;q=0.9"),
     Map.entry("content-type", "text/plain"),
     Map.entry("origin", "https://bnpl.labdigbdbstgae.com"),
