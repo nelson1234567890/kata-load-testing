@@ -9,9 +9,13 @@ import org.slf4j.LoggerFactory;
 import java.io.*;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.logging.LogManager;
 
 import static io.gatling.javaapi.core.CoreDsl.*;
 import static io.gatling.javaapi.http.HttpDsl.http;
+
+
+
 
 public class flujoReusoCheckOutCorregido extends Simulation {
   private static final int USER_COUNT = Integer.parseInt(System.getProperty("USERS", "30"));
@@ -21,16 +25,18 @@ public class flujoReusoCheckOutCorregido extends Simulation {
     .inferHtmlResources(AllowList(), DenyList(".*\\.js", ".*\\.css", ".*\\.gif", ".*\\.jpeg", ".*\\.jpg", ".*\\.ico", ".*\\.woff", ".*\\.woff2", ".*\\.(t|o)tf", ".*\\.png", ".*detectportal\\.firefox\\.com.*"))
   ;
 
+
+
   public String lecturaTXT() {
-    FileReader archivo;
-    BufferedReader lector;
     String iP1 = null;
     try {
+      FileReader archivo;
+      BufferedReader lector;
+
       archivo = new FileReader("src/test/java/ip");
       lector = new BufferedReader(archivo);
       iP1 = lector.readLine();
     } catch (Exception e) {
-      System.out.println("Error en lectura del archivo");
 
     }
     return iP1;
