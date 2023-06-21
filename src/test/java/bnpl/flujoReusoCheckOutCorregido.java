@@ -25,20 +25,22 @@ public class flujoReusoCheckOutCorregido extends Simulation {
     .inferHtmlResources(AllowList(), DenyList(".*\\.js", ".*\\.css", ".*\\.gif", ".*\\.jpeg", ".*\\.jpg", ".*\\.ico", ".*\\.woff", ".*\\.woff2", ".*\\.(t|o)tf", ".*\\.png", ".*detectportal\\.firefox\\.com.*"))
   ;
 
+  public flujoReusoCheckOutCorregido() throws IOException {
+  }
 
 
-  public String lecturaTXT() {
+  public String lecturaTXT() throws IOException {
     String iP1 = null;
-    try {
+
       FileReader archivo;
       BufferedReader lector;
-
-      archivo = new FileReader("src/test/java/ip");
-      lector = new BufferedReader(archivo);
-      iP1 = lector.readLine();
-    } catch (Exception e) {
-
-    }
+      try{
+        archivo = new FileReader("src/test/java/ip");
+        lector = new BufferedReader(archivo);
+        iP1 = lector.readLine();
+      }catch (Exception e){
+        iP1 = null;
+      }
     return iP1;
   }
 
