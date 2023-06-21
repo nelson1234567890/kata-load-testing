@@ -26,22 +26,26 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   ;
 
   public flujoReusoCheckOutCorregido() throws IOException {
+    // Do nothing because of X and Y.
   }
 
 
   public String lecturaTXT() throws IOException {
     String iP1 = null;
 
-      FileReader archivo;
-      BufferedReader lector;
+      FileReader archivo= null;
+      BufferedReader lector = null;
       try{
         archivo = new FileReader("src/test/java/ip");
         lector = new BufferedReader(archivo);
         iP1 = lector.readLine();
-      }catch (Exception e){
-        iP1 = null;
+      }finally{
+        archivo.close();
+        lector.close();
       }
     return iP1;
+
+
   }
 
   private Map<CharSequence, String> headers_0 = Map.ofEntries(
