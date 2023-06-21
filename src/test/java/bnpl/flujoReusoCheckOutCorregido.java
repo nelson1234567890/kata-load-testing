@@ -39,9 +39,10 @@ public class flujoReusoCheckOutCorregido extends Simulation {
         archivo = new FileReader("src/test/java/ip");
         lector = new BufferedReader(archivo);
         iP1 = lector.readLine();
-      }finally{
-        if(lector != null) {
+      }finally {
+        if (lector != null) {
           lector.close();
+        }
       }
 
     return iP1;
