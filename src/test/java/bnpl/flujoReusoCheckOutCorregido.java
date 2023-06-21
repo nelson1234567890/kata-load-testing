@@ -6,7 +6,9 @@ import io.gatling.javaapi.http.HttpProtocolBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.*;
 import java.util.Map;
+import java.util.Scanner;
 
 import static io.gatling.javaapi.core.CoreDsl.*;
 import static io.gatling.javaapi.http.HttpDsl.http;
@@ -19,7 +21,21 @@ public class flujoReusoCheckOutCorregido extends Simulation {
     .inferHtmlResources(AllowList(), DenyList(".*\\.js", ".*\\.css", ".*\\.gif", ".*\\.jpeg", ".*\\.jpg", ".*\\.ico", ".*\\.woff", ".*\\.woff2", ".*\\.(t|o)tf", ".*\\.png", ".*detectportal\\.firefox\\.com.*"))
   ;
 
-  String iP1 = "181.32.219.40";
+  public String lecturaTXT() {
+    FileReader archivo;
+    BufferedReader lector;
+    String iP1 = null;
+    try {
+      archivo = new FileReader("src/test/java/ip");
+      lector = new BufferedReader(archivo);
+      iP1 = lector.readLine();
+    } catch (Exception e) {
+      System.out.println("Error en lectura del archivo");
+
+    }
+    return iP1;
+  }
+
   private Map<CharSequence, String> headers_0 = Map.ofEntries(
     Map.entry("accept", "*/*"),
     Map.entry("accept-encoding", "gzip, deflate, br"),
@@ -732,7 +748,7 @@ public class flujoReusoCheckOutCorregido extends Simulation {
     Map.entry("x-companyid", "8002911234"),
     Map.entry("x-custidentnum", "1000117216"),
     Map.entry("x-custidenttype", "CC"),
-    Map.entry("x-ipaddr", iP1),
+    Map.entry("x-ipaddr", lecturaTXT()),
     Map.entry("x-journey", "OTP"),
     Map.entry("x-name", "AliadosEcommerce"),
     Map.entry("x-rquid", "5ee4b344-b18d-4436-b76b-a16e048983a8"),
@@ -770,7 +786,7 @@ public class flujoReusoCheckOutCorregido extends Simulation {
     Map.entry("x-companyid", "8002911234"),
     Map.entry("x-custidentnum", "1000117216"),
     Map.entry("x-custidenttype", "CC"),
-    Map.entry("x-ipaddr", iP1),
+    Map.entry("x-ipaddr", lecturaTXT()),
     Map.entry("x-journey", "OTP"),
     Map.entry("x-name", "AliadosEcommerce"),
     Map.entry("x-rquid", "5ee4b344-b18d-4436-b76b-a16e048983a8"),
