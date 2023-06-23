@@ -65,19 +65,16 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   }
 
   public String lecturaTXT() throws IOException {
-    String iP1 = null;
-    FileReader archivo= null;
-    BufferedReader lector = null ;
-    try{
-      archivo = new FileReader("src/test/java/ip");
-      lector = new BufferedReader(archivo);
-      iP1 = lector.readLine();
-    }finally {
-      if (lector != null) {
-        lector.close();
-      }
+    //FileReader fr = null;
+    //BufferedReader br = null;
+
+    try(FileReader fr = new FileReader("src/test/java/ip");
+        BufferedReader br = new BufferedReader(fr)){
+      return br.readLine();
+    }catch(IOException ie){
+      return null;
+
     }
-    return iP1;
   }
 
 
