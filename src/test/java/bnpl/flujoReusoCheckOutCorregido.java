@@ -61,7 +61,12 @@ public class flujoReusoCheckOutCorregido extends Simulation {
   ;
 
   public flujoReusoCheckOutCorregido() throws IOException {
-    //Metodo
+    setUp(
+            scn.injectOpen(
+                    nothingFor(5),
+                    rampUsers(USER_COUNT).during(RAMP_DURATION)
+            ).protocols(httpProtocol)
+    );
   }
 
   public String lecturaTXT() throws IOException {
@@ -1121,13 +1126,4 @@ public class flujoReusoCheckOutCorregido extends Simulation {
             .headers(headers102)
         )
     );
-
-  {
-    setUp(
-            scn.injectOpen(
-                    nothingFor(5),
-                    rampUsers(USER_COUNT).during(RAMP_DURATION)
-            ).protocols(httpProtocol)
-    );
-  }
 }
