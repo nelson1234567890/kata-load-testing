@@ -9,7 +9,7 @@ import static io.gatling.javaapi.core.CoreDsl.*;
 import static io.gatling.javaapi.http.HttpDsl.http;
 
 
-public class flujoReusoCheckOutCorregido extends Simulation {
+public class FlujoReusoCheckOutCorregido extends Simulation {
   private static final int USER_COUNT = Integer.parseInt(System.getProperty("USERS", "30"));
   private static final int RAMP_DURATION = Integer.parseInt(System.getProperty("RAMP_DURATION", "20"));
 
