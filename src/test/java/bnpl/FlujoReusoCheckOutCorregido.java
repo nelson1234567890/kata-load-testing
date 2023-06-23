@@ -60,7 +60,7 @@ public class FlujoReusoCheckOutCorregido extends Simulation {
     .inferHtmlResources(AllowList(), DenyList(".*\\.js", ".*\\.css", ".*\\.gif", ".*\\.jpeg", ".*\\.jpg", ".*\\.ico", ".*\\.woff", ".*\\.woff2", ".*\\.(t|o)tf", ".*\\.png", ".*detectportal\\.firefox\\.com.*"))
   ;
 
-  public flujoReusoCheckOutCorregido() throws IOException {
+  public FlujoReusoCheckOutCorregido() throws IOException {
     setUp(
             scn.injectOpen(
                     nothingFor(5),
