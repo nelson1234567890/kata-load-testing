@@ -11,6 +11,7 @@ jobs:
   integration-load-tests:
     uses: bancodebogota/bbog-dig-do-testing-pipeline/.github/workflows/test_load_integration.yml@v3
     with:
+      environment: st
       aws-region: "us-east-1"
       command-install: 'mvn clean install -DskipTests'
       command-execute: 'mvn gatling:test'
