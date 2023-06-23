@@ -8,7 +8,7 @@ on:
 
 jobs:
   requirements:
-    uses: bancodebogota/bbog-dig-do-testing-pipeline/.github/workflows/requirements_load.yml@v2
+    uses: bancodebogota/bbog-dig-do-testing-pipeline/.github/workflows/requirements_load.yml@v3
     with:
       use-linter: false
       project-name: ${{ github.event.repository.name }}
