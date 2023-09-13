@@ -1,4 +1,4 @@
-package bnpl;
+package bnpl; 
 
 import io.gatling.javaapi.core.ScenarioBuilder;
 import io.gatling.javaapi.core.Simulation;
