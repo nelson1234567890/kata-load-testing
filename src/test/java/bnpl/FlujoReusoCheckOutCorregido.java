@@ -6,7 +6,7 @@ import io.gatling.javaapi.http.HttpProtocolBuilder;
 import java.io.*;
 import java.util.Map;
 import static io.gatling.javaapi.core.CoreDsl.*;
-import static io.gatling.javaapi.http.HttpDsl.http;
+import static io.gatling.javaapi.http.HttpDsl.http; 
 
 
 public class FlujoReusoCheckOutCorregido extends Simulation {
