@@ -10,7 +10,6 @@ jobs:
   requirements:
     uses: bancodebogota/bbog-dig-do-testing-pipeline/.github/workflows/requirements_load.yml@v5
     with:
-      use-linter: false
       project-name: ${{ github.event.repository.name }}
       project-key: ${{ github.event.repository.name }}
       language: 'java'
