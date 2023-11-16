@@ -1,13 +1,14 @@
-# Initial exceptions
-*.png
-*.html
-*.idea
 .idea
-.csv
-
-# Copia de Ignore de proyecto bbog-dig-do-testing-pipeline
-node_modules
 .DS_Store
+reports
+*/target
+node_modules
+
+*.html
+.html
+*.pdf
+.pdf
+
 logs
 *.log
 npm-debug.log*
@@ -40,7 +41,7 @@ typings/
 .node_repl_history
 *.tgz
 .yarn-integrity
-.env
+
 .env.test
 .cache
 .next
@@ -55,18 +56,20 @@ typings/
 public/*/*
 !public/*/.gitkeep
 *.tf
-
+<report folder>
 # System Files
 Thumbs.db
 
 # IDEs and editors
 /.idea
-.project
-.classpath
 .c9/
 *.launch
 .settings/
 *.sublime-workspace
 .iml
 
+/report.js
 target
+.env
+**.env
+/test-output

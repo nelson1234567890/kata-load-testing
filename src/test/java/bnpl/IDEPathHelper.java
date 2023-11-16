@@ -1,7 +1,6 @@
 package bnpl;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 import java.net.URISyntaxException;
 import java.nio.file.Path;
@@ -12,23 +11,24 @@ public class IDEPathHelper {
   private IDEPathHelper() {
     throw new IllegalStateException("Utility class");
   }
-  static final Path mavenSourcesDirectory;
-  static final Path mavenResourcesDirectory;
-  static final Path mavenBinariesDirectory;
-  static final Path resultsDirectory;
-  static final Path recorderConfigFile;
+  static final Path MAVENSOURCESDIRECTORY;
+  static final Path MAVENRESOURCESDIRECTORY;
+  static final Path MAVENBINARIESDIRECTORY;
+  static final Path RESULTSDIRECTORY;
+  static final Path RECORDERCONFIGFILE;
 
   static {
     try {
-      Path projectRootDir = Paths.get(requireNonNull(IDEPathHelper.class.getResource("gatling.conf"), "Couldn't locate gatling.conf").toURI()).getParent().getParent().getParent();
+      Path projectRootDir = Paths.get(requireNonNull(IDEPathHelper.class.getResource("gatling.conf"),
+              "Couldn't locate gatling.conf").toURI()).getParent().getParent().getParent();
       Path mavenTargetDirectory = projectRootDir.resolve("target");
       Path mavenSrcTestDirectory = projectRootDir.resolve("src").resolve("test");
 
-      mavenSourcesDirectory = mavenSrcTestDirectory.resolve("java");
-      mavenResourcesDirectory = mavenSrcTestDirectory.resolve("resources");
-      mavenBinariesDirectory = mavenTargetDirectory.resolve("test-classes");
-      resultsDirectory = mavenTargetDirectory.resolve("gatling");
-      recorderConfigFile = mavenResourcesDirectory.resolve("recorder.conf");
+      MAVENSOURCESDIRECTORY = mavenSrcTestDirectory.resolve("java");
+      MAVENRESOURCESDIRECTORY = mavenSrcTestDirectory.resolve("resources");
+      MAVENBINARIESDIRECTORY = mavenTargetDirectory.resolve("test-classes");
+      RESULTSDIRECTORY = mavenTargetDirectory.resolve("gatling");
+      RECORDERCONFIGFILE = MAVENRESOURCESDIRECTORY.resolve("recorder.conf");
     } catch (URISyntaxException e) {
       throw new ExceptionInInitializerError(e);
     }
