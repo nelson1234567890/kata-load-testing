@@ -2,20 +2,21 @@ package bnpl;
 
 import io.gatling.recorder.GatlingRecorder;
 import io.gatling.recorder.config.RecorderPropertiesBuilder;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import scala.Option;
 
 import java.nio.file.Path;
 
-public class Recorder {
+public final class Recorder {
     public static void main(String[] args) {
         RecorderPropertiesBuilder props = new RecorderPropertiesBuilder()
-                .simulationsFolder(IDEPathHelper.mavenSourcesDirectory.toString())
-                .resourcesFolder(IDEPathHelper.mavenResourcesDirectory.toString())
+                .simulationsFolder(IDEPathHelper.MAVENRESOURCESDIRECTORY.toString())
+                .resourcesFolder(IDEPathHelper.MAVENRESOURCESDIRECTORY.toString())
                 .simulationPackage("computerdatabase")
                 .simulationFormatJava();
 
-        GatlingRecorder.fromMap(props.build(), Option.<Path> apply(IDEPathHelper.recorderConfigFile));
+        GatlingRecorder.fromMap(props.build(), Option.<Path>apply(IDEPathHelper.RECORDERCONFIGFILE));
+    }
+    private Recorder() {
+        //not called
     }
 }
