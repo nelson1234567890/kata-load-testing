@@ -4,6 +4,7 @@ import io.gatling.javaapi.core.ScenarioBuilder;
 import io.gatling.javaapi.core.Simulation;
 import io.gatling.javaapi.http.HttpProtocolBuilder;
 
+import java.io.IOException;
 import java.util.Map;
 
 import static io.gatling.javaapi.core.CoreDsl.scenario;
@@ -136,17 +137,16 @@ public class FlujoReusoCheckOutCorregido extends Simulation {
                             .headers(closeDigReq)
             );
 
-    {
 
+    public FlujoReusoCheckOutCorregido() throws IOException {
         setUp(
                 scn.injectOpen(
                         nothingFor(5),
                         rampUsers(20).during(15)
                 ).protocols(httpProtocol)
         );
-
-
     }
+
 
 }
 
