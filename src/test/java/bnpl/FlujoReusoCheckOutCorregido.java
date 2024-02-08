@@ -7,6 +7,7 @@ import io.gatling.javaapi.http.HttpProtocolBuilder;
 import java.io.IOException;
 import java.util.Map;
 
+
 import static io.gatling.javaapi.core.CoreDsl.scenario;
 import static io.gatling.javaapi.core.CoreDsl.StringBody;
 import static io.gatling.javaapi.core.CoreDsl.nothingFor;
@@ -32,12 +33,10 @@ public class FlujoReusoCheckOutCorregido extends Simulation {
     private Map<CharSequence, String> allied = Map.ofEntries(
             Map.entry(content, aplication),
             Map.entry(request, requestVal),
-            Map.entry("X-alliedToken", "02ab6ea5-54b5-4bcb-b145-fcd442148f57"),
             Map.entry(ipAddres, ipAddresVal),
-            Map.entry("X-IdentType", "CC"),
-            Map.entry("X-amount", "2000000"),
-            Map.entry("X-salepoint", "Punto de venta Bogota"),
+            Map.entry("X-salePoint", "Kiosco de Financiacion"),
             Map.entry("X-sellerId", "21"),
+            Map.entry("X-isProxy", "false"),
             Map.entry("X-channel", "Web")
     );
     private Map<CharSequence, String> token = Map.ofEntries(
@@ -86,8 +85,61 @@ public class FlujoReusoCheckOutCorregido extends Simulation {
     private ScenarioBuilder scn = scenario("Request mngr")
             .exec(
                     http("getAllied")
-                            .get("/ecommerce-widgets-request-mngr/V1/Utilities/allied")
+                            .post("/ecommerce-widgets-request-mngr/V1/Utilities/allied")
                             .headers(allied)
+                            .body(StringBody("""
+                                    {
+                                        "agreementCode": null,
+                                        "allyCode": null,
+                                        "category": {
+                                            "Code": "8299",
+                                            "Description": "Servicios Educativos"
+                                        },
+                                        "creationDate": "2023-11-08T21:41:11.986Z",
+                                        "domains": [
+                                            "https://www.homecenter.com.co",
+                                            "https://wp-ae-stg.labdigitalbdbstaging.co"
+                                        ],
+                                        "email": "sbogota@homecenter.co",
+                                        "id": "663e98ef-12ac-486c-b8c4-7c46b5c841ba",
+                                        "license": {
+                                            "ExpiredToken": "2024-09-05T12:00:00.000Z",
+                                            "Licence": "ACTIVATED",
+                                            "Token": "01197ccf-a19d-47d6-a823-2d2423f88140"
+                                        },
+                                        "modificationDate": "2024-01-15T21:21:55.301Z",
+                                        "name": "SODIMAC COLOMBIA S.A.",
+                                        "nit": "8002421062",
+                                        "phone": "3102417905",
+                                        "salePoints": [
+                                            {
+                                                "Account": {
+                                                    "Number": "49274880",
+                                                    "Type": "Current"
+                                                },
+                                                "Code": "20451407",
+                                                "Address": "CRA 68D 80 70",
+                                                "Email": "Abonosclientes@homecenter.co",
+                                                "Enable": true,
+                                                "Name": "Kiosco de Financiacion",
+                                                "Phone": "3208899933",
+                                                "Type": "Web"
+                                            }
+                                        ],
+                                        "settings": {
+                                            "Journey": "Checkout",
+                                            "Landing": "https://www.homecenter.com.co",
+                                            "Shortname": "HOMECENTER",
+                                            "UrlResponse": "https://www.homecenter.com.co"
+                                        },
+                                        "shortName": "HOMECENTER",
+                                        "policies": {
+                                            "maxAmount": 2000000,
+                                            "fees": 4,
+                                            "engineVersion": "v1"
+                                        }
+                                    }
+                                    """))
             )
             .pause(1)
             .exec(
