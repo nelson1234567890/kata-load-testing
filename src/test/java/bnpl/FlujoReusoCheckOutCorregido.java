@@ -157,32 +157,7 @@ public class FlujoReusoCheckOutCorregido extends Simulation {
                                     }
                                     """)))
 
-
             .pause(1)
-            .exec(
-                    http("bankfeeswithcreditcardamount")
-                            .post("/ecommerce-widgets-request-mngr/V1/Utilities/bankfeeswithcreditcardamount")
-                            .headers(bankfeeswithcreditcardamount)
-                            .body(StringBody("""
-                                    {
-                                        "PriceItem": 200000,
-                                        "AmountFees": 10
-                                    }
-                                    """))
-            )
-            .pause(1)
-            .exec(
-                    http("bankfees")
-                            .post("/ecommerce-widgets-request-mngr/V1/Utilities/bankfees")
-                            .headers(bankfees)
-                            .body(StringBody("""
-                                    {
-                                        "PriceItem": 100000
-                                    }
-                                    """))
-            )
-            .pause(1)
-
             .exec(
                     http("digitalRequest/close")
                             .post("/ecommerce-widgets-request-mngr/V1/Utilities/digital-request/close")
@@ -201,4 +176,3 @@ public class FlujoReusoCheckOutCorregido extends Simulation {
 
 
 }
-
