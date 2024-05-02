@@ -48,12 +48,6 @@ public class FlujoReusoCheckOutCorregido extends Simulation {
     );
 
 
-    private Map<CharSequence, String> bankfees = Map.ofEntries(
-            Map.entry(content, aplication),
-            Map.entry(ipAddres, ipAddresVal),
-            Map.entry(custID, "123454668")
-    );
-
     private Map<CharSequence, String> products = Map.ofEntries(
             Map.entry(content, aplication),
             Map.entry(request, requestVal),
@@ -63,14 +57,6 @@ public class FlujoReusoCheckOutCorregido extends Simulation {
             Map.entry("X-channel", "Web")
     );
 
-
-    private Map<CharSequence, String> bankfeeswithcreditcardamount = Map.ofEntries(
-            Map.entry(content, aplication),
-            Map.entry(ipAddres, ipAddresVal),
-            Map.entry(request, requestVal),
-            Map.entry(custID, "1000117219"),
-            Map.entry("X-Journey", "Checkout")
-    );
     private Map<CharSequence, String> closeDigReq = Map.ofEntries(
             Map.entry(content, aplication),
             Map.entry(ipAddres, ipAddresVal),
@@ -157,32 +143,7 @@ public class FlujoReusoCheckOutCorregido extends Simulation {
                                     }
                                     """)))
 
-
             .pause(1)
-            .exec(
-                    http("bankfeeswithcreditcardamount")
-                            .post("/ecommerce-widgets-request-mngr/V1/Utilities/bankfeeswithcreditcardamount")
-                            .headers(bankfeeswithcreditcardamount)
-                            .body(StringBody("""
-                                    {
-                                        "PriceItem": 200000,
-                                        "AmountFees": 10
-                                    }
-                                    """))
-            )
-            .pause(1)
-            .exec(
-                    http("bankfees")
-                            .post("/ecommerce-widgets-request-mngr/V1/Utilities/bankfees")
-                            .headers(bankfees)
-                            .body(StringBody("""
-                                    {
-                                        "PriceItem": 100000
-                                    }
-                                    """))
-            )
-            .pause(1)
-
             .exec(
                     http("digitalRequest/close")
                             .post("/ecommerce-widgets-request-mngr/V1/Utilities/digital-request/close")
@@ -201,4 +162,3 @@ public class FlujoReusoCheckOutCorregido extends Simulation {
 
 
 }
-
