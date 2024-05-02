@@ -48,12 +48,6 @@ public class FlujoReusoCheckOutCorregido extends Simulation {
     );
 
 
-    private Map<CharSequence, String> bankfees = Map.ofEntries(
-            Map.entry(content, aplication),
-            Map.entry(ipAddres, ipAddresVal),
-            Map.entry(custID, "123454668")
-    );
-
     private Map<CharSequence, String> products = Map.ofEntries(
             Map.entry(content, aplication),
             Map.entry(request, requestVal),
@@ -63,14 +57,6 @@ public class FlujoReusoCheckOutCorregido extends Simulation {
             Map.entry("X-channel", "Web")
     );
 
-
-    private Map<CharSequence, String> bankfeeswithcreditcardamount = Map.ofEntries(
-            Map.entry(content, aplication),
-            Map.entry(ipAddres, ipAddresVal),
-            Map.entry(request, requestVal),
-            Map.entry(custID, "1000117219"),
-            Map.entry("X-Journey", "Checkout")
-    );
     private Map<CharSequence, String> closeDigReq = Map.ofEntries(
             Map.entry(content, aplication),
             Map.entry(ipAddres, ipAddresVal),
