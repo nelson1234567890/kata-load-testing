@@ -26,6 +26,8 @@ public class FlujoReusoCheckOutCorregido extends Simulation {
     private String ipAddresVal = "127.0.0.1";
     private String custID = "X-IdentSerialNum";
     private String custIDType = "X-CustIdentType";
+    private String channel = "X-channel";
+    private String cusIdenNum = "X-CustIdentNum";
 
 
     private HttpProtocolBuilder httpProtocol = http
@@ -37,7 +39,7 @@ public class FlujoReusoCheckOutCorregido extends Simulation {
             Map.entry("X-salePoint", "Kiosco de Financiacion"),
             Map.entry("X-sellerId", "21"),
             Map.entry("X-isProxy", "false"),
-            Map.entry("X-channel", "Web")
+            Map.entry(channel, "Web")
     );
     private Map<CharSequence, String> token = Map.ofEntries(
             Map.entry(content, aplication),
@@ -53,15 +55,15 @@ public class FlujoReusoCheckOutCorregido extends Simulation {
             Map.entry(request, requestVal),
             Map.entry(ipAddres, ipAddresVal),
             Map.entry(custIDType, "CC"),
-            Map.entry("X-CustIdentNum", "123454667"),
-            Map.entry("X-channel", "Web")
+            Map.entry(cusIdenNum, "123454667"),
+            Map.entry(channel, "Web")
     );
 
     private Map<CharSequence, String> closeDigReq = Map.ofEntries(
             Map.entry(content, aplication),
             Map.entry(ipAddres, ipAddresVal),
             Map.entry(custIDType, "CC"),
-            Map.entry("X-CustIdentNum", "1000117217"),
+            Map.entry(cusIdenNum, "1000117217"),
             Map.entry("X-IsClient", "NO_CLIENT"),
             Map.entry(request, requestVal),
             Map.entry("X-digRequestId", "111")
@@ -73,8 +75,8 @@ public class FlujoReusoCheckOutCorregido extends Simulation {
             Map.entry(ipAddres, ipAddresVal),
             Map.entry("X-strcode", "8bf94cbf7fda418cad9c6f0d2b4a39b5"),
             Map.entry(custIDType, "CC"),
-            Map.entry("X-CustIdentNum", "1000117217"),
-            Map.entry("X-channel", "Web"),
+            Map.entry(cusIdenNum, "1000117217"),
+            Map.entry(channel, "Web"),
             Map.entry("x-auth-token", "4e4f32c2-82be-405a-8213-695789068667")
     );
 
