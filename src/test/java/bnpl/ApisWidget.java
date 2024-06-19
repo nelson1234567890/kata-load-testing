@@ -15,7 +15,7 @@ import static io.gatling.javaapi.core.CoreDsl.rampUsers;
 import static io.gatling.javaapi.http.HttpDsl.http;
 
 
-public class FlujoReusoCheckOutCorregido extends Simulation {
+public class ApisWidget extends Simulation {
 
 
     private String content = "Content-Type";
@@ -181,8 +181,7 @@ public class FlujoReusoCheckOutCorregido extends Simulation {
                                     """))
             );
 
-
-    public FlujoReusoCheckOutCorregido() throws IOException {
+    public ApisWidget() throws IOException {
         setUp(
                 scn.injectOpen(
                         nothingFor(5),
