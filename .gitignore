@@ -73,3 +73,5 @@ target
 .env
 **.env
 /test-output
+
+results/
