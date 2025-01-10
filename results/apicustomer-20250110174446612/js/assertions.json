@@ -1,0 +1,10 @@
+{
+  "simulation": "bnpl.ApiCustomer",
+  "simulationId": "apicustomer-20250110174446612",
+  "start": 1736531087705,
+  "description": "prueba4",
+  "scenarios": ["Customer mngr"],
+  "assertions": [
+
+  ]
+}

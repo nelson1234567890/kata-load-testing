@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.util.Map;
 
 
+import static io.gatling.javaapi.core.CoreDsl.atOnceUsers;
 import static io.gatling.javaapi.core.CoreDsl.scenario;
 import static io.gatling.javaapi.core.CoreDsl.StringBody;
 import static io.gatling.javaapi.core.CoreDsl.nothingFor;
@@ -25,13 +26,13 @@ public class ApiCustomer extends Simulation {
     private String custIdentType = "X-CustIdentType";
     private String ipAddres = "X-IPAddr";
     private String ipAddresVal = "127.0.0.1";
+    private String xName = "X-Name";
+    private String xNameValue = "AliadosEcommerce";
     private String request = "X-RqUID";
     private String requestVal = "3e4f32c2-82be-405a-8213-695789068032";
-    private String accessToken = "eyJhbGciOiJSUzI1NiJ9.eyJpZGVudGl0eVR5cGUiOiAiQyIsICJpZGVudGl0eU51bWJlciI6IjEwMDAxMTcyMTciLCAiZGF0ZWluaXRpYWwiOiIyMDI1LTAxLTA5IDE2OjQ3OjQ0In0.GlMBCfsc-7e7rd2FByuMI25_p9lOssk_owjqHo9sfsg01PRrvHEpX474UaUX2YpMjKGPlPj198vyCPop7td_8Qeikvh1SZal2GEaIjSdVpxgQ7BYKdI4p7hJgIOoeiC5Ii_Ii9t4ovbMu4WAy48zX-neeteNvMElZwbW3iWmpcs";
+    private String xAccesToken = "X-AccessToken";
+    private String accessToken = "eyJhbGciOiJSUzI1NiJ9.eyJpZGVudGl0eVR5cGUiOiAiQyIsICJpZGVudGl0eU51bWJlciI6IjEwMDAxMTcyMTciLCAiZGF0ZWluaXRpYWwiOiIyMDI1LTAxLTEwIDEyOjQ1OjM5In0.QEHORrgTUga8UxG0cBlP_xI3bSY22IxYkAgicPE5AiXFVDbOvM-L-FCw8Qc6Ay7tCRbU5jnZLWYEvOvvZX4Tochr6CUQ5RR5T3Ci81HTJP68UjqRu3xAj5GByZ27qGyH5I38aWCLzwZf5Dqhy4Ag3wBWSA6nMDiQGb8SdM9GiBQ";
 
-    private String custID = "X-IdentSerialNum";
-    private String custIDType = "X-CustIdentType";
-    private String cusIdenNum = "X-CustIdentNum";
 
     private HttpProtocolBuilder httpProtocol = http
             .baseUrl("https://api-bnpl.labdigbdbstgae.com");
@@ -43,14 +44,14 @@ public class ApiCustomer extends Simulation {
             Map.entry(identNum, "1000117217"),
             Map.entry(custIdentType, "CC"),
             Map.entry(ipAddres, ipAddresVal),
-            Map.entry("X-Name", "AliadosEcommerce"),
+            Map.entry(xName, xNameValue),
             Map.entry(request,requestVal),
-            Map.entry("X-AccessToken",accessToken)
+            Map.entry(xAccesToken,accessToken)
     );
 
     private ScenarioBuilder scn = scenario("Customer mngr")
             .exec(
-                    http("getCustomer")
+                    http("customer")
                             .get("/ecommerce-customer-mngr/V1/Utilities/customer")
                             .headers(getCustomer))
             .pause(1);
@@ -58,8 +59,10 @@ public class ApiCustomer extends Simulation {
     public ApiCustomer() throws IOException {
         setUp(
                 scn.injectOpen(
-                        nothingFor(5),
-                        rampUsers(20).during(15)
+//                        nothingFor(10),
+//                        rampUsers(5).during(15)
+
+                        atOnceUsers(2)
                 ).protocols(httpProtocol)
         );
     }
