@@ -9,13 +9,12 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.util.Map;
 
+import static io.gatling.javaapi.core.CoreDsl.StringBody;
 import static io.gatling.javaapi.core.CoreDsl.atOnceUsers;
-import static io.gatling.javaapi.core.CoreDsl.bodyString;
 import static io.gatling.javaapi.core.CoreDsl.nothingFor;
 import static io.gatling.javaapi.core.CoreDsl.rampUsers;
 import static io.gatling.javaapi.core.CoreDsl.scenario;
 import static io.gatling.javaapi.http.HttpDsl.http;
-import static io.gatling.javaapi.http.HttpDsl.status;
 
 public class ApiCustomer extends Simulation {
 
@@ -33,12 +32,12 @@ public class ApiCustomer extends Simulation {
     private String request = "X-RqUID";
     private String requestVal = "7395c4e9-89ed-4599-b059-1679ae0775a6";
     private String xAccesToken = "X-AccessToken";
-    private String accessToken = "eyJhbGciOiJSUzI1NiJ9.eyJpZGVudGl0eVR5cGUiOiAiQyIsICJpZGVudGl0eU51bWJlciI6IjEwMDAxMTcyMTciLCAiZGF0ZWluaXRpYWwiOiIyMDI1LTAxLTEwIDEyOjUwOjE4In0.E4vm2_5b64cKse0LYUJkJAw4Jx8UnnH9hqeJ_j1Gn_uQp9Av83D_-wYZe4E5V4V6BEaZPynIVHbAFkg2ujuAQ3kPpaulgA3u6-GLWdvivI7tpUaSm-rPsaSOz-plAWgD7r-rLhc0MHSIK5BBXL4IvcTwVxl-gzgKm-6Ldd6QZI0";
+    private String accessToken = "eyJhbGciOiJSUzI1NiJ9.eyJpZGVudGl0eVR5cGUiOiAiQyIsICJpZGVudGl0eU51bWJlciI6IjEwMDAxMTcyMTciLCAiZGF0ZWluaXRpYWwiOiIyMDI1LTAxLTEwIDE2OjIyOjE3In0.Bol0ua7t3kSyQ2pflTrEL9dhqM32k03pDD5LipoQwZthDM3GTEBo2IoRH2jHouVKWO0KULQEWtK20Zw8q0nMCgZJERS2zapTaMM060r6vanNXFDn2Lzc-C5A5hYG29OP-JOO9cQciLLmp8biuRP4c7Cgi4B7rzz31BcFZTDmIbI";
 
     private HttpProtocolBuilder httpProtocol = http
             .baseUrl("https://api-bnpl.labdigbdbstgae.com");
 
-    private Map<CharSequence, String> getCustomer = Map.ofEntries(
+    private Map<CharSequence, String> customer = Map.ofEntries(
             Map.entry(content, application),
             Map.entry(channel, "Web"),
             Map.entry(identNum, "1000117217"),
@@ -53,16 +52,43 @@ public class ApiCustomer extends Simulation {
             .exec(
                     http("customer")
                             .get("/ecommerce-customer-mngr/V1/Utilities/customer")
-                            .headers(getCustomer)
+                            .headers(customer)
 
+            )
+            .pause(1)
+            .exec(
+                    http("customer")
+                            .put("/ecommerce-customer-mngr/V1/Utilities/customer")
+                            .headers(customer)
+                            .body(StringBody("""
+                                {
+                                            "Customer": {
+                                                "Email": "bdbnelson@gmail.com",
+                                                "Phone": "3012523698",
+                                                "City": "Bogota",
+                                                "SecondName": "fernando",
+                                                "LastName": "rojas",
+                                                "MiddleName": "fernando",
+                                                "FirstName": "nelson",
+                                                "Job": "Asa",
+                                                "IsClient": true,
+                                                "Income": 2000000.01,
+                                                "BirthDt": "1960-06-02",
+                                                "Gender": "M",
+                                                "ethnicGroupName": "Prefiero no responder",
+                                                "ethnicGroupCode": "1000007"
+                                            }
+                                        }
+                            """))
             )
             .pause(1);
 
     public ApiCustomer() throws IOException {
         setUp(
                 scn.injectOpen(
-                        nothingFor(5),
-                        rampUsers(20).during(15)
+                        //nothingFor(5),
+                        //rampUsers(20).during(15)
+                        atOnceUsers(1)
                 ).protocols(httpProtocol)
         );
     }
