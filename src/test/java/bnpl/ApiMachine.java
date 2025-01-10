@@ -38,6 +38,7 @@ public class ApiMachine extends Simulation {
                             .get("/validate-machine/V1/Utilities/machine")
                             .headers(machine)
             );
+
     public ApiMachine() throws IOException {
         setUp(
                 scn.injectOpen(
@@ -45,5 +46,5 @@ public class ApiMachine extends Simulation {
                         rampUsers(20).during(15)
                 ).protocols(httpProtocol)
         );
-}
+    }
 }

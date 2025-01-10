@@ -42,7 +42,8 @@ public class ApiCaptcha extends Simulation {
                             .get("/ecommerce-widgets-request-mngr/V1/Utilities/secure/captcha")
                             .headers(captcha)
                             .body(StringBody(captchaPayload))
-           );
+            );
+
     public ApiCaptcha() throws IOException {
         setUp(
                 scn.injectOpen(
@@ -50,5 +51,5 @@ public class ApiCaptcha extends Simulation {
                         rampUsers(20).during(15)
                 ).protocols(httpProtocol)
         );
-}
+    }
 }

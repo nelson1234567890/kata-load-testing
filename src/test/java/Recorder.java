@@ -8,6 +8,7 @@ public class Recorder {
 
     private Recorder() {
     }
+
     public static void main(String[] args) {
         RecorderPropertiesBuilder props = new RecorderPropertiesBuilder()
                 .simulationsFolder(IDEPathHelper.MAVEN_SOURCES_DIRECTORY.toString())
