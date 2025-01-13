@@ -37,7 +37,7 @@ public class ApiCustomer extends Simulation {
     private String identType = "x-IdentificationType";
     private String xAccesToken = "X-AccessToken";
     private String accessToken =
-            "eyJhbGciOiJSUzI1NiJ9.eyJpZGVudGl0eVR5cGUiOiAiQyIsICJpZGVudGl0eU51bWJlciI6IjEwMDAxMTcyMTciLCAiZGF0ZWluaXRpYWwiOiIyMDI1LTAxLTEwIDE3OjUwOjI0In0.SkBLYQhzTTg2AErRie1D8t6C3f2lEp0NCGB54I6W9qKyE5eu8ZRqr5DvCfSpdpbYNKUeW5FWhMkGWSemmYQmMY6CsmMXMXrL-x9fMgoCD7s6RAfLkTKcjrXPugLmvTKZL30Hbs20wjuhgrKcURfyAelTZLRw4iW4fw4B7yIjJW4";
+            "eyJhbGciOiJSUzI1NiJ9.eyJpZGVudGl0eVR5cGUiOiAiQyIsICJpZGVudGl0eU51bWJlciI6IjEwMDAxMTcyMTciLCAiZGF0ZWluaXRpYWwiOiIyMDI1LTAxLTEzIDE2OjI3OjA3In0.U5uwYkQW6TI1v-DqUGVNt222gQRexBHDQX3zJvvWg42OJCWWOUue1wF2FywjB651kVEnsx4h3JIZtYVEc4Id74NmS86kc0BxA0bbzuXH8ToeMDYnuE7qWsjHpLny3_kmwCOTB6hmdfthbW1kxznWBXdKmL4wUtJX-L9kCHQBpsA";
 
     private HttpProtocolBuilder httpProtocol = http
             .baseUrl("https://api-bnpl.labdigbdbstgae.com");
@@ -72,6 +72,14 @@ public class ApiCustomer extends Simulation {
             Map.entry(identNum, custID),
             Map.entry(ipAddres, ipAddresVal),
             Map.entry(xAccesToken, accessToken)
+    );
+
+    private Map<CharSequence, String> paymentPlan = Map.ofEntries(
+            Map.entry(xAccesToken, accessToken),
+            Map.entry(custIdentType, "CC"),
+            Map.entry(identNum, custID),
+            Map.entry(request, requestVal),
+            Map.entry(content, application)
     );
 
     private ScenarioBuilder scn = scenario("Customer Manager")
@@ -144,6 +152,20 @@ public class ApiCustomer extends Simulation {
                                             "placeOfIssuance": "AGUADAS - CALDAS",
                                             "dispatcher": "eyJjZWxsUGhvbmUiOm51bGwsImVtYWlsIjpudWxsLCJpZGVudGl0eU51bWJlciI6IjEwMjAzMDQwNTAiLCJhY2Nlc3NUb2tlbiI6ImV5SmhiR2NpT2lKU1V6STFOaUo5LmV5SnBaR1Z1ZEdsMGVWUjVjR1VpT2lBaVF5SXNJQ0pwWkdWdWRHbDBlVTUxYldKbGNpSTZJakV3TWpBek1EUXdOVEFpTENBaVpHRjBaV2x1YVhScFlXd2lPaUl5TURJMExURXdMVEE0SURFME9qUTFPakU1SW4wLmR4SjVXdVJuMzl5eWF5UW52ZjlZTjJWVEhUSFFWTE9aUVRqLUlsTmRXYmxGTG5SdVFDdVFlbG5yNGlQTWktYzhWdXFGUkMxMFR0RXQ4Wm5wU2MwUmF4Tk1ETVpXT1p4aVRnVlZtbktEeUEwTmYyOF8teVZGVjBneUdLWGFIOU8xbkV0ZVg5NmZBQnk4VzVHSURlOXByWm1STU5YZG5DNG9RUjFYRmdDOExuWSIsImtleUF1dGhlbnRpY2F0ZWRDZWxsUGhvbmUiOm51bGwsImFjY2Vzc1R5cGUiOiIzIiwib3B0aW9uQ29kZSI6bnVsbCwib2ZmaWNlQ29kZSI6bnVsbCwiZnJvbUxhdW5jaGVyIjpudWxsLCJyZWFjdGl2YXRpb25BY2NvdW50IjpudWxsLCJhcHBWZXJzaW9uIjpudWxsLCJwcm9kdWN0SWQiOm51bGwsInNwZWNpZmljSW5mb0ZvclByb2R1Y3QiOm51bGwsImN1c3RvbWVyU3RhdGUiOiJBQ1RJVkUiLCJwcml2YXRlSXAiOm51bGwsInV1aWRUaHJlYXQiOm51bGwsIm5ldHdvcmsiOm51bGwsImNoYW5uZWwiOiJXRUIiLCJ1dG1VdWlkIjoiMTk2NDFhYmItNWI2Zi00ZTkxLTg1ODEtM2E0ZGZjMGE2MTdlIiwidXRtSW5mbyI6bnVsbCwiY2VsbHBob25lVXNlZEZvckF1dGhlbnRpY2F0aW9uIjpudWxsLCJvcmlnaW4iOm51bGwsImlkZW50aXR5VHlwZSI6IkMiLCJ1dWlkIjoiMWFjMTQxMDYtYzJhZS00NWY5LWFhZGUtMjk1ZWZkYTE0NDNhIiwicmVleHBlZGl0aW9uRmxhZyI6bnVsbCwic3BlY2lmaWNQcm9kdWN0SW5mb1V1aWQiOiI1NDBlN2YzYi1jMmU2LTQ5ZDgtYjkxMi04Mjk2NGM0YWE4MWQiLCJzcGVjaWZpY1Byb2R1Y3RJbmZvIjp7InJlcXVlc3RJZCI6IjE5NjQxYWJiLTViNmYtNGU5MS04NTgxLTNhNGRmYzBhNjE3ZSIsImlkZW50aWZpY2F0aW9uTnVtYmVyIjoiMTAzMDY3Njk1MCIsIkFwcE5hbWUiOiJCTlBMIiwiSm91cm5leSI6IkNoZWNrb3V0IiwiT3JpZ2luIjoiaHR0cHM6Ly93cC1hZS1zdGcubGFiZGlnaXRhbGJkYnN0YWdpbmcuY28vY29tcHJhL29yZGVyLXJlY2VpdmVkLzIxNTYvP2tleT13Y19vcmRlcl96ZjBPU3VtTHEwd0pWIiwicmVkaXJlY3RFcnJvclVybCI6Imh0dHBzOi8vd3AtYWUtc3RnLmxhYmRpZ2l0YWxiZGJzdGFnaW5nLmNvL2NvbXByYS9vcmRlci1yZWNlaXZlZC8yMTU2Lz9rZXk9d2Nfb3JkZXJfemYwT1N1bUxxMHdKViIsInJldXNlIjpmYWxzZSwiYXZhaWxDcmVkaXQiOiIxMDAwMDAwLjAwIiwicGF5bWVudFJlZmVyZW5jZSI6IjIxNTYiLCJjdXN0b21lclR5cGUiOiJJU19DTElFTlQiLCJ1c2VySm91cm5leSI6Ik9yaWdpbmF0aW9uIiwiZW1haWwiOiJucm9qYTEzQGJhbmNvZGVib2dvdGEuY29tLmNvIiwidGltZXN0YW1wIjoxNzI4NDE2NDkyNDY5LCJyZWRpcmVjdEFsbGllZCI6Imh0dHBzOi8vd3AtYWUtc3RnLmxhYmRpZ2l0YWxiZGJzdGFnaW5nLmNvL2NvbXByYS9vcmRlci1yZWNlaXZlZC8yMTU2Lz9rZXk9d2Nfb3JkZXJfemYwT1N1bUxxMHdKViIsImlzUHJveHkiOiJmYWxzZSIsImdlbmRlciI6Ik0iLCJuaXQiOiI5MDAzNjY3ODgwIiwicG9saWNpZXMiOnsibWF4QW1vdW50IjoyMDAwMDAwLCJmZWVzIjo0LCJlbmdpbmVWZXJzaW9uIjoiVjMiLCJjYW5DaGFuZ2VDdXN0b21lckRhdGEiOnRydWV9LCJjZWxscGhvbmVOdW1iZXIiOiIzMDEyNTMyNDY4In0sImhhc2hCaW9tZXRyaWMiOiIiLCJhcGlDaXR5IjoiQXNoYnVybiIsIm9saW1waWFNZXRob2QiOmZhbHNlLCJicmFuY2giOjAsImF1dGhVdWlkIjpudWxsLCJzaXRlIjpudWxsLCJ3YXN0ZUluZm8iOm51bGwsImZpcnN0QXV0aEF0dGVtcHQiOmZhbHNlLCJwZXJzb25hbEluZm8iOnsiYXBwbGljYXRpb25JZCI6bnVsbCwiaWRlbnRpdHlUeXBlIjoiQ0MiLCJpZGVudGl0eU51bWJlciI6IjEwMjAzMDQwNTAiLCJsaXN0RW1haWxzIjpbIm5lbHNvbnJvamFzNjY2QHlhaG9vLmNvbSIsIm5yb2phMTNAYmFuY29kZWJvZ290YS5jb20uY28iLCJuZWxzb25mZXJuYW5kb3JvamFzQGdtYWlsLmNvbS5jbyIsIm5lbHNvbmZlcm5hbmRvcm9qYXM2QGhvdG1haWwuY29tIiwibmVsc29uZmVybmFuZG9yb2phc0BpY2xvdWQuY29tIl0sImZpcnN0TmFtZSI6IkFudG9uaWEiLCJzZWNvbmROYW1lIjoiU29maWEiLCJmaXJzdExhc3ROYW1lIjoiUm9qYXMiLCJzZWNvbmRMYXN0TmFtZSI6IkEiLCJnZW5kZXIiOiJNVUpFUiIsImlkZW50aXR5RXhwZWRpdGlvbkRhdGUiOiIwOC8wNy8xOTk3In0sImF1dGhNZXRob2QiOm51bGwsImZsb3ciOiJPcmlnaW5hdGlvbiIsInJlcXVlc3RJZCI6IjE5NjQxYWJiLTViNmYtNGU5MS04NTgxLTNhNGRmYzBhNjE3ZSJ9",
                                             "idPlaceOfIssuance": "17013000"
+                                        }
+                                    """))
+            )
+            .pause(1)
+            .exec(
+                    http("paymentPlan")
+                            .post("/ecommerce-widgets-request-mngr/V1/Utilities/paymentplan")
+                            .headers(paymentPlan)
+                            .body(StringBody("""
+                                        {
+                                            "amountRequested": 150000,
+                                            "period": "BEGINNING_OF_MONTH",
+                                            "amountApproved": 2000000,
+                                            "bankFees": 4
                                         }
                                     """))
             )
