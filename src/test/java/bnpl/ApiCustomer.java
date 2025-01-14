@@ -37,7 +37,7 @@ public class ApiCustomer extends Simulation {
     private String identType = "x-IdentificationType";
     private String xAccesToken = "X-AccessToken";
     private String accessToken =
-            "eyJhbGciOiJSUzI1NiJ9.eyJpZGVudGl0eVR5cGUiOiAiQyIsICJpZGVudGl0eU51bWJlciI6IjEwMDAxMTcyMTciLCAiZGF0ZWluaXRpYWwiOiIyMDI1LTAxLTEzIDE2OjI3OjA3In0.U5uwYkQW6TI1v-DqUGVNt222gQRexBHDQX3zJvvWg42OJCWWOUue1wF2FywjB651kVEnsx4h3JIZtYVEc4Id74NmS86kc0BxA0bbzuXH8ToeMDYnuE7qWsjHpLny3_kmwCOTB6hmdfthbW1kxznWBXdKmL4wUtJX-L9kCHQBpsA";
+            "eyJhbGciOiJSUzI1NiJ9.eyJpZGVudGl0eVR5cGUiOiAiQyIsICJpZGVudGl0eU51bWJlciI6IjEwMDAxMTcyMTciLCAiZGF0ZWluaXRpYWwiOiIyMDI1LTAxLTE0IDA5OjQ2OjM1In0.C9SUq8vsO5yk_gFEvVgxeVVnbh3xCjVfHaODMg849KFtMNnxll7f9VUfNSTJNFJnt-L-1mB8H66SnuRtm-uhtCrYwHj0QR7H8b7aBlMs-oQBvYOUPZB0YX_dZPdOnIOJhiKyFPNFvk9laTaS6NIcHR5avkE3JA26WFoiqq0E4vY";
 
     private HttpProtocolBuilder httpProtocol = http
             .baseUrl("https://api-bnpl.labdigbdbstgae.com");
@@ -80,6 +80,15 @@ public class ApiCustomer extends Simulation {
             Map.entry(identNum, custID),
             Map.entry(request, requestVal),
             Map.entry(content, application)
+    );
+
+    private Map<CharSequence, String> crmSafeData = Map.ofEntries(
+            Map.entry(content, application),
+            Map.entry(custIdentType, "CC"),
+            Map.entry(identNum, custID),
+            Map.entry(ipAddres, ipAddresVal),
+            Map.entry(request, requestVal),
+            Map.entry(xAccesToken, accessToken)
     );
 
     private ScenarioBuilder scn = scenario("Customer Manager")
@@ -168,6 +177,13 @@ public class ApiCustomer extends Simulation {
                                             "bankFees": 4
                                         }
                                     """))
+            )
+            .pause(1)
+            .exec(
+                    http("crmSafeData")
+                            .get("/ecommerce-customer-mngr/V1/Utilities/crm/safe-data")
+                            .headers(crmSafeData)
+
             )
             .pause(1);
 
