@@ -1,5 +1,6 @@
 package bnpl;
 
+import com.utilidades.CofigFile;
 import io.gatling.javaapi.core.ScenarioBuilder;
 import io.gatling.javaapi.core.Simulation;
 import io.gatling.javaapi.http.HttpProtocolBuilder;
@@ -15,6 +16,7 @@ import static io.gatling.javaapi.core.CoreDsl.nothingFor;
 import static io.gatling.javaapi.core.CoreDsl.rampUsers;
 import static io.gatling.javaapi.core.CoreDsl.scenario;
 import static io.gatling.javaapi.http.HttpDsl.http;
+import static io.gatling.javaapi.http.HttpDsl.status;
 
 public class ApiCustomer extends Simulation {
 
@@ -36,8 +38,8 @@ public class ApiCustomer extends Simulation {
     private String identNumber = "x-IdentificationNumber";
     private String identType = "x-IdentificationType";
     private String xAccesToken = "X-AccessToken";
-    private String accessToken =
-            "eyJhbGciOiJSUzI1NiJ9.eyJpZGVudGl0eVR5cGUiOiAiQyIsICJpZGVudGl0eU51bWJlciI6IjEwMDAxMTcyMTciLCAiZGF0ZWluaXRpYWwiOiIyMDI1LTAxLTE0IDA5OjQ2OjM1In0.C9SUq8vsO5yk_gFEvVgxeVVnbh3xCjVfHaODMg849KFtMNnxll7f9VUfNSTJNFJnt-L-1mB8H66SnuRtm-uhtCrYwHj0QR7H8b7aBlMs-oQBvYOUPZB0YX_dZPdOnIOJhiKyFPNFvk9laTaS6NIcHR5avkE3JA26WFoiqq0E4vY";
+    private CofigFile env = new CofigFile();
+    private String accessToken = env.getProperty("accessToken");
 
     private HttpProtocolBuilder httpProtocol = http
             .baseUrl("https://api-bnpl.labdigbdbstgae.com");
@@ -96,6 +98,7 @@ public class ApiCustomer extends Simulation {
                     http("getCustomer")
                             .get("/ecommerce-customer-mngr/V1/Utilities/customer")
                             .headers(customer)
+                            .check(status().is(200))
 
             )
             .pause(1)
@@ -123,6 +126,7 @@ public class ApiCustomer extends Simulation {
                                             }
                                         }
                                     """))
+                            .check(status().is(204))
             )
             .pause(1)
             .exec(
@@ -136,6 +140,7 @@ public class ApiCustomer extends Simulation {
                                             "hasCeropayPlus": false
                                         }
                                     """))
+                            .check(status().is(200))
             )
             .pause(1)
             .exec(
@@ -163,6 +168,7 @@ public class ApiCustomer extends Simulation {
                                             "idPlaceOfIssuance": "17013000"
                                         }
                                     """))
+                            .check(status().is(204))
             )
             .pause(1)
             .exec(
@@ -177,13 +183,14 @@ public class ApiCustomer extends Simulation {
                                             "bankFees": 4
                                         }
                                     """))
+                            .check(status().is(200))
             )
             .pause(1)
             .exec(
                     http("crmSafeData")
                             .get("/ecommerce-customer-mngr/V1/Utilities/crm/safe-data")
                             .headers(crmSafeData)
-
+                            .check(status().is(200))
             )
             .pause(1);
 
@@ -192,7 +199,6 @@ public class ApiCustomer extends Simulation {
                 scn.injectOpen(
                         nothingFor(5),
                         rampUsers(20).during(15)
-                        //atOnceUsers(100)
                 ).protocols(httpProtocol)
         );
     }
