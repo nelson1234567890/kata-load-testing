@@ -197,9 +197,19 @@ public class ApiCustomer extends Simulation {
     public ApiCustomer() throws IOException {
         setUp(
                 scn.injectOpen(
-                        nothingFor(5),
-                        rampUsers(20).during(15)
+                        nothingFor(2),
+                        rampUsers(5).during(60)
                 ).protocols(httpProtocol)
         );
     }
 }
+/*
+public ApiCustomer() throws IOException {
+    setUp(
+            scn.injectOpen(
+                    nothingFor(5),
+                    rampUsers(20).during(15)
+            ).protocols(httpProtocol)
+    );
+}
+*/
