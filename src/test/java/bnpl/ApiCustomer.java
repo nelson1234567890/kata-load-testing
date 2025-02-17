@@ -20,7 +20,6 @@ import static io.gatling.javaapi.http.HttpDsl.status;
 
 public class ApiCustomer extends Simulation {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ApiCustomer.class.getName());
 
     private String content = "Content-Type";
     private String application = "application/json";
@@ -203,13 +202,3 @@ public class ApiCustomer extends Simulation {
         );
     }
 }
-/*
-public ApiCustomer() throws IOException {
-    setUp(
-            scn.injectOpen(
-                    nothingFor(5),
-                    rampUsers(20).during(15)
-            ).protocols(httpProtocol)
-    );
-}
-*/

@@ -1,3 +1,5 @@
+package runner;
+
 import io.gatling.recorder.GatlingRecorder;
 import io.gatling.recorder.config.RecorderPropertiesBuilder;
 import scala.Option;
