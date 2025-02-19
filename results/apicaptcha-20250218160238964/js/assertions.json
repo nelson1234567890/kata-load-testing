@@ -1,0 +1,10 @@
+{
+  "simulation": "bnpl.ApiCaptcha",
+  "simulationId": "apicaptcha-20250218160238964",
+  "start": 1739894565124,
+  "description": "",
+  "scenarios": ["machine"],
+  "assertions": [
+
+  ]
+}

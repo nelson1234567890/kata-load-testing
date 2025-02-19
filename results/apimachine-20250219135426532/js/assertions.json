@@ -1,0 +1,10 @@
+{
+  "simulation": "bnpl.ApiMachine",
+  "simulationId": "apimachine-20250219135426532",
+  "start": 1739973272360,
+  "description": "",
+  "scenarios": ["machine"],
+  "assertions": [
+
+  ]
+}

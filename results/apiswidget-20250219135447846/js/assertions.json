@@ -1,0 +1,10 @@
+{
+  "simulation": "bnpl.ApisWidget",
+  "simulationId": "apiswidget-20250219135447846",
+  "start": 1739973293570,
+  "description": "",
+  "scenarios": ["Request mngr"],
+  "assertions": [
+
+  ]
+}
