@@ -50,7 +50,6 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <simulationsFolder>src/test/java/bnpl</simulationsFolder>
                     <runMultipleSimulations>true</runMultipleSimulations>
                 </configuration>
             </plugin>
