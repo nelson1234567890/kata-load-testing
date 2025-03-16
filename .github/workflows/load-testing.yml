@@ -10,3 +10,4 @@ jobs:
       java-version: "21"
       command-execute: "mvn gatling:test"
       path-report: "target/gatling/"
+
