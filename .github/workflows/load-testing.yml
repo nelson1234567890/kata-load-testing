@@ -1,0 +1,12 @@
+name: load-testing-workflow
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  api-test:
+    uses: nelson1234567890/pipeline-reusable-kata/.github/workflows/reusable.yml@develop
+    with:
+      java-version: "21"
+      command-execute: "mvn gatling:test"
+      path-report: "target/gatling/"
