@@ -1,0 +1,10 @@
+{
+  "simulation": "testApisLoad.CloseModel",
+  "simulationId": "closemodel-20250316003104812",
+  "start": 1742085067267,
+  "description": "",
+  "scenarios": ["userCloseModel"],
+  "assertions": [
+
+  ]
+}

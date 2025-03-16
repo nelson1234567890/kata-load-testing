@@ -1,0 +1,10 @@
+{
+  "simulation": "testApisLoad.OpenModel",
+  "simulationId": "openmodel-20250316003123285",
+  "start": 1742085083879,
+  "description": "",
+  "scenarios": ["ProductOpenModel"],
+  "assertions": [
+
+  ]
+}
